@@ -1,0 +1,115 @@
+.ynfs_share_image
+{
+	float: left;
+}
+.ynfs_download_ctrl
+{
+	margin-left: 0px;
+	margin-right: 25px;
+}
+.ynfs_uploadItem span
+{
+	width: 80%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+body#global_page_ynfilesharing-index-move,
+body#global_page_ynfilesharing-folder-delete,
+body#global_page_ynfilesharing-link-delete
+{
+	overflow: hidden!important;
+}
+.mif-tree-wrapper
+{
+	border: solid 1px #b4b4b4;
+	box-sizing: border-box;
+}
+#global_page_ynfilesharing-index-move > span
+{
+	margin: 5px;
+}
+.autogen_class_views_embeds_content #toolbar
+{
+	height: 50px;
+}
+#global_page_ynfilesharing-link-browse .ynfs_browse .ynfs_name_column
+{
+	width:50%;
+}
+.ynfs_browse .ynfs_owner_column
+{
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px)
+{
+	.ynfs_download_ctrl{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.ynfs_share_image{
+		float: right;
+	}
+}
+
+@media screen and (max-width: 640px)
+{
+	.ynfs_browse .ynfs_name_column > a
+	{
+		margin-left: 0px;
+		word-wrap: break-word;
+	}
+	.ynfs_owner_column > a
+	{
+		word-wrap: break-word;
+	}
+	.ynfs_folder_icon,
+	.ynfs_icon 
+	{
+		margin-right: 10px;
+	}
+	.ynfs_view_download_column,
+	.ynfs_browse .ynfs_modifieddate_column
+	{
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.ynfs_controls .buttonlink
+	{
+		display: block;
+	}
+	.ynfs_controls .buttonlink + .buttonlink
+	{
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 480px)
+{
+	.ynfs_folder_icon
+	{
+		background-size: 20px 20px;
+	}
+	.ynfs_icon
+	{
+		width: 20px;
+		height: 20px;
+		margin-top: 5px;
+	}
+}
+@media screen and (max-width: 320px)
+{
+	.ynfs_folder_icon
+	{
+		background-size: 16px 16px;
+	}
+	.ynfs_icon
+	{
+		width: 16px;
+		height: 16px;
+		margin-top: 8px;
+	}
+}
+

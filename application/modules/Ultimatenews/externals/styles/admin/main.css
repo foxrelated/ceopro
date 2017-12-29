@@ -1,0 +1,38 @@
+ul.tag-autosuggest 
+{
+	position: absolute;
+	padding: 0px;
+	width: 300px;
+	list-style: none;
+	z-index: 50;
+	border: 1px solid #ddd;
+	margin: 0px;
+	list-style: none;
+	cursor: pointer;
+	white-space: nowrap;
+	background: #fff;
+}
+ul.tag-autosuggest > li {
+	padding: 3px;
+	overflow: hidden;
+}
+ul.tag-autosuggest > li.autocompleter-choices {
+	font-size: .8em;
+}
+ul.tag-autosuggest > li.autocompleter-choices .autocompleter-choice {
+	line-height: 25px;
+}
+.autocompleter-choice {
+	cursor: pointer;
+}
+ul.tag-autosuggest > li span.autocompleter-queried {
+	font-weight: bold;
+}
+
+ul.tag-autosuggest > li + li 
+{
+	border-top: 1px solid #eaeaea;
+}
+#category_name-element{
+    overflow: initial;
+}

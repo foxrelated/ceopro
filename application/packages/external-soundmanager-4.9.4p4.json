@@ -1,0 +1,230 @@
+{
+  "type": "external",
+  "name": "soundmanager",
+  "version": "4.9.4p4",
+  "revision": "10111",
+  "path": "externals\/soundmanager",
+  "repository": null,
+  "sku": null,
+  "date": "Mon, 09 Oct 2017 09:37:44 +0000",
+  "title": "SoundManager",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Mon, 09 Oct 2017 09:37:44 +0000",
+    "title": "SoundManager",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/soundmanager": {
+      "type": "directory",
+      "path": "externals\/soundmanager",
+      "structure": [
+        {
+          "path": "license.txt",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1595,
+          "sha1": "7fafb4f1798fe3c2f9da4fa768a8e9a110546fdc"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 393,
+          "sha1": "90d566f9c55ea1406185f56dafc8cbb2e8604d36"
+        },
+        {
+          "path": "swf",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "swf\/soundmanager2_flash9_debug.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 17211,
+          "sha1": "a7bfb32cae05cd8f883a1ccc2708f0b9b3339c4d"
+        },
+        {
+          "path": "swf\/soundmanager2.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2911,
+          "sha1": "d1f64348643641115a17a3321fd4a4d7aa98f2d7"
+        },
+        {
+          "path": "swf\/xdomain",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "swf\/xdomain\/soundmanager2_flash9_debug.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 17221,
+          "sha1": "4dfe1ecc39e5712d7daef567877e172af4c19c4f"
+        },
+        {
+          "path": "swf\/xdomain\/soundmanager2.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2913,
+          "sha1": "a39f356f5b8d2adaa257bca134ef2d73d5c8f62d"
+        },
+        {
+          "path": "swf\/xdomain\/soundmanager2_debug.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3285,
+          "sha1": "8dee9360732df7774cb259089b3695120a8b1a29"
+        },
+        {
+          "path": "swf\/xdomain\/soundmanager2_flash9.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8665,
+          "sha1": "05249fb30a157e467f9030b539dcf096db58e81c"
+        },
+        {
+          "path": "swf\/soundmanager2_debug.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3285,
+          "sha1": "efade90325bd8ee5598a88251918d771bd6b1240"
+        },
+        {
+          "path": "swf\/soundmanager2_flash9.swf",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8665,
+          "sha1": "123b6fab1e8209fbdddd5e5d0309ec661d3ffccf"
+        },
+        {
+          "path": "troubleshoot",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "troubleshoot\/fpgss-add-location.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 21317,
+          "sha1": "9dbfb4ead06e1767247f704236594d31f4fff12b"
+        },
+        {
+          "path": "troubleshoot\/debug.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2370,
+          "sha1": "c638f25a2d77dbde233ee764cee8fedfdd9eb2a3"
+        },
+        {
+          "path": "troubleshoot\/fpgss-added-location.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 20131,
+          "sha1": "9ada74fa5ead3d5c432acdaa64917165d7fb9c98"
+        },
+        {
+          "path": "troubleshoot\/index.html",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 9372,
+          "sha1": "d76cb53b0d7a97f00b486d1abd41bdaadb7ef65b"
+        },
+        {
+          "path": "troubleshoot\/debug.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 7945,
+          "sha1": "d5c516629c8ec1ca6602cf43b42e0d16f0e24e2c"
+        },
+        {
+          "path": "script",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "script\/soundmanager2.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 163716,
+          "sha1": "7d992b4e03fa69e1258e8bca09ee7b91d43b345c"
+        },
+        {
+          "path": "script\/soundmanager2-nodebug.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 83504,
+          "sha1": "f4b255a637239dcc80ece3ce36bb916904f53946"
+        },
+        {
+          "path": "script\/soundmanager2-nodebug-jsmin.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 36474,
+          "sha1": "0422fcfb4a60828e06e2d5a68f1058ea86393620"
+        },
+        {
+          "path": "script\/soundmanager2-jsmin.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 51241,
+          "sha1": "02312c27f801ea3e5e108a6473bef610f2c2b2ba"
+        }
+      ]
+    }
+  }
+}

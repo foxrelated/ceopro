@@ -1,0 +1,49 @@
+.advgroup-category-collapsed {
+    background: url(~/application/modules/Advgroup/externals/images/collapse_collapsed.png) no-repeat;
+}
+
+.advgroup-category-no-collapsed {
+   background: url(~/application/modules/Advgroup/externals/images/collapse.png) no-repeat;
+}
+
+tr.advgroup-category-sub-category td.category-name {
+    padding-left:50px;
+}
+
+.advgroup-category-collapse-control, .advgroup-category-collapse-nocontrol {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+table.advgroup_admin_tbl td.center {
+	text-align: center;
+} 
+
+#tab_enabled-label label,
+#mode_enabled-label label,
+#view_mode-label label
+{
+	font-weight: bold;
+}
+#mode_list-element ul li,
+#mode_grid-element ul li,
+#mode_map-element ul li,
+#tab_active-element ul li,
+#tab_directory-element ul li
+
+{
+	float: left;
+	padding-right: 20px;
+}
+#mode_list-element ul li + li,
+#mode_grid-element ul li+ li,
+#mode_map-element ul li+ li,
+#tab_active-element ul li+ li,
+#tab_directory-element ul li+ li
+
+{
+	float: none;
+	padding-right: 0;
+}

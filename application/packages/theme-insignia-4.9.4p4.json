@@ -1,0 +1,277 @@
+{
+  "type": "theme",
+  "name": "insignia",
+  "version": "4.9.4p4",
+  "revision": "10113",
+  "path": "application\/themes\/insignia",
+  "repository": null,
+  "sku": null,
+  "date": "Mon, 09 Oct 2017 09:37:45 +0000",
+  "title": "Insignia",
+  "description": "Insignia",
+  "thumb": "theme.jpg",
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Mon, 09 Oct 2017 09:37:45 +0000",
+    "title": "Insignia",
+    "description": "Insignia",
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/insignia": {
+      "type": "directory",
+      "path": "application\/themes\/insignia",
+      "structure": [
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 19808,
+          "sha1": "ed3cc4f5f514a772f7503d04c092cd52d4271ec0"
+        },
+        {
+          "path": "theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 22559,
+          "sha1": "75d47ac3e999edc01f3ed15e3e7f33a69b131a8f"
+        },
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8199,
+          "sha1": "9668882dec619eb2be9d9e559e59c407e36632b5"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1155,
+          "sha1": "72ce9bc531109dc7db654240af188305bfc193de"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 52380,
+          "sha1": "9ae3756f1f7e5315cae4f59f904ccedb0fb4f6de"
+        },
+        {
+          "path": "color-variants",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "color-variants\/insignia-pink",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "color-variants\/insignia-pink\/theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 21946,
+          "sha1": "83a2de262fb3d5a3da3b286431d0eb98f48b5622"
+        },
+        {
+          "path": "color-variants\/insignia-pink\/constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8198,
+          "sha1": "7b20efd72a391d12e0e6603a9e6bb946009cd66c"
+        },
+        {
+          "path": "color-variants\/insignia-green",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "color-variants\/insignia-green\/theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 23047,
+          "sha1": "91b4e9012c48716849bdf612559e3e1f5bff337a"
+        },
+        {
+          "path": "color-variants\/insignia-green\/constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8198,
+          "sha1": "a77c42078cd343cc233bcd289e6cceb30bfd29f4"
+        },
+        {
+          "path": "color-variants\/insignia-purple",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "color-variants\/insignia-purple\/theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 22301,
+          "sha1": "2705adc21da0269d2a9e73a5d9540f7324b5eade"
+        },
+        {
+          "path": "color-variants\/insignia-purple\/constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8198,
+          "sha1": "80179d2ff83ab9aeb1fced3df84e4e58be750f7c"
+        },
+        {
+          "path": "color-variants\/insignia-orange",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "color-variants\/insignia-orange\/theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 23248,
+          "sha1": "6f280a3e1a36837c1b712bea42d91cceb825fecc"
+        },
+        {
+          "path": "color-variants\/insignia-orange\/constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8198,
+          "sha1": "98a91365348a7cb1b94807f55e24090271202f31"
+        },
+        {
+          "path": "color-variants\/insignia-black",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "color-variants\/insignia-black\/theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 22725,
+          "sha1": "08a455a42be64d8cd360f04ef7fcdb1412fa49ca"
+        },
+        {
+          "path": "color-variants\/insignia-black\/constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 8195,
+          "sha1": "ec0aa5b6dc9d668f96a070edcdc119b01109f0eb"
+        },
+        {
+          "path": "images",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "images\/bullet_hover.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 179,
+          "sha1": "932a55bc938965bc94a48ea2a7d540a0e35dccaf"
+        },
+        {
+          "path": "images\/topbar_menu_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 170,
+          "sha1": "565dda63d0039d02852e14ef58766797f25ee2f7"
+        },
+        {
+          "path": "images\/topbar_bg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 13285,
+          "sha1": "189deb8f84195b62aa20afb1c9433503cf44534f"
+        },
+        {
+          "path": "images\/bullet.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 177,
+          "sha1": "88d5bbc5e895b976c41778c8eb37eb456b84908c"
+        },
+        {
+          "path": "images\/bullet_active.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 173,
+          "sha1": "7eab9cf04e67034273d6532fe89a47ae58445e2f"
+        },
+        {
+          "path": "images\/buttonbg.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 105,
+          "sha1": "bfbe9d72ee9861006d0538d7a4c9d9c3e0ebc6c4"
+        }
+      ]
+    }
+  }
+}

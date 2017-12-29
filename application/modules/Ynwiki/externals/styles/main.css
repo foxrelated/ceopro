@@ -1,0 +1,587 @@
+.ynwiki_htmldiff_viewer{
+	white-space: pre-wrap;
+	color: gray;
+}
+
+ins {color:green;background:#dfd;text-decoration:none}
+del {color:red;background:#fdd;text-decoration:none}
+.pane {margin:0; padding:0; border:0; width:100%; min-height:20em; overflow:auto; font:12px monospace; }
+
+.ynwiki_htmldiff_viewer {color:gray}
+.ynwiki_htmldiff_viewer.onlyDeletions ins {display:none}
+.ynwiki_htmldiff_viewer.onlyInsertions del {display:none}
+.ynwiki_quicklinks_menu {
+	background-color: #E9F4FA;
+	background-image: url("/application/modules/Ynwiki/externals/images/foreground_bg.png");
+	background-repeat: repeat-x;
+	border: 1px solid #D0E2EC;
+}
+
+.ynwiki_quicklinks_menu {
+	border-color: #D0E2EC;
+	border-radius: 3px 3px 3px 3px;
+	border-width: 1px;
+	margin-bottom: 15px;
+}
+
+.ynwiki_quicklinks_menu > li {
+	margin: 0 6px;
+	padding: 6px 0;
+}
+
+.icon_group_demote,
+.notification_item_general.notification_type_ynwiki_demote
+{
+	background-image: url(~/application/modules/Ynwiki/externals/images/member/demote.png);
+}
+
+.icon_group_promote,
+.notification_item_general.notification_type_ynwiki_promote
+{
+	background-image: url(~/application/modules/Ynwiki/externals/images/member/promote.png);
+}
+
+div.faq-question {
+	border-top-width: 1px;
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+ul.faq-details-list li {
+	margin-top: 10px;
+}
+
+.ynwiki_quicklinks_menu > li {
+	margin: 0 6px;
+	padding: 6px 0;
+}
+
+.ynwiki_quicklinks_menu > li + li {
+	border-top: 1px solid $theme_border_color;
+}
+
+.ynwiki_link
+{
+	font-weight: bold;
+}
+
+ul.ynwiki_browse
+{
+	clear: both;
+}
+
+ul.ynwiki_browse span h3
+{
+	margin: 0;
+}
+
+ul.ynwiki_browse > li
+{
+	clear: both;
+	padding: 0px 0px 15px 0px;
+}
+
+ul.ynwiki_browse > li + li
+{
+	border-top-width: 1px;
+	padding-top: 15px;
+}
+
+ul.ynwiki_browse > li .ynwiki_browse_photo
+{
+	float: left;
+	overflow: hidden;
+	margin-right: 8px;
+}
+
+html[dir="rtl"] ul.ynwiki_browse > li .ynwiki_browse_photo
+{
+	float: right;
+	margin-right: 0px;
+	margin-left: 8px;
+}
+
+ul.ynwiki_browse > li .ynwiki_browse_options
+{
+	float: right;
+	overflow: hidden;
+	padding-left: 20px;
+}
+
+html[dir="rtl"] ul.ynwiki_browse > li .ynwiki_browse_options
+{
+	float: left;
+	padding-left: 0px;
+	padding-right: 20px;
+}
+
+ul.ynwiki_browse > li .ynwiki_browse_options > a
+{
+	clear: both;
+	display: block;
+	margin: 5px;
+	font-size: .8em;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+ul.ynwiki_browse > li .ynwiki_browse_info
+{
+	overflow: hidden;
+}
+
+ul.ynwiki_browse > li .ynwiki_browse_info_title
+{
+	font-weight: bold;
+}
+
+ul.ynwiki_browse > li .ynwiki_browse_info_date
+{
+	font-size: .8em;
+	color: $theme_font_color_light;
+}
+
+ul.ynwiki_browse > li .ynwiki_browse_info_blurb
+{
+	margin-top: 5px;
+}
+
+.layout_ynwiki_recent_viewed_pages ul.ynwiki_browse > li + li,
+.layout_ynwiki_most_commented_pages ul.ynwiki_browse > li + li,
+.layout_ynwiki_most_favourite_pages ul.ynwiki_browse > li + li,
+.layout_ynwiki_most_followed_pages ul.ynwiki_browse > li + li,
+.layout_ynwiki_most_rated_pages ul.ynwiki_browse > li + li,
+.layout_ynwiki_most_viewed_pages ul.ynwiki_browse > li + li,
+.layout_ynwiki_recent_edited_pages ul.ynwiki_browse > li + li
+{
+	padding-top: 0px;
+}
+
+ul.feed .feed_item_icon[class*=activity_icon_ynwiki]{
+	& > ul{display: inline-block;}
+}
+
+.item_icon_ynwiki_page,
+.notification_type_ynwiki_update,
+.notification_type_ynwiki_move{
+	padding-left: 0 !important;
+	background-image: none;
+
+	&:before{
+		content: '\\f0f6';
+		margin-right: 5px;
+		font-family: fontawesome;
+	}
+}
+
+.layout_ynwiki_recent_updated_pages ul.feed .feed_item_link_title
+{
+	margin-top: -14px\0;
+}
+
+.layout_ynwiki_recent_updated_pages ul.feed .feed_item_attachments
+{
+	padding: 2px 3px 3px;
+	padding-top: 0px\0;
+	*padding-top: 0px;
+}
+
+@media (max-width: 480px){
+	body#global_page_ynwiki-index-view{
+		iframe{
+			width: 100%;
+		}
+	}
+}
+
+@media all and (min-width:0)
+{
+	.layout_ynwiki_recent_updated_pages ul.feed .feed_item_link_title {
+		margin-top: 0px\0;
+	}
+
+	/* IE9 */
+	.layout_ynwiki_recent_updated_pages ul.feed .feed_item_attachments
+	{
+		padding-top: 1px\0;
+	}
+}
+
+.ynwiki_wiki_space
+{
+	border: 1px solid $theme_border_color;
+	clear: none !important;
+	float: left;
+	height: 50px;
+	margin: 5px 0 0 5px;
+	padding: 5px !important;
+	width: 47.5%;
+}
+.ynwiki_table
+{
+	width: 100%;
+	border: 1px solid $theme_border_medium_color;
+}
+.ynwiki_table .ynwiki_header
+{
+	background-color: $theme_border_medium_color;
+	height: 30px;
+	text-align: center;
+}
+.ynwiki_table tr.ynwiki_table_body
+{
+	border-bottom: 1px solid $theme_border_color;
+	height: 28px;
+}
+.ynwiki_table tr.ynwiki_table_body td
+{
+	border-right : 1px solid $theme_border_color;
+	text-align: center;
+}
+.icon_ynwiki_unfollow{
+	background: url(~/application/modules/Ynwiki/externals/images/unfollow.png) no-repeat left bottom;
+	padding-left: 22px;
+}
+.icon_ynwiki_unfavourite{
+	background: url(~/application/modules/Ynwiki/externals/images/unfavourite.png) no-repeat left bottom;
+	padding-left: 22px;
+}
+.icon_ynwiki_viewall
+{
+	font-weight: bold;
+}
+.ynwiki_version
+{
+	background-color: $theme_form_background_color;
+	/*display: inline-block;*/
+	margin: 0;
+	padding: 8px 16px;
+	width: 120px;
+	overflow: hidden;
+}
+
+.ynwiki_content > div
+{
+	font-size: 75%;
+	color: #222;
+	background: $theme_body_background_color;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.ynwiki_content h1,
+.ynwiki_content h2,
+.ynwiki_content h3,
+.ynwiki_content h4,
+.ynwiki_content h5,
+.ynwiki_content h6
+{
+	font-weight: normal;
+	color: $theme_font_color;
+}
+
+.ynwiki_content h1 { font-size: 3em; line-height: 1; margin-bottom: 0.5em; }
+.ynwiki_content h2 { font-size: 2em; margin-bottom: 0.75em; }
+.ynwiki_content h3 { font-size: 1.5em; line-height: 1; margin-bottom: 1em; }
+.ynwiki_content h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+.ynwiki_content h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+.ynwiki_content h6 { font-size: 1em; font-weight: bold; }
+
+.ynwiki_content h1 img,
+.ynwiki_content h2 img,
+.ynwiki_content h3 img,
+.ynwiki_content h4 img,
+.ynwiki_content h5 img,
+.ynwiki_content h6 img
+{
+	margin: 0;
+}
+
+.ynwiki_content p
+{
+	margin: 0 0 0.7em;
+}
+.ynwiki_content .left  			{ float: left !important; }
+.ynwiki_content p .left			{ margin: 1.5em 1.5em 1.5em 0; padding: 0; }
+.ynwiki_content .right 			{ float: right !important; }
+.ynwiki_content p .right 		{ margin: 1.5em 0 1.5em 1.5em; padding: 0; }
+
+.ynwiki_content blockquote  { margin: 1.5em; color: $theme_font_color; font-style: italic; }
+.ynwiki_content strong,
+.ynwiki_content dfn
+{
+	font-weight: bold;
+}
+.ynwiki_content em,
+.ynwiki_content dfn
+{
+	font-style: italic;
+}
+.ynwiki_content sup,
+.ynwiki_content sub
+{
+	line-height: 0;
+}
+
+.ynwiki_content abbr,
+.ynwiki_content acronym
+{
+	border-bottom: 1px dotted $theme_font_color;
+}
+.ynwiki_content address
+{
+	margin: 0 0 1.5em; font-style: italic;
+}
+.ynwiki_content del
+{
+	background: none repeat scroll 0 0 #FFDDDD;
+	color: red;
+}
+.ynwiki_content pre
+{
+	margin: 1.5em 0; white-space: pre;
+}
+
+.ynwiki_content pre,
+.ynwiki_content code,
+.ynwiki_content tt
+{
+	font: 1em 'andale mono', 'lucida console', monospace; line-height: 1.5;
+}
+
+
+/* Lists
+-------------------------------------------------------------- */
+
+.ynwiki_content li ul,
+.ynwiki_content li ol
+{
+	margin: 0;
+}
+.ynwiki_content ul,
+.ynwiki_content ol
+{
+	margin: 0 1.5em 1.5em 0;
+	padding-left: 1.5em;
+}
+
+.ynwiki_content ul          { list-style-type: disc; }
+.ynwiki_content ol          { list-style-type: decimal; }
+
+.ynwiki_content dl          { margin: 0 0 1.5em 0; }
+.ynwiki_content dl dt       { font-weight: bold; }
+.ynwiki_content dd          { margin-left: 1.5em;}
+
+
+/* Tables
+-------------------------------------------------------------- */
+
+/*
+Because of the need for padding on TH and TD, the vertical rhythm
+on table cells has to be 27px, instead of the standard 18px or 36px
+of other elements.
+*/
+
+.ynwiki_content table
+{
+	margin-bottom: 1.4em;
+	width: 100%;
+	border: 1px solid $theme_border_medium_color;
+	border-collapse: collapse;
+}
+
+.ynwiki_content th
+{
+	font-weight: bold;
+	text-align: left;
+}
+
+.ynwiki_content thead th
+{
+	background: #c3d9ff;
+}
+
+.ynwiki_content th,
+.ynwiki_content td,
+.ynwiki_content caption { padding: 4px 10px 4px 5px; }
+.ynwiki_content tr
+{
+	background-color: #C5C5C5;
+	border-bottom: 1px solid $theme_border_color;
+	height: 28px;
+}
+.ynwiki_content tr + tr
+{
+	background-color: transparent;
+}
+
+.ynwiki_content td
+{
+	border-right : 1px solid $theme_border_color;
+}
+
+/*
+You can zebra-stripe your tables in outdated browsers by adding
+the class "even" to every other table row.
+*/
+.ynwiki_content tbody tr:nth-child(even) td,
+.ynwiki_content tbody tr.even td  {
+	background: #e5ecf9;
+}
+.ynwiki_content tfoot       { font-style: italic; }
+.ynwiki_content caption     { background: #eee; }
+
+
+/* Misc classes
+-------------------------------------------------------------- */
+
+.ynwiki_content .small      { font-size: .8em; margin-bottom: 1.875em; line-height: 1.875em; }
+.ynwiki_content .large      { font-size: 1.2em; line-height: 2.5em; margin-bottom: 1.25em; }
+.ynwiki_content .hide       { display: none; }
+
+.ynwiki_content .quiet      { color: #666; }
+.ynwiki_content .loud       { color: #000; }
+.ynwiki_content .highlight  { background:#ff0; }
+.ynwiki_content .added      { background:#060; color: #fff; }
+.ynwiki_content .removed    { background:#900; color: #fff; }
+
+.ynwiki_content .first      { margin-left:0; padding-left:0; }
+.ynwiki_content .last       { margin-right:0; padding-right:0; }
+.ynwiki_content .top        { margin-top:0; padding-top:0; }
+.ynwiki_content .bottom     { margin-bottom:0; padding-bottom:0; }
+
+#ynwiki_create div.form-label {
+	float: none;
+	margin: 0;
+	padding: 0 0 5px;
+	text-align: left;
+}
+
+.layout_ynwiki_search_pages div#filter_form,
+.layout_ynwiki_search_pages .filters,
+.layout_ynwiki_search_pages form#filter_form div.form-elements {
+	background: none repeat scroll 0 0 transparent !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+}
+.layout_ynwiki_profile_options{
+	.item_photo_ynwiki_page{
+		width: 100%;
+	}
+}
+ 
+
+#to-wrapper ul.message-autosuggest {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #BBBBBB;
+	cursor: pointer;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;;
+}
+
+#to-wrapper ul.message-autosuggest .friendlist {
+	background-position: 5px center;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}
+
+#to-wrapper ul.message-autosuggest > li span.autocompleter-queried {
+	font-weight: bold;
+}
+
+#to-wrapper ul.message-autosuggest > li.autocompleter-choices .autocompleter-choice {
+	line-height: 25px;
+}
+
+#to-wrapper .autocompleter-choice {
+	cursor: default;
+}
+
+#to-wrapper ul.message-autosuggest > li:hover
+{
+	background-color: #EEEEEE;
+}
+
+#toValues-wrapper .tag {
+	background-color: #D3E6EF;
+	border-radius: 3px 3px 3px 3px;
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin: 0 10px 5px 0;
+	padding: 0.4em 0.6em;
+}
+
+.ynwiki_browse_options,
+.ynwiki_profile_options_menu {
+	a.buttonlink {
+		padding-left: 21px;
+		background-position: left center;
+		background-repeat: no-repeat;
+	}
+}
+
+.menu_ynwiki_edit {
+	background: url(~/application/modules/Ynwiki/externals/images/edit.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_add {
+	background: url(~/application/modules/Ynwiki/externals/images/page-icon.gif) no-repeat left bottom;
+}
+
+.menu_ynwiki_print {
+	background: url(~/application/modules/Ynwiki/externals/images/print.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_download {
+	background: url(~/application/modules/Ynwiki/externals/images/download.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_attach {
+	background: url(~/application/modules/Ynwiki/externals/images/attach.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_follow {
+	background: url(~/application/modules/Ynwiki/externals/images/follow.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_unfollow {
+	background: url(~/application/modules/Ynwiki/externals/images/unfollow.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_favourite {
+	background: url(~/application/modules/Ynwiki/externals/images/favourite.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_unfavourite {
+	background: url(~/application/modules/Ynwiki/externals/images/unfavourite.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_history {
+	background: url(~/application/modules/Ynwiki/externals/images/history.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_delete {
+	background: url(~/application/modules/Ynwiki/externals/images/delete.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_move {
+	background: url(~/application/modules/Ynwiki/externals/images/move.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_restrict {
+	background: url(~/application/modules/Ynwiki/externals/images/restrict.png) no-repeat left bottom;
+}
+
+.menu_ynwiki_join {
+	background-image: url(~/application/modules/Ynwiki/externals/images/join.png);
+}
+
+.menu_ynwiki_leave {
+	background-image: url(~/application/modules/Ynwiki/externals/images/leave.png);
+}
+
+.menu_ynwiki_report {
+	background: url(~/application/modules/Ynwiki/externals/images/report.png) no-repeat left bottom;
+}

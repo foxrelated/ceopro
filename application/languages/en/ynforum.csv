@@ -1,0 +1,613 @@
+"YNFORUM_FORM_ADMIN_LEVEL_EVENT_CREATE_DESCRIPTION";"Do you want to allow user to create events in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_EVENT_EDIT_DESCRIPTION";"Do you want to allow user to edit events in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_EVENT_DELETE_DESCRIPTION";"Do you want to allow user to delete events in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_GROUP_CREATE_DESCRIPTION";"Do you want to allow user to create groups in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_GROUP_EDIT_DESCRIPTION";"Do you want to allow user to edit groups in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_GROUP_DELETE_DESCRIPTION";"Do you want to allow user to delete groups in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_POLL_CREATE_DESCRIPTION";"Do you want to allow user to create polls in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_POLL_EDIT_DESCRIPTION";"Do you want to allow user to edit polls in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_POLL_DELETE_DESCRIPTION";"Do you want to allow user to delete polls in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_ANNOUNCEMENT_CREATE_DESCRIPTION";"Do you want to allow user to create announcements in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_ANNOUNCEMENT_EDIT_DESCRIPTION";"Do you want to allow user to edit announcements in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_ANNOUNCEMENT_DELETE_DESCRIPTION";"Do you want to allow user to delte announcements in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_ANNOUNCEMENT_HIGHLIGHT_DESCRIPTION";"Do you want to allow user to highlight announcements in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_EDITING_OTHER_EVENT_DESCRIPTION";"Do you want to allow user to edit of other members' events in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_DELETING_OTHER_EVENT_DESCRIPTION";"Do you want to allow user to delete of other members' events in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_EVENT_HIGHLIGHT_DESCRIPTION";"Do you want to allow user to highlight events in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_EDITING_OTHER_GROUP_DESCRIPTION";"Do you want to allow user to edit of other members' groups in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_DELETING_OTHER_GROUP_DESCRIPTION";"Do you want to allow user to delete of other members' groups in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_GROUP_HIGHLIGHT_DESCRIPTION";"Do you want to allow user to highlight groups in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_EDITING_OTHER_POLL_DESCRIPTION";"Do you want to allow user to edit of other members' polls in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_DELETING_OTHER_POLL_DESCRIPTION";"Do you want to allow user to delete of other members' polls in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_POLL_HIGHLIGHT_DESCRIPTION";"Do you want to allow user to highlight polls in forum?"
+"YNFORUM_POST_ATTACHED_PHOTO";"Attached Photos"
+"Repick Album";"Repick Album"
+"Attach from computer";"Attach from computer"
+"Choose from my library";"Choose from my library"
+"YNFORUM_CLEAR_SELECTION";"Clear Selection"
+"YNFORUM_SELECT_ALL";"Select All"
+"YNFORUM_ATTACHED_SELECT";"Attach Selected"
+"Add Photos";"Add Photos"
+
+"YNFORUM_EDIT_TOPIC";"Edit topic"
+"YNFORUM_ADD_PHOTO";"Add photos"
+"YNFORUM_POST_ICON";"Post icon"
+"add";"add"
+"delete";"delete"
+"edit";"edit"
+"Forums";"Forums"
+"My Watch Topics";"My Watch Topics"
+"Back To Forum";"Back To Forum"
+"From Date";"From Date"
+"To Date";"To Date"
+"Select All Topics";"Select All Topics"
+"Deselect All Topics";"Deselect All Topics"
+"Mark All as Read";"Mark All as Read"
+"Stick Topics";"Stick Topics"
+"Un-stick Topics";"Un-stick Topics"
+"Close Topics";"Close Topics"
+"Open Topics";"Open Topics"
+"Moderate Topics";"Moderate Topics"
+"Go";"Go"
+"Select All Posts";"Select All Posts"
+"Deselect All Posts";"Deselect All Posts"
+"Moderate Posts";"Moderate Posts"
+"Post title";"Post title"
+"Manage Photo";"Manage Photo"
+"Finish";"Finish"
+"Skip & Finish";"Skip & Finish"
+"Please select a action to moderate.";"Please select a action to moderate."
+"Please select a post to moderate.";"Please select a post to moderate."
+"Are you sure you want to moderate the selected posts?";"Are you sure you want to moderate the selected posts?"
+"Please select a topic to moderate.";"Please select a topic to moderate."
+"Are you sure you want to moderate the selected topics?";"Are you sure you want to moderate the selected topics?"
+"Go to the last post";"Go to the last post"
+"Hot topic";"Hot topic"
+"Icon Legend and Forum Rights";"Icon Legend and Forum Rights"
+"Last reply by %1$s on %2$s";"Last reply by %1$s on %2$s"
+"Latest Posts";"Latest Posts"
+"Moderators";"Moderators"
+"move up";"move up"
+"post";"post";"posts"
+"remove";"remove"
+"View newest posts";"View newest posts"
+"share permission";"share permission"
+"Search in forum";"Search in forum"
+"There is no post in this forum";"There is no post in this forum"
+"topic";"topic";"topics"
+"Topic doesn't have any replies";"Topic doesn't have any replies"
+"Topic has replies";"Topic has replies"
+"view";"view"
+"Closed topic";"Closed topic"
+"BBCode";"BBCode"
+"is opened";"is opened"
+"is closed";"is closed"
+"HTML";"HTML"
+"Search for a member to add as a moderator for this forum.";"Search for a member to add as a moderator for this forum."
+"Edit Category";"Edit Category"
+"Category Title";"Category Title"
+"Description";"Description"
+"Parent Category";"Parent Category"
+"Create Category";"Create Category"
+"Attach an icon (The icon will be resized to 48px * 48px)";"Attach an icon (The icon will be resized to 48px * 48px)"
+"Save Changes";"Save Changes"
+" or ";" or "
+"Create Forum";"Create Forum"
+"Delete Category";"Delete Category"
+"Are you sure you want to delete this category?";"Are you sure you want to delete this category?"
+"Super Admins";"Super Admins"
+"You have the permission to post or reply a topic";"You have the permission to post or reply a topic"
+"You don't have permission to post or reply a topic";"You don't have permission to post or reply a topic"
+"You have the permission to edit a topic";"You have the permission to edit a topic"
+"You don't have permission to edit a topic";"You don't have permission to edit a topic"
+"You have the permission to delete a topic";"You have the permission to delete a topic"
+"You don't have the permission to delete a topic";"You don't have the permission to delete a topic"
+"You have the permission to approve a post";"You have the permission to approve a post"
+"You don't have the permission to approve a post";"You don't have the permission to approve a post"
+"You have the permission to make a sticky on a topic";"You have the permission to make a sticky on a topic"
+"You don't have the permission to make a sticky on a topic";"You don't have the permission to make a sticky on a topic"
+"You have the permission to close a topic";"You have the permission to close a topic"
+"You don't have the permission to close a topic";"You don't have the permission to close a topic"
+"You have the permission to move a topic";"You have the permission to move a topic"
+"You don't have the permission to move a topic";"You don't have the permission to move a topic"
+"Quote this";"Quote this"
+"share";"share"
+"thank";"thank"
+"add reputation";"add reputation"
+"report this post";"report this post"
+"Moderator";"Moderator"
+"Post(s)";"Post(s)"
+"Thank(s)";"Thank(s)"
+"Thanked";"Thanked"
+"cR(s)";"cR(s)"
+"Global Settings";"Global Settings"
+"Manage Forums";"Manage Forums"
+"Your post is waiting for the approval";"Your post is waiting for the approval"
+"Approve";"Approve"
+"Edit";"Edit"
+"Delete";"Delete"
+"Edit Forum";"Edit Forum"
+"Forum Title";"Forum Title"
+"Parent Category/Forum";"Parent Category/Forum"
+"Member Levels";"Member Levels"
+"Super Admins";"Super Admins"
+"Admins";"Admins"
+"Remove Moderator";"Remove Moderator"
+"Are you sure you want to remove this moderator?";"Are you sure you want to remove this moderator?"
+"Add Moderator";"Add Moderator"
+"Search for a member to add as a moderator for this forum";"Search for a member to add as a moderator for this forum"
+"Member Name";"Member Name"
+"Add the moderator to its sub-forums/sub-categories.";"Add the moderator to its sub-forums/sub-categories."
+"User Identity";"User Identity"
+"Yes, allow viewing and subscription of forums, even private ones.";"Yes, allow viewing and subscription of forums, even private ones."
+"Yes, allow viewing and subscription of forums.";"Yes, allow viewing and subscription of forums."
+"No, do not allow forums to be viewed or subscribed to.";"No, do not allow forums to be viewed or subscribed to."
+"Yes, allow creation of topics in forums, even private ones.";"Yes, allow creation of topics in forums, even private ones."
+"Yes, allow creation of topics.";"Yes, allow creation of topics."
+"No, do not allow topics to be created.";"No, do not allow topics to be created."
+"Yes, allow posting to forums, even private ones.";"Yes, allow posting to forums, even private ones."
+"Yes, allow posting to forums.";"Yes, allow posting to forums."
+"No, do not allow posting to forums.";"No, do not allow posting to forums."
+"Yes, allow editing of posts, including other members' posts.";"Yes, allow editing of posts, including other members' posts."
+"Yes, allow editing of posts.";"Yes, allow editing of posts."
+"No, do not allow forum posts to be edited.";"No, do not allow forum posts to be edited."
+"Yes, allow deletion of posts, including other members' posts.";"Yes, allow deletion of posts, including other members' posts."
+"Yes, allow deletion of posts.";"Yes, allow deletion of posts."
+"No, do not allow forum posts to be deleted.";"No, do not allow forum posts to be deleted."
+"Allow HTML in posts?";"Allow HTML in posts?"
+"Allow editing of other members' topics";"Allow editing of other members' topics"
+"Yes, allow editing other members' topics.";"Yes, allow editing other members' topics."
+"No, do not allow topics to be edited.";"No, do not allow topics to be edited."
+"Allow deleting of other members' topics";"Allow deleting of other members' topics"
+"Yes, allow deleting other members' topics.";"Yes, allow deleting other members' topics."
+"No, do not allow topics to be deleted.";"No, do not allow topics to be deleted."
+"Allow approval of others' topics";"Allow approval of others' topics"
+"Yes, allow approval other members' topics.";"Yes, allow approval other members' topics."
+"No, do not allow topics to be approved.";"No, do not allow topics to be approved."
+"Allow sticky make of other members' topics";"Allow sticky make of other members' topics"
+"Yes, allow sticky make of topics.";"Yes, allow sticky make of topics."
+"No, do not allow topics to be made sticky.";"No, do not allow topics to be made sticky."
+"Allow close of other members' topics";"Allow close of other members' topics"
+"Yes, allow close of topics.";"Yes, allow close of topics."
+"No, do not allow topics to be closed.";"No, do not allow topics to be closed."
+"Allow move of other members' topics";"Allow move of other members' topics"
+"Yes, allow move of topics.";"Yes, allow move of topics."
+"No, do not allow topics to be moved.";"No, do not allow topics to be moved."
+"Search";"Search"
+"Delete Forum";"Delete Forum"
+"Are you sure you want to delete this forum?";"Are you sure you want to delete this forum?"
+"Remove this moderator from its sub-forums or sub-categories.";"Remove this moderator from its sub-forums or sub-categories."
+"Default Level";"Default Level"
+"Public";"Public"
+"Attach an icon (The icon will be resized to 56px * 41px)";"Attach an icon (The icon will be resized to 56px * 41px)"
+"cancel";"cancel"
+"Forum Description";"Forum Description"
+"This post was edited by %1$s at %2$s";"This post was edited by %1$s at %2$s"
+"The following users say thanks to";"The following users say thanks to"
+"for this useful post:";"for this useful post:"
+"Quick navigation";"Quick navigation"
+"Please select an item";"Please select an item"
+"Forum";"Forum"
+"There is no user found !!!";"There is no user found !!!"
+"Forum saved.";"Forum saved."
+"Category saved.";"Category saved."
+"Category added.";"Category added."
+"Forum added.";"Forum added."
+"Moderator Added.";"Moderator Added."
+"Moderator Removed.";"Moderator Removed."
+"Category deleted.";"Category deleted."
+"Forum deleted.";"Forum deleted."
+"No forum is selected.";"No forum is selected."
+"Forum removed.";"Forum removed."
+"Post Reply";"Post Reply"
+"Edit Post";"Edit Post"
+"Posted";"Posted"
+"in the topic %1$s";"in the topic %1$s"
+"in the forum %1$s";"in the forum %1$s"
+"This post was edited by %1$s at %2$s";"This post was edited by %1$s at %2$s"
+"Previous";"Previous"
+"Next";"Next"
+"By";"By"
+"In";"In"
+"%1$s view";"%1$s view";"%1$s views"
+"%1$sLast post%2$s by %3$s";"%1$sLast post%2$s by %3$s"
+"%1$s %2$s view";"%1$s %2$s view";"%1$s %2$s views"
+"Forums Plugin";"Forums Plugin"
+"Member Level Settings";"Member Level Settings"
+"Forum Statistic";"Forum Statistic"
+"Statistic - Forums";"Statistic - Forums"
+"Topic(s):";"Topic(s):"
+"Post(s):";"Post(s):"
+"Admin Forums";"Admin Forums"
+"Add Category";"Add Category"
+"Add Forum";"Add Forum"
+"Max file size limit exceeded (probably).";"Max file size limit exceeded (probably)."
+"Invalid request method";"Invalid request method"
+"No file";"No file"
+"Invalid Upload";"Invalid Upload"
+"An error occurred.";"An error occurred."
+"Post deleted.";"Post deleted."
+"Moderated by";"Moderated by"
+"result was";"result was";"result were"
+"found.";"found."
+"Latest Posts";"Latest Posts"
+"Posts/Views";"Posts/Views"
+"Normal Posts";"Normal Posts"
+"by";"by"
+"Go to the last post";"Go to the last post"
+"Posted on";"Posted on"
+"Add New Topic";"Add New Topic"
+"Post Topic";"Post Topic"
+"Topic deleted.";"Topic deleted."
+"Topic renamed.";"Topic renamed."
+"Topic moved.";"Topic moved."
+"Deleted Member";"Deleted Member"
+"%1$s said:";"%1$s said:"
+"Your search returned too many results; only displaying the first 20.";"Your search returned too many results; only displaying the first 20."
+"List of unapproved posts";"List of unapproved posts"
+"Topic";"Topic"
+"Browse";"Browse"
+"Report";"Report"
+"There is no post waiting for your approval !!!";"There is no post waiting for your approval !!!"
+"View unapproved posts";"View unapproved posts"
+"Unapproved posts";"Unapproved posts"
+"Sticky Topics";"Sticky Topics"
+"Normal Topics";"Normal Topics"
+"Show topics from";"Show topics from"
+"1 day";"1 day"
+"%1$d day";"%1$d day"
+"%1$d days";"%1$d days"
+"1 week";"1 week"
+"%1$d week";"%1$d week","%1$d weeks"
+"%1$d weeks";"%1$d weeks"
+"1 month";"1 month"
+"%1$d month";"%1$d month","%1$d months"
+"%1$d months";"%1$d months"
+"1 year";"1 year"
+"Sort topics by";"Sort topics by"
+"Title";"Title"
+"Post created time";"Post created time"
+"Reply count";"Reply count"
+"View count";"View count"
+"Post user";"Post user"
+"Order topics by";"Order topics by"
+"Ascending";"Ascending"
+"Descending";"Descending"
+"Show Topics";"Show Topics"
+"Reply";"Reply"
+"This topic has been closed.";"This topic has been closed."
+"Make sticky";"Make sticky"
+"Remove sticky";"Remove sticky"
+"Close";"Close"
+"Open";"Open"
+"Rename";"Rename"
+"Move";"Move"
+"Watch topic";"Watch topic"
+"Stop watching topic";"Stop watching topic"
+"Back To Topics";"Back To Topics"
+"Quick reply";"Quick reply"
+"You cannot thank or add reputation to the same post twice.";"You cannot thank or add reputation to the same post twice."
+"There is an error occurred. Please try again !!!";"There is an error occurred. Please try again !!!"
+"> Report User";"> Report User"
+"> Add to My Friends";"> Add to My Friends"
+"> Send Message";"> Send Message"
+"Increase one point for this user.";"Increase one point for this user."
+"Decrease one point for this user.";"Decrease one point for this user."
+"Increase/decrease reputation points for this user";"Increase/decrease reputation points for this user"
+"Increase/Decrease";"Increase/Decrease"
+"Add Reputation";"Add Reputation"
+"Topic:";"Topic:"
+"This is the view advanced forum page.";"This is the view advanced forum page."
+"Topic title";"Topic title"
+"maximum";"maximum"
+"files";"files"
+"Advanced Forum";"Advanced Forum"
+"Advanced Forum View";"Advanced Forum View"
+"This form is just an example fallback for the unobtrusive behaviour of FancyUpload. If this part is not changed, something must be wrong with your code.";"This form is just an example fallback for the unobtrusive behaviour of FancyUpload. If this part is not changed, something must be wrong with your code."
+"Upload a Photo:";"Upload a Photo:"
+"files";"files"
+"Clear List";"Clear List"
+"To enable the embedded uploader, unblock it in your browser and refresh (see Adblock).";"To enable the embedded uploader, unblock it in your browser and refresh (see Adblock)."
+"To enable the embedded uploader, enable the blocked Flash movie (see Flashblock).";"To enable the embedded uploader, enable the blocked Flash movie (see Flashblock)."
+"A required file was not found, please be patient and we'll fix this.";"A required file was not found, please be patient and we'll fix this."
+"To enable the embedded uploader, install the latest Adobe Flash plugin.";"To enable the embedded uploader, install the latest Adobe Flash plugin."
+"Click ""Add photos"" to select one or more photos from your computer. After you have selected the photos, they will begin to upload right away. When your upload is finished, click the button below your photo list to save them to your store.";"Click ""Add photos"" to select one or more photos from your computer. After you have selected the photos, they will begin to upload right away. When your upload is finished, click the button below your photo list to save them to your store."
+"Add photos";"Add photos"
+"posted";"posted"
+"Do you want to add reputation for this user by this post?";"Do you want to add reputation for this user by this post?"
+"There is no posts in this forum !!!";"There is no posts in this forum !!!"
+"List of newest posts";"List of newest posts"
+"Watch this forum";"Watch this forum"
+"Stop watching this forum";"Stop watching this forum"
+"Watch Forum";"Watch Forum"
+"Do you want to watch this forum ?";"Do you want to watch this forum ?"
+"Watch all sub forums in this forum";"Watch all sub forums in this forum"
+"Stop Watching Forum";"Stop Watching Forum"
+"Do you want to stop watching this forum ?";"Do you want to stop watching this forum ?"
+"Stop watching all sub forums in this forum";"Stop watching all sub forums in this forum"
+"Search in the sub-forums";"Search in the sub-forums"
+"Posts per topic page";"Posts per topic page"
+"These settings affect all members in your community.";"These settings affect all members in your community."
+"Your changes have been saved.";"Your changes have been saved."
+"How many posts will be showed per topic page? (Enter a number between 1 and 999)";"How many posts will be showed per topic page? (Enter a number between 1 and 999)"
+"How many topics will be showed per forum page? (Enter a number between 1 and 999)";"How many topics will be showed per forum page? (Enter a number between 1 and 999)"
+"Topics per forum page";"Topics per forum page"
+"How many posts does a topic have to get to be considered as the hot one? (Enter a number between 1 and 999)";"How many posts does a topic have to get to be considered as the hot one? (Enter a number between 1 and 999)"
+"Minimum number of posts of a hot topic";"Minimum number of posts of a hot topic"
+"Yes, members can use BBCode tags.";"Yes, members can use BBCode tags."
+"No, do not let members use BBCode.";"No, do not let members use BBCode."
+"Enable BBCode";"Enable BBCode"
+"Yes, members can use HTML in their posts.";"Yes, members can use HTML in their posts."
+"No, strip HTML from posts.";"No, strip HTML from posts."
+"Enable HTML";"Enable HTML"
+"Yes, topics are approved automatically";"Yes, topics are approved automatically"
+"No, topics have to be approved before displaying to the community";"No, topics have to be approved before displaying to the community"
+"Approve topics";"Approve topics"
+"How many photos will be showed per post? (Enter a number between 1 and 100)";"How many photos will be showed per post? (Enter a number between 1 and 100)"
+"Photos per topic";"Photos per topic"
+"How many topics will be showed in the Hottest topics widget?";"How many topics will be showed in the Hottest topics widget?"
+"Number of topics in the hottest topics widget";"Number of topics in the hottest topics widget"
+"How many topics will be showed in the Most Viewed Topics widget?";"How many topics will be showed in the Most Viewed Topics widget?"
+"Number of topics in the most viewed topics widget";"Number of topics in the most viewed topics widget"
+"How many topics will be showed in the Newest Topics widget?";"How many topics will be showed in the Newest Topics widget?"
+"Number of topics in the newest topics widget";"Number of topics in the newest topics widget"
+"How many users will be showed in the Top Thanked Users widget?";"How many users will be showed in the Top Thanked Users widget?"
+"Number of users in the top thanked users widget";"Number of users in the top thanked users widget"
+"Send me notifications when other members reply to this topic.";"Send me notifications when other members reply to this topic."
+"Forum Signature";"Forum Signature"
+"The forum is not watched.";"The forum is not watched."
+"The forum is watched successfully.";"The forum is watched successfully."
+"Add Friend";"Add Friend"
+"Would you like to add this member as a friend?";"Would you like to add this member as a friend?"
+"body";"body"
+"Value is required and can't be empty";"Value is required and can't be empty"
+"Choose file";"Choose file"
+"Rename Topic";"Rename Topic"
+"Delete Post";"Delete Post"
+"Are you sure you want to delete this post?";"Are you sure you want to delete this post?"
+"Cancel";"Cancel"
+"Attachment";"Attachment"
+"Are you sure you want to delete this attachment?";"Are you sure you want to delete this attachment?"
+"This post has a photo attached. Do you want to delete it?";"This post has a photo attached. Do you want to delete it?"
+"Attach a New Photo (optional)";"Attach a New Photo (optional)"
+"Attach a Photo";"Attach a Photo"
+"Hottest Topics";"Hottest Topics"
+"Most Viewed Topics";"Most Viewed Topics"
+"Newest Topics";"Newest Topics"
+
+"YNFORUM_FORM_ADMIN_SHARE_PERMISSION_DESCRIPTION";"Set permissions for moderators in this forum"
+"YNFORUM_FORM_ADMIN_ALLOW_EDITING_OTHER_TOPIC_DESCRIPTION";"Do you want to allow this moderator to edit topics in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_DELETING_OTHER_TOPIC_DESCRIPTION";"Do you want to allow this moderator to delete topics in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_APPROVAL_OTHER_TOPIC_DESCRIPTION";"Do you want to allow this moderator to approve topics in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_STICKY_OTHER_TOPIC_DESCRIPTION";"Do you want to allow this moderator to make sticky topics in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_CLOSE_OTHER_TOPIC_DESCRIPTION";"Do you want to allow this moderator to close topics in forum?"
+"YNFORUM_FORM_ADMIN_ALLOW_MOVE_OTHER_TOPIC_DESCRIPTION";"Do you want to allow this moderator to move topics in forum?"
+"YNFORUM_FORM_ADMIN_LEVEL_DESCRIPTION";"These settings are applied on a per
+member level basis. Start by selecting the member level you want to modify,
+then adjust the settings for that level below. Note that settings on this page
+override the abilities granted to moderators. If you select ""No"" to an option,
+even moderators will not be able to perform that action. Conversely, if you
+select the ""Yes, even private ones""/""Yes, including other members'"" options,
+they will be able to perform that action even if they are not a moderator."
+"Allow Viewing of Forums?";"Allow Viewing of Forums?"
+"YNFORUM_FORM_ADMIN_LEVEL_VIEW_DESCRIPTION";"Do you want to let users view forums? If set to no, some other settings on this page may not apply."
+"YNFORUM_FORM_ADMIN_LEVEL_TOPIC_CREATE_DESCRIPTION";"Do you want to allow users to create topics in forums?"
+"YNFORUM_FORM_ADMIN_LEVEL_TOPIC_EDIT_DESCRIPTION";"Do you want to allow users to edit topics in forums?"
+"YNFORUM_FORM_ADMIN_LEVEL_TOPIC_DELETE_DESCRIPTION";"Do you want to allow users to delete topics in forums?"
+"YNFORUM_FORM_ADMIN_LEVEL_POST_CREATE_DESCRIPTION";"Do you want to allow users to post to the forums? If set to no, some other settings on this page may not apply. This is useful if you want users to be able to view forums and manage their subscriptions, but only want certain levels to be able to create forums."
+"YNFORUM_FORM_ADMIN_LEVEL_POST_EDIT_DESCRIPTION";"Do you want to allow users to edit posts in forums?"
+"YNFORUM_FORM_ADMIN_LEVEL_POST_DELETE_DESCRIPTION";"Do you want to allow users to delete posts in forums?"
+"YNFORUM_FORM_ADMIN_LEVEL_CONTENTHTML_DESCRIPTION";"If you have disabled HTML in posts but want to allow specific tags, you can enter them below (separated by commas). If you have enabled HTML in posts, this setting will have no effect.  Example: b, img, a, embed, font"
+
+
+"Topic unread";"Topic unread"
+"%s rate";"%s rate";"%s rates"
+"Last &#187;";"Last &#187;"
+"&#171; First";"&#171; First"
+
+#action type titles
+"ADMIN_ACTIVITY_TYPE_YNFORUM_PROMOTE";"When a user (subject) is given moderator status in a advanced forum (object)."
+"ADMIN_ACTIVITY_TYPE_YNFORUM_TOPIC_CREATE";"When a user (subject) creates a advanced forum topic (object)."
+"ADMIN_ACTIVITY_TYPE_YNFORUM_TOPIC_REPLY";"When a user (subject) replies to a advanced forum topic (object)."
+"ADMIN_ACTIVITY_TYPE_YNFORUM_POST_THANK";"When a user (subject) thanks to a post in a forum topic (object)."
+
+"_ACTIVITY_ACTIONTYPE_YNFORUM_PROMOTE";"Forum promotions"
+"_ACTIVITY_ACTIONTYPE_YNFORUM_TOPIC_CREATE";"Creating a forum topic"
+"_ACTIVITY_ACTIONTYPE_YNFORUM_TOPIC_REPLY";"Replying to a forum topic"
+"_ACTIVITY_ACTIONTYPE_YNFORUM_POST_THANK";"Thank to a post in the forum"
+
+"ACTIVITY_TYPE_YNFORUM_TOPIC_REPLY";"When people reply to forum topics that I've replied to."
+"ACTIVITY_TYPE_YNFORUM_TOPIC_RESPONSE";"When people reply to forum topics that I create."
+"ACTIVITY_TYPE_YNFORUM_PROMOTE";"When I'm given moderator status in a forum."
+"ACTIVITY_TYPE_YNFORUM_POST_THANK";"When I thank to a post in the forum."
+
+# item types
+"ITEM_TYPE_YNFORUM_CATEGORY";"Forum Categories"
+"ITEM_TYPE_YNFORUM";"Forums"
+"ITEM_TYPE_YNFORUM_TOPIC";"Forum Topics"
+"ITEM_TYPE_YNFORUM_POST";"Forum Posts"
+
+#action type
+"{item:$subject} has been made a moderator for the forum {item:$object}";"{item:$subject} has been made a moderator for the forum {item:$object}"
+"{item:$subject} posted a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}";"{item:$subject} posted a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}"
+"{item:$subject} replied to a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}";"{item:$subject} replied to a {item:$object:topic} in the forum {itemParent:$object:forum}: {body:$body}"
+"{item:$subject} thanked to a post in the  {item:$object:topic} in the {itemParent:$object:forum}: {body:$body}";"{item:$subject} thanked to a post in the  {item:$object:topic} in the {itemParent:$object:forum}: {body:$body}"
+
+#notification type
+"Your {item:$object:post} on a {itemParent:$object::forum topic} has just approved.";"Your {item:$object:post} on a {itemParent:$object::forum topic} has just approved."
+"{item:$subject} has {item:$object:posted} on a {itemParent:$object::forum topic} and waited for your approval.";"{item:$subject} has {item:$object:posted} on a {itemParent:$object::forum topic} and waited for your approval."
+"You were promoted to moderator in the forum {item:$object}.";"You were promoted to moderator in the forum {item:$object}."
+"{item:$subject} has {item:$object:posted} on a {itemParent:$object::forum topic} you posted on.";"{item:$subject} has {item:$object:posted} on a {itemParent:$object::forum topic} you posted on."
+"{item:$subject} has {item:$object:posted} on a {itemParent:$object::forum topic} you created.";"{item:$subject} has {item:$object:posted} on a {itemParent:$object::forum topic} you created."
+"{item:$subject} thank you for your {item:$object:post} on the {itemParent:$object::forum topic}.";"{item:$subject} thank you for your {item:$object:post} on the {itemParent:$object::forum topic}."
+"{item:$subject} added reputation for your {item:$object:post} on the {itemParent:$object::forum topic}.";"{item:$subject} added reputation for your {item:$object:post} on the {itemParent:$object::forum topic}."
+"{item:$subject} has created a {item:$object:topic} on the {itemParent:$object::forum} you are watching.";"{item:$subject} has created a {item:$object:topic} on the {itemParent:$object::forum} you are watching."
+"{item:$subject} has {item:$object:posted} on a {itemParent:$object::forum topic}.";"{item:$subject} has {item:$object:posted} on a {itemParent:$object::forum topic}."
+
+#notification types
+"ACTIVITY_TYPE_YNFORUM_OWNER_POST_APPROVED";"When my post is approved (when the feature approving post automatically is not turned on)."
+"ACTIVITY_TYPE_YNFORUM_POST_WAIT_APPROVAL";"When my new post is waiting for the approval so that the others can view it."
+"ACTIVITY_TYPE_YNFORUM_TOPIC_THANK";"When a user thanks to my post."
+"ACTIVITY_TYPE_YNFORUM_TOPIC_REPUTATION";"When a user add reputation for you."
+"ACTIVITY_TYPE_YNFORUM_TOPIC_CREATE";"When a user created a topic in a forum that you are watching."
+"ACTIVITY_TYPE_YNFORUM_TOPIC_REPLY_FORUM_WATCH";"When a user replied to a topic that you are watching its forum."
+
+# mail templates
+
+# notify_ynforum_topic_reply
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPLY_TITLE";"Forum Topic Reply"
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPLY_DESCRIPTION";"This email is sent to the member when people reply to forum topics that the member replied to."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPLY_SUBJECT";"A member has posted a reply to the topic ""[object_parent_title]"""
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPLY_BODY";"[header]
+
+[sender_title] has posted a reply to the topic ""[object_parent_title]"" :
+
+""[message]""
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynforum_topic_response
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_RESPONSE_TITLE";"Forum Topic Response"
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_RESPONSE_DESCRIPTION";"This email is sent to the member when people reply to forum topics that the member created."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_RESPONSE_SUBJECT";"A member has posted a reply your the topic ""[object_parent_title]"""
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_RESPONSE_BODY";"[header]
+
+[sender_title] has posted a reply to your topic ""[object_parent_title]"":
+
+""[message]""
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynforum_promote
+"_EMAIL_NOTIFY_YNFORUM_PROMOTE_TITLE";"Forum Promotion"
+"_EMAIL_NOTIFY_YNFORUM_PROMOTE_DESCRIPTION";"This email is sent when a member is promoted to moderator in a forum."
+"_EMAIL_NOTIFY_YNFORUM_PROMOTE_SUBJECT";"You have been promoted to moderator in the forum [object_title]"
+"_EMAIL_NOTIFY_YNFORUM_PROMOTE_BODY";"[header]
+
+You have been promoted to moderator in the forum ""[object_title]"". Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+"YNFORUM_FORM_ADMIN_SETTINGS_GLOBAL_FEEDS_DESCRIPTION";"Please note that only forums that are publicly visible will be displayed in the activity feeds"
+"Display activity in feeds";"Display activity in feeds"
+"Main feed";"Main feed"
+"Posting Member's Profile";"Posting Member's Profile"
+
+"%1$s said:";"%1$s said:"
+
+# notify_ynforum_owner_post_approved
+"_EMAIL_NOTIFY_YNFORUM_OWNER_POST_APPROVED_TITLE";"Your forum post is approved"
+"_EMAIL_NOTIFY_YNFORUM_OWNER_POST_APPROVED_DESCRIPTION";"This email is sent to the member when your post is approved by the forum's moderator."
+"_EMAIL_NOTIFY_YNFORUM_OWNER_POST_APPROVED_SUBJECT";"A forum's moderator has approved your post in the topic ""[object_parent_title]"""
+"_EMAIL_NOTIFY_YNFORUM_OWNER_POST_APPROVED_BODY";"[header]
+
+[sender_title] has approved your post in the topic ""[object_parent_title]"":
+
+""[message]""
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynforum_owner_post_approved
+"_EMAIL_NOTIFY_YNFORUM_OWNER_POST_APPROVED_TITLE";"Your forum post is approved"
+"_EMAIL_NOTIFY_YNFORUM_OWNER_POST_APPROVED_DESCRIPTION";"This email is sent to the member when your post is approved by the forum's moderator."
+"_EMAIL_NOTIFY_YNFORUM_OWNER_POST_APPROVED_SUBJECT";"A forum's moderator has approved your post in the topic ""[object_parent_title]"""
+"_EMAIL_NOTIFY_YNFORUM_OWNER_POST_APPROVED_BODY";"[header]
+
+[sender_title] has approved your post in the topic ""[object_parent_title]"":
+
+""[message]""
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynforum_post_wait_approval
+"_EMAIL_NOTIFY_YNFORUM_POST_WAIT_APPROVAL_TITLE";"Your forum post is waiting for the forum's moderator approval"
+"_EMAIL_NOTIFY_YNFORUM_POST_WAIT_APPROVAL_DESCRIPTION";"This email is sent to the member when your post is waiting for the forum's moderator approval."
+"_EMAIL_NOTIFY_YNFORUM_POST_WAIT_APPROVAL_SUBJECT";"Your forum post in the topic ""[object_parent_title]"" is waiting for the forum's moderator approval."
+"_EMAIL_NOTIFY_YNFORUM_POST_WAIT_APPROVAL_BODY";"[header] 
+
+Your forum post is waiting for the forum's moderator approval :
+
+""[message]""
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynforum_topic_reputation
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPUTATION_TITLE";"You are added reputation by your forum post"
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPUTATION_DESCRIPTION";"This email is sent to the member when he/she is added reputation by his or her forum post."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPUTATION_SUBJECT";"You are added reputation by your forum post in the topic ""[object_parent_title]""."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPUTATION_BODY";"[header] 
+
+You are added reputation by your forum post in the topic ""[object_parent_title]"".
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynforum_topic_thank
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_THANK_TITLE";"A user thanked to your forum post"
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_THANK_DESCRIPTION";"This email is sent to the member when his/her forum post is thanked by another user."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_THANK_SUBJECT";"A user thanked to you by your forum post in the topic ""[object_parent_title]""."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_THANK_BODY";"[header] 
+
+A user thanked to your forum post in the topic ""[object_parent_title]"".
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynforum_topic_create
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_CREATE_TITLE";"A user created a topic on the forum you are watching"
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_CREATE_DESCRIPTION";"This email is sent to the member when a user created a topic on a forum that you are watching."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_CREATE_SUBJECT";"A user posted a topic ""[object_title]"" in the forum ""[object_parent_title]""."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_CREATE_BODY";"[header] 
+
+[sender_title] post a topic ""[object_title]"" in the forum ""[object_parent_title]"" you are watching :
+
+""[message]""
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynforum_topic_reply_forum_watch
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPLY_FORUM_WATCH_TITLE";"A user replied a topic on the forum you are watching"
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPLY_FORUM_WATCH_DESCRIPTION";"This email is sent to the member when one of his/her watching forums having a reply for a topic."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPLY_FORUM_WATCH_SUBJECT";"A user user replied a the topic ""[object_parent_title]""."
+"_EMAIL_NOTIFY_YNFORUM_TOPIC_REPLY_FORUM_WATCH_BODY";"[header] 
+
+A user replied a topic ""[object_parent_title]"" in the forum you are watching.
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+"You are no longer watching this forum.";"You are no longer watching this forum."

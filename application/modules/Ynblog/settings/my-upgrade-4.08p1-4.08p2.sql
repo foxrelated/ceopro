@@ -1,0 +1,2 @@
+UPDATE `engine4_core_modules` SET `version` = '4.08p2' where 'name' = 'ynblog';
+UPDATE  `engine4_core_content` SET  `params` =  '{"title":"Featured Blogs"}' WHERE `engine4_core_content`.`params` = '{title":"Featured Blogs"}';

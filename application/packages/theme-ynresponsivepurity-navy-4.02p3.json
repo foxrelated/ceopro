@@ -1,0 +1,257 @@
+{
+  "type": "theme",
+  "name": "ynresponsivepurity-navy",
+  "version": "4.02p3",
+  "revision": null,
+  "path": "application\/themes\/ynresponsivepurity-navy",
+  "repository": null,
+  "date": "Wed, 24 May 2017 02:56:17 +0000",
+  "title": "YNC - Responsive Purity Template - Navy",
+  "description": "Responsive Purity Template - Blue",
+  "thumb": "theme.jpg",
+  "developer": null,
+  "authors": [
+    "YouNetCo"
+  ],
+  "meta": {
+    "date": "Wed, 24 May 2017 02:56:17 +0000",
+    "title": "YNC - Responsive Purity Template - Navy",
+    "description": "Responsive Purity Template - Blue",
+    "developer": null,
+    "authors": [
+      "YouNetCo"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Theme",
+    "priority": 100
+  },
+  "dependencies": {
+    "module-ynresponsivepurity": {
+      "type": "module",
+      "name": "ynresponsivepurity",
+      "guid": "module-ynresponsivepurity",
+      "minVersion": "4.01",
+      "maxVersion": null,
+      "excludeExcept": null
+    },
+    "module-ynresponsive1": {
+      "type": "module",
+      "name": "ynresponsive1",
+      "guid": "module-ynresponsive1",
+      "minVersion": "4.05",
+      "maxVersion": null,
+      "excludeExcept": null
+    }
+  },
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/themes\/ynresponsivepurity-navy": {
+      "type": "directory",
+      "path": "application\/themes\/ynresponsivepurity-navy",
+      "structure": [
+        {
+          "path": "legacy",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "legacy\/yncustom-mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 95,
+          "sha1": "95a76b77baf8e09113dcf876c01a459a1d5ecca1"
+        },
+        {
+          "path": "legacy\/yncustom-homepage.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 88,
+          "sha1": "68fc875901bfebd989e5c99eece817d2786090e5"
+        },
+        {
+          "path": "legacy\/yntheme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 87,
+          "sha1": "00bc91bf37a609325894bdaa3e7012e3b89100d8"
+        },
+        {
+          "path": "legacy\/yncustom.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 88,
+          "sha1": "68fc875901bfebd989e5c99eece817d2786090e5"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1229,
+          "sha1": "ec05ad2076ace685fde9b0e6ec773994a6939355"
+        },
+        {
+          "path": "pattern.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 926,
+          "sha1": "fd09c41c32296f9a4a143edaaa58eba83bcee39a"
+        },
+        {
+          "path": "editor.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 49,
+          "sha1": "d34f1cb47d82e085db6fd6be68c60f6ada663a4e"
+        },
+        {
+          "path": "yncustom-mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 85,
+          "sha1": "f1cebf01777e1e5505adf1be2c70fd0b6c4b41ea"
+        },
+        {
+          "path": "style.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 48,
+          "sha1": "5b9a611664592f9062a5e243a2cec266e9823500"
+        },
+        {
+          "path": "grid.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 73,
+          "sha1": "84c2bf508aaa3897d95b460169b837dded9a41f3"
+        },
+        {
+          "path": "yncustom-homepage.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 86,
+          "sha1": "aac2de8333f40d34ec504d39f5e34140ea612ced"
+        },
+        {
+          "path": "logo.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3041,
+          "sha1": "e13e945252a55d689af2d13b396c14facac9a38f"
+        },
+        {
+          "path": "theme.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 33688,
+          "sha1": "5cf63e1cfcfd3f9bd2aa5809b150f0186d0ea7a0"
+        },
+        {
+          "path": "theme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 221,
+          "sha1": "8e791f437cf8485dc48f9001691865257b03bcd9"
+        },
+        {
+          "path": "yntheme.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 76,
+          "sha1": "c905b06436410ea99522e8266beadb4422a47c7c"
+        },
+        {
+          "path": "constants.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 9488,
+          "sha1": "75d2fc34888f58192d5a7e0eaadebcbdb8052dc0"
+        },
+        {
+          "path": "mobile.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 208,
+          "sha1": "57936fe752c05cb49769df65f3c8305ed271601a"
+        },
+        {
+          "path": "ynresponsive1.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 107,
+          "sha1": "fbfae2880e2c492a34916c5a738b5f8c517917c0"
+        },
+        {
+          "path": "yncustom.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 78,
+          "sha1": "6777a9b569ef21234a3b7cf72a285823682fa9c3"
+        }
+      ]
+    },
+    "application\/themes\/configure\/default": {
+      "type": "directory",
+      "path": "application\/themes\/configure\/default",
+      "structure": [
+        {
+          "path": "reset.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 7895,
+          "sha1": "4c03a1ad87c0f25ad34efb4562715eb43102ed71"
+        }
+      ]
+    },
+    "application\/themes\/configure\/ynresponsivepurity-navy": {
+      "type": "directory",
+      "path": "application\/themes\/configure\/ynresponsivepurity-navy",
+      "structure": [
+        {
+          "path": "reset.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 16595,
+          "sha1": "6c233d57e65864b487a1af5e87f9144e018af57b"
+        }
+      ]
+    }
+  }
+}

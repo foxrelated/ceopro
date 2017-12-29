@@ -1,0 +1,170 @@
+"ITEM_TYPE_ACTIVITY_ACTION";"Activity Type"
+"Advanced Search";"Advanced Search"
+"Search Filters";"Search Filters"
+"No results were found";"No results were found"
+"Search more results";"Search more results"
+"Tick on the box next to plugin that you want to appear in Search Filters column";"Tick on the box next to plugin that you want to appear in Search Filters column"
+"Your changes have been saved.";"Your changes have been saved."
+"Save Changes";"Save Changes"
+"Select All";"Select All"
+"Deselect All";"Deselect All"
+"Advanced Search Plugin";"Advanced Search Plugin"
+"Results per page";"Results per page"
+"Search";"Search"
+"Please enter a search query.";"Please enter a search query."
+"%s result found";"%s result found";"%s results found"
+"All Results";"All Results"
+"Search";"Search"
+"Please enter a search query.";"Please enter a search query."
+"No results were found.";"No results were found."
+"Loading ...";"Loading ..."
+"Show More Results";"Show More Results"
+
+
+"YNADVSEARCH_MANAGE_CONTENT_TYPES_DESCRIPTION";"You can manage content search option on this page. Each type of content can be enabled/disabled to show in the select box or display on search bar as auto-suggested results. This allows admin to have full control over what types of content users can focus their search query on"
+"YNADVSEARCH_GLOBAL_SETTINGS_DESCRIPTION";"General settings of Advanced Search plugins. These settings affect all members in your community."
+"YNADVSEARCH_MANAGE_FAQ_DESCRIPTION";"FAQs are effective in helping member to understand how things work. This page allows you to add and manage FAQs."
+"YNADVSEARCH_FAQS_CREATE_DESCRIPTION";"Create a FAQ to display in Faqs page."
+"YNADVSEARCH_FAQS_EDIT_DESCRIPTION";"Edit a FAQ."
+
+"FAQs";"FAQs"
+"No FAQs has been added.";"No FAQs has been added."
+"Search Page";"Search Page"
+
+# album-result widget
+"Nobody has created an album with that criteria.";"Nobody has created an album with that criteria."
+"Be the first to %1$screate%2$s one!";"Be the first to %1$screate%2$s one!"
+"Nobody has created an album yet.";"Nobody has created an album yet."
+"Get started by %1$screating%2$s your first album!";"Get started by %1$screating%2$s your first album!"
+# "%s photo";"%s photo"
+# "%s photos";"%s photo"
+
+# blog-result widget
+"Nobody has written a blog entry with that criteria.";"Nobody has written a blog entry with that criteria."
+"Be the first to %1$swrite%2$s one!";"Be the first to %1$swrite%2$s one!"
+"Nobody has written a blog entry yet.";"Nobody has written a blog entry yet."
+"Posted";"Posted"
+
+# classified-result widget
+"Showing classified listings using the tag";"Showing classified listings using the tag"
+"Showing classified listings created on";"Showing classified listings created on"
+"Nobody has posted a classified listing with that criteria.";"Nobody has posted a classified listing with that criteria."
+"Be the first to %1$spost%2$s one!";"Be the first to %1$spost%2$s one!"
+"Nobody has posted a classified listing yet.";"Nobody has posted a classified listing yet."
+"posted by";"posted by"
+
+# event-result widget
+# "%s guest";"%s guest"
+# "%s guests";"%s guests"
+"Nobody has created an event with that criteria.";"Nobody has created an event with that criteria."
+"Be the first to %1$screate%2$s one!";"Be the first to %1$screate%2$s one!"
+"Nobody has created an event yet."."@@Nobody has created an event yet."
+"There are no past events yet.";"There are no past events yet."
+
+# forum-result widget
+"Topics";"Topics"
+"Posts";"Posts"
+"Views";"Views"
+"Latest Posts";"Latest Posts"
+"Posted on";"Posted on"
+"by";"by"
+"Nobody has posted a topic with that criteria.";"Nobody has posted a topic with that criteria."
+
+# forum-search widget
+"Search Forum Topics";"Search Forum Topics"
+
+# group-result widget
+# "%s member";"%s member"
+# "%s members";"%s member"
+"led by";"led by"
+"Nobody has created a group with that criteria.";"Nobody has created a group with that criteria."
+"Why don't you %1$screate one%2$s?";"Why don't you %1$screate one%2$s?"
+"There are no groups yet.";"There are no groups yet."
+
+# music-result widget
+"There is no music uploaded yet.";"There is no music uploaded yet."
+"Why don't you add some?";"Why don't you add some?"
+"Edit Playlist";"Edit Playlist"
+"Delete Playlist";"Delete Playlist"
+"%s comment";"%s comment"
+
+# poll-result widget
+"There are no polls yet.";"There are no polls yet."
+"Why don't you %1$screate one%2$s";"Why don't you %1$screate one%2$s"
+"Posted by %s";"Posted by %s"
+# "%s vote";"%s vote"
+# "%s votes";"%s votes"
+# "%s view";"%s view"
+# "%s views";"%s views"
+
+# video-result widget
+"By";"By"
+"Nobody has posted a video with that criteria.";"Nobody has posted a video with that criteria."
+"Videos using the tag";"Videos using the tag"
+# "%1$s view";"%1$s view"
+# "%1$s views";"%1$s view"
+"Be the first to %1$spost%2$s one!";"Be the first to %1$spost%2$s one!"
+"Nobody has created a video yet.";"Nobody has created a video yet."
+
+# yn-blog-result widget
+"No one has written any blog entries yet.";"No one has written any blog entries yet."
+
+# yn-event-result widget
+"Nobody has created an event yet.";"Nobody has created an event yet."
+"Be the first to %1$screate%2$s one!";"Be the first to %1$screate%2$s one!"
+"Result Search";"Result Search"
+"From";"From"
+"To";""
+"daily";"daily"
+"weekly";"weekly"
+"monthly";"monthly"
+"Map View";"Map View"
+"Grid View";"Grid View"
+"List View";"List View"
+"There were no events found matching your search criteria.";"There were no events found matching your search criteria."
+"There are no past events yet.";"There are no past events yet."
+
+
+# yn-filesharing widget
+"Name";"Name"
+"Type";"Type"
+"Owner";"Owner"
+"Modified Date";"Modified Date"
+"Views\/Downloads";"Views\/Downloads"
+"Folder";"Folder"
+"There is no folders and files founded.";"There is no folders and files founded."
+"View More";"View More"
+
+# yn-fundraising-result
+"Raised";"Raised"
+"Time Left";"Time Left"
+"Unlimited";"Unlimited"
+"You do not have any campaigns that match your search criteria.";"You do not have any campaigns that match your search criteria."
+"You do not have any campaign.";"You do not have any campaign."
+
+"Top Keywords";"Top Keywords"
+"Find all ";"Find all "
+" named ";" named "
+"Find in ";"Find in "
+# "%s Result";"%s Result"
+# "%s Results";"%s Results"
+"Advanced Member Search";"Advanced Member Search"z
+"Results";"Results"
+"Result";"Result"
+"Search more results for ";"Search more results for "
+
+"ITEM_TYPE_YNJOBPOSTING_JOB";"Job Posting Jobs"
+"ITEM_TYPE_YNJOBPOSTING_COMPANY";"Job Posting Companies"
+"ITEM_TYPE_YNJOBPOSTING_INDUSTRY";"Job Posting Industries"
+"ITEM_TYPE_YNBUSINESSPAGES_BUSINESS";"Businesses"
+"ITEM_TYPE_YNRESUME_RESUME";"Resumes"
+"ITEM_TYPE_YNVIDEOCHANNEL_CHANNEL";"Video Channel - Channel"
+"ITEM_TYPE_YNVIDEOCHANNEL_VIDEO";"Video Channel - Video"
+"ITEM_TYPE_YNVIDEOCHANNEL_PLAYLIST";"Video Channel - Playlist"
+"ITEM_TYPE_YNULTIMATEVIDEO_VIDEO";"Ultimate Video - Video"
+"ITEM_TYPE_YNULTIMATEVIDEO_PLAYLIST";"Ultimate Video - Playlist"
+
+
+"Save";"Save"
+"Saved";"Saved"
+"Industries";"Industries"

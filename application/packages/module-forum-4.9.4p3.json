@@ -1,0 +1,1319 @@
+{
+    "type": "module",
+    "name": "forum",
+    "version": "4.9.4p3",
+    "revision": "10267",
+    "path": "application\/modules\/Forum\/",
+    "repository": null,
+    "sku": null,
+    "date": "Mon, 02 Oct 2017 09:46:26 +0000",
+    "title": "Forum",
+    "description": "Forum",
+    "thumb": null,
+    "developer": null,
+    "authors": [
+        "Webligo Developments"
+    ],
+    "meta": {
+        "date": "Mon, 02 Oct 2017 09:46:26 +0000",
+        "title": "Forum",
+        "description": "Forum",
+        "developer": null,
+        "authors": [
+            "Webligo Developments"
+        ],
+        "changeLog": null
+    },
+    "actions": [
+        "install",
+        "upgrade",
+        "refresh",
+        "enable",
+        "disable"
+    ],
+    "callback": {
+        "path": "application\/modules\/Forum\/settings\/install.php",
+        "class": "Forum_Installer",
+        "priority": 100
+    },
+    "dependencies": {
+        "module-core": {
+            "type": "module",
+            "name": "core",
+            "guid": "module-core",
+            "minVersion": "4.2.0",
+            "maxVersion": null,
+            "excludeExcept": null
+        }
+    },
+    "tests": [],
+    "permissions": [],
+    "structure": {
+        "application\/modules\/Forum": {
+            "type": "directory",
+            "path": "application\/modules\/Forum",
+            "structure": [
+                {
+                    "path": "externals",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/.htaccess",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1042,
+                    "sha1": "6c835f103d253edf70bfd5ba2430ebe3fa8cacdd"
+                },
+                {
+                    "path": "externals\/styles",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/styles\/mobile.css",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 12291,
+                    "sha1": "111bd0eaf85f574c639df4a4753a40b52ecf0526"
+                },
+                {
+                    "path": "externals\/styles\/admin",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/styles\/admin\/main.css",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2486,
+                    "sha1": "5b80e97b7d97dd449c48e66adfdcd33a39dd2ea7"
+                },
+                {
+                    "path": "externals\/styles\/main.css",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 17639,
+                    "sha1": "814d908ff00bdfbb9a2e3b5b9b72134a62960cb2"
+                },
+                {
+                    "path": "externals\/images",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/images\/forum_unread.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2417,
+                    "sha1": "4a17f8c18e123b5e6e566c1534757f985061caad"
+                },
+                {
+                    "path": "externals\/images\/admin",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "externals\/images\/admin\/forum_createcategory.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 733,
+                    "sha1": "b6244b0027a8c9f702b311cb5b2ab8cc64f3b5f2"
+                },
+                {
+                    "path": "externals\/images\/admin\/forum_create.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 663,
+                    "sha1": "ca8ed46683a613b7270b1ed7c8b76980242144f1"
+                },
+                {
+                    "path": "externals\/images\/admin\/forum_moveup.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 413,
+                    "sha1": "06851bf9049b1f1bfabff6ad51bea01e154e6711"
+                },
+                {
+                    "path": "externals\/images\/nophoto_post_thumb_icon.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2881,
+                    "sha1": "efc2ddf74252b5a3a5124d0bfaf4a6360022a355"
+                },
+                {
+                    "path": "externals\/images\/topic.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 743,
+                    "sha1": "2fd55cc32bf1d52270bf70d8e9e1b6f706f2d4df"
+                },
+                {
+                    "path": "externals\/images\/nophoto_forum_thumb_icon.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2881,
+                    "sha1": "efc2ddf74252b5a3a5124d0bfaf4a6360022a355"
+                },
+                {
+                    "path": "externals\/images\/nophoto_topic_thumb_icon.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2881,
+                    "sha1": "efc2ddf74252b5a3a5124d0bfaf4a6360022a355"
+                },
+                {
+                    "path": "externals\/images\/topic_unread.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 936,
+                    "sha1": "a2f36d30df07ee264edff8ca4f69ba3f9a6caa7e"
+                },
+                {
+                    "path": "externals\/images\/forum.png",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2183,
+                    "sha1": "5d60fd4f565804d0270557fb62f5d7a48f3135b4"
+                },
+                {
+                    "path": "controllers",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "controllers\/IndexController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4293,
+                    "sha1": "eaa82359b861ff0d3b17158fc1142c0df713b2e3"
+                },
+                {
+                    "path": "controllers\/CategoryController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 549,
+                    "sha1": "e74732f15dd8b0ac74c11059ba9fd3215ea085ea"
+                },
+                {
+                    "path": "controllers\/AdminLevelController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3610,
+                    "sha1": "ef77a9db31d090c19c2001d5e33215a70a7d0a97"
+                },
+                {
+                    "path": "controllers\/AdminSettingsController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1681,
+                    "sha1": "1666cf8e7706b1d43d61abcfe7a267446d4be7e4"
+                },
+                {
+                    "path": "controllers\/ForumController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 5592,
+                    "sha1": "5544563a1f2324de5fc4019e26abc47dd48671f4"
+                },
+                {
+                    "path": "controllers\/TopicController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 19039,
+                    "sha1": "2734c9453d2ae7ccdb2bc3c8472ee2eacce396b1"
+                },
+                {
+                    "path": "controllers\/PostController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4691,
+                    "sha1": "4d788f2af1492e90b4c9b1e3355badd735065450"
+                },
+                {
+                    "path": "controllers\/AdminManageController.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 13046,
+                    "sha1": "8e4b78127305a3ec5703fb3dd3fc3aec2d1a573b"
+                },
+                {
+                    "path": "Plugin",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Plugin\/Core.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 5246,
+                    "sha1": "fc7daf37e20322c8ceba007202c024acacfe49a4"
+                },
+                {
+                    "path": "widgets",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/list-recent-posts",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/list-recent-posts\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1880,
+                    "sha1": "b7519130fe65befb688a36cf1ce193c226ad7b47"
+                },
+                {
+                    "path": "widgets\/list-recent-posts\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1781,
+                    "sha1": "5a2957db957eb2e0664adcb4893ff129602861ef"
+                },
+                {
+                    "path": "widgets\/browse-search",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/browse-search\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 853,
+                    "sha1": "679b66394ad09b6c7ba130793ee8252adada3b06"
+                },
+                {
+                    "path": "widgets\/browse-search\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 435,
+                    "sha1": "719a33da8c5a1f2d94085cf8bf9a3ea02c7e0b5a"
+                },
+                {
+                    "path": "widgets\/profile-forum-posts",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/profile-forum-posts\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2777,
+                    "sha1": "955b86857e264d03b0fc7d78cd57cd6be0713fd8"
+                },
+                {
+                    "path": "widgets\/profile-forum-posts\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3833,
+                    "sha1": "d5d4809787bb2916c40148022d596cc99e6bdd0a"
+                },
+                {
+                    "path": "widgets\/profile-forum-topics",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/profile-forum-topics\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2908,
+                    "sha1": "403454be157a2084f2e4c100664ef8c08767394d"
+                },
+                {
+                    "path": "widgets\/profile-forum-topics\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4816,
+                    "sha1": "409ef0f2c7a41f488deda7a708d55dd3f2c71b01"
+                },
+                {
+                    "path": "widgets\/list-recent-topics",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "widgets\/list-recent-topics\/Controller.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1886,
+                    "sha1": "7161989e4b83e93dfb7c0218123c87857ab6671b"
+                },
+                {
+                    "path": "widgets\/list-recent-topics\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1835,
+                    "sha1": "10fad385f36fe65bb10a5583adf00e05cab651b8"
+                },
+                {
+                    "path": "Api",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Api\/Core.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 875,
+                    "sha1": "eef9be9136ccb742c336d04f6373e4d558113aec"
+                },
+                {
+                    "path": "views",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/index",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/index\/upload-photo.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1022,
+                    "sha1": "1195e3c674bf94a065d81f433caec39641e0c1b8"
+                },
+                {
+                    "path": "views\/scripts\/index\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3450,
+                    "sha1": "ac84fd3f3fd2d94d61c099b40b3eeb554aedaeb0"
+                },
+                {
+                    "path": "views\/scripts\/admin-settings",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/admin-settings\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 657,
+                    "sha1": "298d9d0d51426cbd7cb09a46fcdfd2d23eefee6f"
+                },
+                {
+                    "path": "views\/scripts\/post",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/post\/delete.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 382,
+                    "sha1": "3afb6631e8fb1bd485f8132d4ef073438037bc46"
+                },
+                {
+                    "path": "views\/scripts\/post\/create.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 902,
+                    "sha1": "6c19782b02d7973ec991cd1a503c1af47bb75cc5"
+                },
+                {
+                    "path": "views\/scripts\/post\/edit.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 607,
+                    "sha1": "8b96a2ee34ce22978c296003bf9b1c8170089b3c"
+                },
+                {
+                    "path": "views\/scripts\/forum",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/forum\/view.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4512,
+                    "sha1": "ce278b58fe0bc2b0b79cdbd724bfaab7a4f387ac"
+                },
+                {
+                    "path": "views\/scripts\/forum\/topic-create.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 899,
+                    "sha1": "e4949e2031f1f36f5ddea20d7681659b0318920a"
+                },
+                {
+                    "path": "views\/scripts\/topic",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/topic\/delete.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 369,
+                    "sha1": "5a593e637a95293018ce19920d890fe1ba0e4d32"
+                },
+                {
+                    "path": "views\/scripts\/topic\/post-create.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1026,
+                    "sha1": "cf85edfda0d2e41f9c00fc16b6bf8f4b1d2376d5"
+                },
+                {
+                    "path": "views\/scripts\/topic\/view.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 9901,
+                    "sha1": "5378685ce4f6090e69314b6773a30bffde55bbfe"
+                },
+                {
+                    "path": "views\/scripts\/topic\/rename.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 382,
+                    "sha1": "bea73bb2bf86689bc503cf334639857235e9e451"
+                },
+                {
+                    "path": "views\/scripts\/topic\/move.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 367,
+                    "sha1": "c470f174955552ac99d358d5e75060f0855d95c0"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/add-category.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 369,
+                    "sha1": "d8e461fa6963dd5097a7f380f64f83656a4c409a"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/edit-forum.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 367,
+                    "sha1": "f5df2cbf326aafbfd2eedeb4d92d9f14f6d42037"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/remove-moderator.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 373,
+                    "sha1": "91ee972f6aab4d41daa6ca9d75cbdb0d3f9d7d3b"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/edit-category.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 370,
+                    "sha1": "bfb68ea59aa1c5c3250409fdeafaee7f212d2f58"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/user-search.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 699,
+                    "sha1": "363b341ff904e93808adfad3f35f3f4b4bec49a3"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/delete-category.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 372,
+                    "sha1": "ce215cf21b10bb9ca4e1be56bd7c3d32366306a6"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/add-moderator.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1550,
+                    "sha1": "9ac4ff5478b034272a3ef6bea6ed0494a3ad789f"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/edit.tpl~",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 19,
+                    "sha1": "4e40738bfc8ee9aa8255a0f714d12cf7e1312bb8"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/add-forum.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 366,
+                    "sha1": "ec2668a627c651376bf86b9dc1ac5377f3b656e6"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 5117,
+                    "sha1": "f38a1112261b397b4d251ebaa1273a9d38d22e57"
+                },
+                {
+                    "path": "views\/scripts\/admin-manage\/delete-forum.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 369,
+                    "sha1": "e607764e958008c412600fdc244486ac07efce6e"
+                },
+                {
+                    "path": "views\/scripts\/admin-level",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "views\/scripts\/admin-level\/index.tpl",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 884,
+                    "sha1": "917ac76be0998cf3e3c0f26546f370da5952710d"
+                },
+                {
+                    "path": "settings",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "settings\/install.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 5899,
+                    "sha1": "932d516d9823416e5e9c058c70d9ec97a98148f3"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.1.7-4.1.8.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1044,
+                    "sha1": "aae27e7351414f1bfa95badeefe4b911d7bec5c0"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.8.11-4.9.0.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0644",
+                    "size": 439,
+                    "sha1": "3ccdb505628cd60daadbb280538b4ab8f00e945a"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.1-4.0.2.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2616,
+                    "sha1": "3c8120e9e8c26e982b1ccd3425ca66df2255b370"
+                },
+                {
+                    "path": "settings\/content.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2199,
+                    "sha1": "8d55f2b6a9aeee0aca26d0a124cc250a01dfb6c9"
+                },
+                {
+                    "path": "settings\/manifest.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3672,
+                    "sha1": "bfec1119d1c0482b62309e378a607f8d152a5f0a"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.3-4.0.4.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 315,
+                    "sha1": "9f41841f454ff31fb50b9e0ca3ee3f0f6bae85ec"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.0-4.0.1.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1893,
+                    "sha1": "f32deb32fa8fc1e9f1d8a61794168847075589de"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.1.3-4.1.4.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 223,
+                    "sha1": "c6265bfb08499b914e2e0286c0406af26d5a7812"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.5p1-4.1.0.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 470,
+                    "sha1": "b695ccc6c4c0a1704aa9d1491602475e2f46b8b9"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.1.1-4.1.2.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 826,
+                    "sha1": "3f32d0e473ba486d0a0b53efbfdf2ff31ebeedb5"
+                },
+                {
+                    "path": "settings\/my.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 23751,
+                    "sha1": "f025fde7644474aec6df78a1c3012f9ac389d62c"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.8.10-4.8.11.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 366,
+                    "sha1": "554f8c463aa11d65c987a18095db744cf974a315"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.0.4-4.0.5.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 13250,
+                    "sha1": "97d618499e99f623bb40563eebae72920dab43ff"
+                },
+                {
+                    "path": "settings\/my-upgrade-4.8.0-4.8.1.sql",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 388,
+                    "sha1": "de81c6e3a5b5890e715a98d10d9a584377879122"
+                },
+                {
+                    "path": "Model",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Model\/Forum.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 5398,
+                    "sha1": "bfa7c670213cc01005bdb1eda7f655ee13ef8e5c"
+                },
+                {
+                    "path": "Model\/List.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 687,
+                    "sha1": "d349f13e1e04082c570ba9e14b62ade12b692f38"
+                },
+                {
+                    "path": "Model\/Category.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2819,
+                    "sha1": "d16a26a17ef233aa96c08bcf8cbe44b6eb41f8f2"
+                },
+                {
+                    "path": "Model\/Signature.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1028,
+                    "sha1": "100439f6cd32a14c2dac5d47a5c487c24f820925"
+                },
+                {
+                    "path": "Model\/Post.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 8539,
+                    "sha1": "73043babfe921f958b0b556b504fcec9182b7674"
+                },
+                {
+                    "path": "Model\/Exception.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 518,
+                    "sha1": "1a6e8b20b771ad339fddb650a3fada9031f974f5"
+                },
+                {
+                    "path": "Model\/Topic.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 8763,
+                    "sha1": "e9c6e3b0044d9b1c2f3699b5ac744c6378ba213d"
+                },
+                {
+                    "path": "Model\/DbTable",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Model\/DbTable\/Membership.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 786,
+                    "sha1": "71ebf9f923205a99627d14aa41bac53f8e74358e"
+                },
+                {
+                    "path": "Model\/DbTable\/Topicviews.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 529,
+                    "sha1": "618548e0936daf7447ed321d4226a33fe085f3d6"
+                },
+                {
+                    "path": "Model\/DbTable\/Containers.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 578,
+                    "sha1": "cccf5a14b5c66286574f0da4df0f937699a9914b"
+                },
+                {
+                    "path": "Model\/DbTable\/Lists.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 563,
+                    "sha1": "909b2d6c40e80e287dce80467eea42fd89d7842d"
+                },
+                {
+                    "path": "Model\/DbTable\/ListItems.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 575,
+                    "sha1": "3e0eac68f5e7f843eaf23a872fc12da81fdfe113"
+                },
+                {
+                    "path": "Model\/DbTable\/Categories.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 577,
+                    "sha1": "22764e9b69b65b9380736976679456c23eba6c10"
+                },
+                {
+                    "path": "Model\/DbTable\/Topics.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 727,
+                    "sha1": "41a7eecbc8ea6f0697b4227e1a5125316d6bb6e5"
+                },
+                {
+                    "path": "Model\/DbTable\/Signatures.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 578,
+                    "sha1": "57f4d5325577696ad5c3e0b95c082137a758e38a"
+                },
+                {
+                    "path": "Model\/DbTable\/Posts.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 721,
+                    "sha1": "c6c984a008209cfe9e2d05ad5227fe807cb7dc5a"
+                },
+                {
+                    "path": "Model\/DbTable\/Forums.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 715,
+                    "sha1": "62a97475eca195c1912bd99debda1f076b23f885"
+                },
+                {
+                    "path": "Model\/DbTable\/TopicWatches.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 535,
+                    "sha1": "a3821c09b3bf8ba75398cd280e0701c3e8d07921"
+                },
+                {
+                    "path": "Model\/ListItem.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 524,
+                    "sha1": "325fbdeae618019bb93e014912f52e494005e4fb"
+                },
+                {
+                    "path": "Model\/Container.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 530,
+                    "sha1": "9a8b944c9662dab1fdc89720c7a59e178a795168"
+                },
+                {
+                    "path": "Form",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Forum",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Forum\/Create.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1932,
+                    "sha1": "7a324702da417721e963fa2692d089927022289e"
+                },
+                {
+                    "path": "Form\/Forum\/Edit.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1927,
+                    "sha1": "90ba8dafee575f10b7adbbc3e88b055a467bba02"
+                },
+                {
+                    "path": "Form\/Forum\/Delete.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1260,
+                    "sha1": "7e51f8af23e4d12a3b3d492ee25c307d8a85df17"
+                },
+                {
+                    "path": "Form\/Post",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Post\/Create.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3432,
+                    "sha1": "aa10a802f3014cdce11092c874e3ec908a0be15e"
+                },
+                {
+                    "path": "Form\/Post\/Edit.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 4149,
+                    "sha1": "b002f63d4d2a83a047d00cc3c119ee419525fcf5"
+                },
+                {
+                    "path": "Form\/Post\/Quick.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2928,
+                    "sha1": "a89348111c2cebc5e028d2f08c1df67814683a0e"
+                },
+                {
+                    "path": "Form\/Post\/Delete.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1383,
+                    "sha1": "c662fc8c4354fc0d6ac191986dfd72b687a51380"
+                },
+                {
+                    "path": "Form\/Admin",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin\/Settings",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin\/Settings\/Level.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 5125,
+                    "sha1": "cdffb879abcb36e642c539a0eb2baf393e5caf85"
+                },
+                {
+                    "path": "Form\/Admin\/Settings\/Global.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 2108,
+                    "sha1": "fd6a50c8272684c99d4d65301f304608057234b7"
+                },
+                {
+                    "path": "Form\/Admin\/Forum",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin\/Forum\/Create.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1109,
+                    "sha1": "dc6c7008cf6c902892133a06bec4fa82a4e7a3ef"
+                },
+                {
+                    "path": "Form\/Admin\/Forum\/Edit.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1099,
+                    "sha1": "890a44e2ec3e0c03c6a489b5105f7ea3393e5169"
+                },
+                {
+                    "path": "Form\/Admin\/Forum\/Delete.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 584,
+                    "sha1": "08f2f90cc653d3b02dfaf4bc1f20075bbed2f004"
+                },
+                {
+                    "path": "Form\/Admin\/Category",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin\/Category\/Create.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 590,
+                    "sha1": "cb066ddaeb0a43f5ae08bb722e1ad1f49bf3de22"
+                },
+                {
+                    "path": "Form\/Admin\/Category\/Edit.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 584,
+                    "sha1": "ae6fa1278c7888a2c4f54e2d989612863380579f"
+                },
+                {
+                    "path": "Form\/Admin\/Category\/Delete.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 590,
+                    "sha1": "2deb1527c665ecbbf904c39d4a830a8dc1e08bd5"
+                },
+                {
+                    "path": "Form\/Admin\/Moderator",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Admin\/Moderator\/Create.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1661,
+                    "sha1": "81277b3cb4028c1fa0ed2e3c90624c08139df5b9"
+                },
+                {
+                    "path": "Form\/Admin\/Moderator\/Delete.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1283,
+                    "sha1": "6ca5b745c8314dfa70e517d58e66563eec5822b1"
+                },
+                {
+                    "path": "Form\/Search.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1062,
+                    "sha1": "86f31097278c18c3e88189dc0f3f61d187642f97"
+                },
+                {
+                    "path": "Form\/Category",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Category\/Create.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1295,
+                    "sha1": "046ab97038e3915ad2b93468606b24edb991ad4f"
+                },
+                {
+                    "path": "Form\/Category\/Edit.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1318,
+                    "sha1": "6536c2cf7e6d7e84cb6d00a7d6865870d41b0a31"
+                },
+                {
+                    "path": "Form\/Category\/Delete.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1272,
+                    "sha1": "c8b56c8ab59646ffb84dd20119c39f7bf8e6cd9e"
+                },
+                {
+                    "path": "Form\/Topic",
+                    "dir": true,
+                    "file": false,
+                    "perms": "0755",
+                    "size": 4096,
+                    "sha1": null
+                },
+                {
+                    "path": "Form\/Topic\/Move.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1370,
+                    "sha1": "7ee314615609d03ee633e9c59ab2157d16a73164"
+                },
+                {
+                    "path": "Form\/Topic\/Rename.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1560,
+                    "sha1": "cced12cb86df62bd507314f1f6ca70fb3514395e"
+                },
+                {
+                    "path": "Form\/Topic\/Create.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 3653,
+                    "sha1": "40dd762bc5fc22df6066dc587e665b7588fda662"
+                },
+                {
+                    "path": "Form\/Topic\/Delete.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 1307,
+                    "sha1": "2b1d09d15e28fa5f1995b812f0958a5ad215880b"
+                },
+                {
+                    "path": "Bootstrap.php",
+                    "dir": false,
+                    "file": true,
+                    "perms": "0755",
+                    "size": 537,
+                    "sha1": "d84ccfc9319ca2805c7395a405c62e7fb798eaef"
+                }
+            ]
+        },
+        "application\/languages\/en\/forum.csv": {
+            "type": "file",
+            "path": "application\/languages\/en\/forum.csv",
+            "structure": {
+                "path": "forum.csv",
+                "dir": false,
+                "file": true,
+                "perms": "0755",
+                "size": 12956,
+                "sha1": "8731716fc0207bba9b1670551bc4d18a747b299e"
+            }
+        }
+    }
+}

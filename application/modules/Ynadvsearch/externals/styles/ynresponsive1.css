@@ -1,0 +1,326 @@
+/**
+ * 	
+ *Support Bootstrap 
+ */
+
+#global_page_ynadvsearch-search-blog-search .layout_ynblog_blogs_search, 
+#global_page_ynadvsearch-search-fundraising-search .layout_ynfundraising_campaigns_search {
+	background-color: transparent;
+}
+
+.layout_ynfilesharing_filesharing_search .global_form_box,
+.layout_ynadvsearch_yn_music_search .ynadvsearch-music-from, 
+#global_page_ynadvsearch-search-blog-search .layout_ynblog_blogs_search, 
+#global_page_ynadvsearch-search-fundraising-search .layout_ynfundraising_campaigns_search,
+body[id^="global_page_ynadvsearch"] .layout_main .layout_left div[class*="_search"] form {
+	padding: 1em !important;
+	border: 1px solid $theme_border_color;
+	background-color: #fff;
+}
+
+@media screen and (max-width: 768px){
+	body[id^=global_page_ynadvsearch-][class*=insignia]{
+		.layout_ynadvsearch_store_result .ynstore_ul_listing > li {
+			width: 100% !important;
+			margin: 0;
+		}
+		.layout_page_ynadvsearch_search_wiki-search ul.ynwiki_browse li{
+			width: 100%;
+			margin-right: 0;
+		}
+		.classifieds_browse > li,
+		.polls_browse li{
+			width: 100% !important;
+			margin-right: 0 !important;
+		}
+		.layout_ynadvsearch_music_result ul.music_browse > li,
+		.layout_page_ynadvsearch_search_mp-musicalbums-search .layout_mp3music_browse_albums .mp3_browse_album .mp3music_browsealbums {
+			width: 33.33%;
+		}
+		.layout_ynauction_search_listing_ynauctions{
+			ul.global_form_box li{
+				width: 100% !important;
+				margin-right: 0 !important;
+			}
+		}
+	}
+}
+
+body[id^="global_page_ynadvsearch"] .layout_main .layout_left div[class*="_search"] .ynadvsearch-music-from form {
+	padding: 0 !important;
+	border: 0;
+}
+
+body[id^="global_page_ynadvsearch"]  .field_search_criteria .browsemembers_criteria {
+	border: 0;
+	padding: 0;
+}
+
+div#core_menu_mini_menu form#global_search_form
+{
+	position: relative;
+}
+
+#global_search_form_container {
+	position: relative;
+
+	#global_search_field {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+#global_page_ynadvsearch-search-contest-search .large_contest_list > li:hover:before {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;	
+}
+
+#global_page_ynadvsearch-search-store-product-search .wrap_list_store > div,
+#global_page_ynadvsearch-search-store-store-search .wrap_list_store > div {
+	height: auto !important;
+	padding: 1em !important;
+}
+ 
+#global_search_form_container ul.tag-autosearch
+{
+	width: 300px !important; 
+}
+
+body[id*='_ynadvsearch-'] ul.thumbs .thumbs_photo:hover,
+body[id*='_ynadvsearch-'] ul.thumbs.thumbs_album_small .thumbs_photo, 
+body[id*='_ynadvsearch-'] ul.thumbs .thumbs_photo, ul.thumbs .thumbs_photo:hover {
+	padding: 3px;
+}
+
+body[id*='_ynadvsearch-'] div#searchform input[type=text]
+{
+	width: 255px !important;
+	max-width: 100% !important;
+}
+
+body[id*='_ynadvsearch-'] div.search_results > div
+{
+	width: 100% !important;
+}
+
+body[id*='_ynadvsearch-'] div.search_result
+{
+	width: 100% !important;
+}
+
+body[id*='_ynadvsearch-'] div#searchform
+{
+	padding: 0px !important;
+}
+
+ul.ynadvsearch_module_list input[type="checkbox"]
+{
+	margin-right: 5px;
+}
+
+.layout_socialstore_all_products .ynstore_all_store_select, .layout_socialstore_all_stores .ynstore_all_store_select {
+	margin-top: 0;
+}
+
+.ynevent-search-result-page .ynevent_grid-view .ynevent-tabs-content li .desc {
+	height: 30px;
+}
+
+.layout_ynadvsearch_yn_event_result .ynevent_grid-view .ynevent-tabs-content li .info .date {
+	padding: 20px 5px;
+	height: auto;
+}
+
+.datepicker_jqui,
+.datepicker_jqui * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+body.ynresponsive-metro {
+	.layout_core_content + .generic_layout_container + .generic_layout_container + .generic_layout_container,
+	.layout_core_content + .generic_layout_container + .generic_layout_container,
+	.layout_core_content + .generic_layout_container {
+		padding: 1em;
+	}
+
+	.search_form {
+		margin-bottom: 0;
+	}
+
+	#global_header .layout_ynresponsive1_metro_mini_menu .not-login .group-mini-menu .user-profile ul.user-profile-login .tag-autosearch {
+		right: 0;
+
+
+		li { margin: 0; }
+		li a { color: $theme_link_color; }
+		li:first-child,
+		li:first-child + li {
+			padding: 0.5em;
+			border: 0;
+			text-align: center;
+		}
+
+		li:first-child + li + li {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.layout_page_ynadvsearch_search_group-search .layout_advgroup_groups_search .overTxtLabel,
+	.layout_page_ynadvsearch_search_album-search .layout_advalbum_albums_search .quicklinks {
+		display: none !important;
+	}
+}
+ul.ynsearch_albums_list_view li.ynsearch_albums_items .ynsearch_albums_items_info .album-photo-lists{
+	max-height: 75px;
+}
+.layout_page_ynadvsearch_search_album-search{
+	.layout_core_content{
+		
+	}
+}
+@media screen and (max-width: 1024px)
+{
+	div.layout_ynresponsive1_mini_menu li#global_search_form_container  ul.tag-autosearch
+	{
+		width: 250px !important;
+	}
+	
+	.layout_page_ynadvsearch_search_group-search ul.groups_browse > li,
+	.layout_page_ynadvsearch_search_fundraising-search .ynfundraising_list_campaigns.thumbs > li {
+		width: 50%;
+	}
+
+	.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li {
+		width: 48%;
+		margin-right: 2% !important; 
+	}
+
+	#global_page_ynadvsearch-search-contest-search .large_contest_list > li {
+		width: 32% !important;
+	}
+
+	.layout_page_ynadvsearch_search_mp-musicplaylists-search .mp3music_browsealbums {
+		width: 100%;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 767px){
+	ul.ynsearch_albums_grid_view li.ynsearch_albums_items{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 640px)
+{
+	body[id^=global_page_ynadvsearch-][class*=insignia]{
+		.ynadvsearch-main-form #searchform.ynadvsearch-form-box .ynadvsearch-form-select{
+			float: none;
+			margin: 0 0 5px 0;
+			select{
+				max-width: none;
+			}
+		}
+	}
+	ul.ynsearch_albums_list_view li.ynsearch_albums_items .ynsearch_albums_items_info{
+		float: left;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	#global_page_ynadvsearch-search-contest-search .large_contest_list > li {
+		width: 49% !important;
+	}
+
+	.layout_page_ynadvsearch_search_fundraising-search .ynfundraising_list_campaigns.thumbs > li {
+		width: 100% !important;
+		margin: 0;
+	}
+
+	.layout_ynwiki_listing_pages .ynwiki_browse li:nth-child(2) {
+		border-top: 1px solid $theme_border_color;		
+	}
+
+	.layout_ynadvsearch_forum_result .ynadvsearch_forum_lists .ynadvsearch_forum_item,
+	.layout_page_ynadvsearch_search_wiki-search ul.ynwiki_browse li,
+	#global_page_ynadvsearch-search-blog-search ul.ynblogs_entrylist li,
+	.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li {
+		width: 100%;
+		margin-right: 0 !important; 
+	}
+
+	#global_page_ynadvsearch-search-user-search ul#browsemembers_ul > li,
+	.layout_page_ynadvsearch_search_group-search ul.groups_browse > li,
+	.ynevent-search-result-page .ynevent_grid-view .ynevent-tabs-content li,
+	.ynevent-search-result-page .ynevent_list-view .ynevent-tabs-content li,
+	.ynadvsearch-result-items .ynadvsearch-result-item {
+		width: 100% !important;
+		margin: 0;
+	}
+
+	ul[class^=tag-autosearch] {
+		width: 98% !important;
+		left: 1% !important;
+	}
+
+	.layout_page_ynadvsearch_search_video-search ul.ynvideo_frame ul.videos_browse > li {
+		height: 200px !important;
+	}
+
+	.ynadvsearch-main-form #searchform.ynadvsearch-form-box {
+		padding-right: 0 !important;
+	}
+
+	.ynadvsearch-main-form #searchform.ynadvsearch-form-box .ynadvsearch-form-input {
+		margin-right: 0;
+	}
+
+	.ynadvsearch-main-form .button_submit_2 {
+		width: 100%;
+		position: static;
+		padding-top: 0.5em;
+		margin-top: 0;
+	}
+
+	.layout_ynadvsearch_music_result ul.music_browse > li,
+	.layout_page_ynadvsearch_search_mp-musicalbums-search .layout_mp3music_browse_albums .mp3_browse_album .mp3music_browsealbums {
+		width: 33.33%;
+	}
+
+	#global_page_ynadvsearch-search-album-search ul.thumbs>li {
+		width: 32%;
+	}
+}
+
+@media screen and (max-width: 480px)
+{
+	ul.ynsearch_albums_grid_view li.ynsearch_albums_items{
+		width: 100%;
+	}
+	#global_page_ynadvsearch-search-contest-search .large_contest_list > li {
+		width: 100% !important;
+		margin-right: 0;
+	}
+
+	body[id*='_ynadvsearch-'] div#searchform input[type=text]
+	{
+		width: 200px !important;
+		max-width: 100% !important;
+	}
+
+	#global_page_ynadvsearch-search-album-search ul.thumbs>li {
+		width: 49%;
+	}
+
+	.layout_ynadvsearch_music_result ul.music_browse > li,
+	.layout_page_ynadvsearch_search_mp-musicalbums-search .layout_mp3music_browse_albums .mp3_browse_album .mp3music_browsealbums {
+		width: 50%;
+	}
+}
+
+ul.advalbum_color_patterns li:hover:after,
+ul.advalbum_color_patterns li.selected:after {
+    width: 32px !important;
+    height: 32px !important;
+}

@@ -1,0 +1,118 @@
+{
+  "type": "external",
+  "name": "mootools",
+  "version": "4.9.4p4",
+  "revision": "9747",
+  "path": "externals\/mootools",
+  "repository": null,
+  "sku": null,
+  "date": "Mon, 09 Oct 2017 09:37:44 +0000",
+  "title": "Mootools",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Mon, 09 Oct 2017 09:37:44 +0000",
+    "title": "Mootools",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/mootools": {
+      "type": "directory",
+      "path": "externals\/mootools",
+      "structure": [
+        {
+          "path": "mootools-more-1.4.0.1-full-nocompat-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 235354,
+          "sha1": "adfed2c3b58ce01b7d84d52b44ce599124ccb7ac"
+        },
+        {
+          "path": "mootools-core-1.4.5-full-nocompat-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 150803,
+          "sha1": "069f109a295b2fad5b776d5adf5008aaded995d7"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 375,
+          "sha1": "8a7ec85dda137bf2696a88d0305ba60703d1e87d"
+        },
+        {
+          "path": "mootools-more-1.4.0.1-full-nocompat-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 147179,
+          "sha1": "eb0fa8f0be51e598b835ef92f4fd7c8822b0697f"
+        },
+        {
+          "path": "mootools-core-1.4.5-full-compat-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 160495,
+          "sha1": "2cc787ebd4d29f2e24646f76f9c525336949783e"
+        },
+        {
+          "path": "mootools-core-1.4.5-full-nocompat-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 90109,
+          "sha1": "2da56364be255f2a3944f11c42a1d53112066bd3"
+        },
+        {
+          "path": "mootools-core-1.4.5-full-compat-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 96362,
+          "sha1": "cc019ac09f68258ee3442fe7cc440adf78a3cef2"
+        },
+        {
+          "path": "mootools-more-1.4.0.1-full-compat-yc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 148565,
+          "sha1": "51cb75de7af103e23bd0ed97be40661aa5584cfb"
+        },
+        {
+          "path": "mootools-more-1.4.0.1-full-compat-nc.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 237712,
+          "sha1": "3d09b0b0b6a2da3833ec99010c2013f51c196627"
+        }
+      ]
+    }
+  }
+}

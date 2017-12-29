@@ -1,0 +1,146 @@
+body[id^=global_page_ynmember-admin]
+{
+	.tabs ul li
+	{
+		padding: 7px;
+		min-height: 30px;
+
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;	
+	}
+}
+
+#global_page_ynmember-admin-settings-level {
+	#credit-wrapper,
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		padding-top: 0px;
+	}
+	#first_amount-wrapper,
+	#credit-wrapper
+	{
+		float: left;
+		min-width: 58%;
+	}
+	#first_credit-wrapper,
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		float: left;
+		clear: none;
+	}
+	#first_credit-label,
+	#max_credit-label,
+	#period-label
+	{
+		display: none;
+	}
+	#max_credit-wrapper,
+	#period-wrapper
+	{
+		width: 120px;
+	}
+	#max_credit-wrapper input,
+	#period-wrapper input
+	{
+		width: 100px;
+	}
+}
+
+.add_icon {
+	background-image: url("~/application/modules/Ynmember/externals/images/add.png"); 
+	background-repeat: no-repeat;
+}
+
+.add_rating_icon {
+	background-image: url("~/application/modules/Ynmember/externals/images/add_rating_icon.png"); 
+	background-repeat: no-repeat;
+}
+
+.delete_rating_icon {
+	background-image: url("~/application/modules/Ynmember/externals/images/delete_rating_icon.png"); 
+	background-repeat: no-repeat;
+}
+
+.close_all_icon {
+	background-image: url("~/application/modules/Ynmember/externals/images/close_icon.png"); 
+	background-repeat: no-repeat;
+}
+
+.open_all_icon {
+	background-image: url("~/application/modules/Ynmember/externals/images/open_icon.png"); 
+	background-repeat: no-repeat;
+}
+
+.admin_table, .result_count {
+	margin-bottom: 10px;
+}
+
+.rating_type_row{
+	margin-top: 5px;
+}
+
+.input_small {
+	width: 100px !important;
+}
+
+.ynmember_rating_star_generic {
+	float: left;
+	display: inline-block;
+	font-size: 16px;
+	color: #ffa800 !important;
+	margin: 0 1px;
+	&.ynmember_star_disable{
+		 color: #ccc !important;
+	 }
+}
+.ynmember_rating_star_big {
+	background-image: url(~/application/modules/Ynmember/externals/images/star_big.png);
+}
+
+.ynmember_rating_star_big_half {
+	background-image: url(~/application/modules/Ynmember/externals/images/star_big_half.png);
+}
+
+.ynmember_rating_star_big_disabled {
+	background-image: url(~/application/modules/Ynmember/externals/images/star_big_disabled.png);
+}
+.rating_star_big
+{
+  background-image: url(~/application/modules/Ynmember/externals/images/admin/star_big.png);
+}
+.rating_star_big_half
+{
+  background-image: url(~/application/modules/Ynmember/externals/images/admin/star_big_half.png);
+}
+.rating_star_big_disabled
+{
+  background-image: url(~/application/modules/Ynmember/externals/images/admin/star_big_disabled.png);
+}
+.ynmember_block {
+	display: inline-block;
+}
+.ynmember_label {
+	display: inline;
+}
+#global_page_ynmember-admin-reviews-view-detail{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+#close_button{
+	margin-left: -20px;
+}
+#global_page_ynmember-admin-review-fields-field-edit #search-wrapper, #global_page_ynmember-admin-review-fields-field-edit #display-wrapper{
+		display:none;
+}
+#global_page_ynmember-admin-review-fields-field-create #search-wrapper, #global_page_ynmember-admin-review-fields-field-create #display-wrapper{
+		display:none;
+}
+html[dir="rtl"]{
+	.global_form_popup #fieldset-buttons a{
+		display: inline-block;
+	}
+	
+}

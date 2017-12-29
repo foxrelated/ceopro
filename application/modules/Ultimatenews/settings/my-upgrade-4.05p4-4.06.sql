@@ -1,0 +1,2 @@
+UPDATE `engine4_core_modules` SET `version` = '4.06' where `name` = 'ultimatenews';
+UPDATE `engine4_core_menuitems` SET `plugin` = 'Ultimatenews_Plugin_Menus' WHERE `name` = 'ultimatenews_main_rsssubscription' OR `name` = 'ultimatenews_main_favoritenews';

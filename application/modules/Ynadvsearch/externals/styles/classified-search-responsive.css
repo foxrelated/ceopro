@@ -1,0 +1,89 @@
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li
+{
+	height: 120px;
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+	margin-bottom: 21px;
+	clear: none;
+	border-bottom-width: 1px;
+	border-style: solid;
+	padding-bottom: 0.5em;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li:nth-child(2n)
+{
+	margin-right: 0;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li + li
+{
+	padding-top: 0;
+	border-top: none;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_body
+{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	padding-left: 18px;
+	background: url(../images/icon_info.png) no-repeat 0px center;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_photo
+{
+	margin-right: 14px;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_photo img
+{
+	width: 114px;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_info_title a
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_info_date
+{
+	font-size: 12px;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_info_date,
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_info_date  span
+{
+	color: #999;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_info_blurb ul li:first-child span:first-child
+{
+	display: none;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_info_blurb ul li:first-child span:first-child + span
+{
+	font-weight: bold;
+	color: #f78c24;
+	font-size: 18px;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_info_blurb ul li:first-child + li span:first-child
+{
+	display: none;
+}
+
+#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li .classifieds_browse_info_blurb ul li:first-child + li span:first-child + span
+{
+	padding-left: 18px;
+	background: url(../images/icon_location.png?c=136) no-repeat 1px center;
+}
+
+@media screen and (max-width: 767px) {
+	#global_page_ynadvsearch-search-classified-search ul.classifieds_browse > li {
+		width: 100% !important;
+		margin: 0;
+	}
+}

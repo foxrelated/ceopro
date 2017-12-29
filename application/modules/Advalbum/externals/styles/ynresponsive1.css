@@ -1,0 +1,1081 @@
+=ynadvalbum-display{
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+=ynadvalbum-flex{
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+}
+=ynadvalbum-box-sizing{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body[id=global_page_advalbum-index-listing][class=ynresponsive-metro]{
+    .ynadvalbum_most_comments_photo{
+        padding: 10px;
+    }
+}
+body.ynresponsive1,
+body.ynresponsiveclean-red,
+body.ynresponsiveclean-blue{
+    &#global_page_advalbum-album-view{
+        .ynadvalbum-listing-tab{
+            top: 2px;
+            right: 0;
+        }
+    }
+    .layout_core_container_tabs .ynadvalbum-listing-tab{
+        top: -54px;
+        right: 0;
+    }
+    .ynadvalbum-listing-tab{
+        top: 8px;
+        right: 4px;
+    }
+    ul.ynadvalbum_manage_photo-items{
+        li.ynadvalbum_manage_photo-item{
+            .ynadvalbum_manage_photo-parent{
+                .ynadvalbum_manage_photo-input-options{
+                    .ynadvalbum_make-cover > div input{
+                        margin-top: 1px;
+                    }
+                }
+            }
+        }
+    }
+    .item_icon_album:before,
+    .item_icon_album_photo:before,
+    .activity_icon_advalbum_photo_new:before,
+    .activity_icon_tagged:before{
+        display: none !important;
+    }
+}
+
+body#global_page_advalbum-photo-view.ynresponsive-metro{
+    .headline{
+        h2{
+            padding: 0px;
+        }
+    }
+    h2{
+        background: #fff;
+        padding: 10px 20px;
+    }
+}
+body[id*='_advalbum-'] .layout_ynbootstrap3_grid .thumbnail-style h3 > a{
+    font-size: 0.8em;
+}
+body[id*='_advalbum-'] .layout_ynbootstrap3_grid .thumbnail-style .thumbnail-style h3{
+    line-height: 20px;
+}
+div#tagger_form .media_photo_tagform_submits{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_date_not_popup{
+    margin-left: 0px;
+}
+#global_page_advalbum-photo-view #tagger_input{
+    height: 30px;
+}
+ul.thumbs.thumbs_nocaptions > li{
+    height: 210px!important;
+}
+.advalbum_responsive_slideshow_flex{
+    display: none;
+}
+.advalbum_responsive_slideshow_parallax{
+    display: block;
+}
+.advalbum_responsive_slideshow_parallax ul.pxs_slider li img{
+    max-height: 70%;
+    margin-top: 10px;
+}
+
+body[id*='_advalbum-'] ul.thumbs .thumbs_photo:hover{
+    padding: 3px;
+    border: 1px solid $theme_main_color_scheme;
+    position: relative;
+}
+body[id*='_advalbum-'] ul.ynalbum-grid-list.thumbs.thumbs_album .thumbs_photo{
+    padding: 0;
+    margin: 12px 11px;
+    border: 0;
+}
+body[id*='_advalbum-'] .layout_advalbum_top_recent_albums ul.thumbs .thumbs_photo,
+body[id*='_advalbum-'] .layout_advalbum_top_recent_albums ul.thumbs .thumbs_photo:hover{
+    margin: 9px 8px;
+    padding: 0;
+    border: 0;
+}
+ul.thumbs.thumbs_album_small > li{
+    height: auto;
+}
+body[id*='_advalbum-'] .layout_ynbootstrap3_grid div.col-md-3 + div.col-md-3{
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+ul.thumbs.thumbs_nocaptions > li.sortable a:hover{
+    .ynadvalbum_button_add_to_area{
+        display: block;
+    }
+}
+.ynalbum-pinterest-view .thumbs_photo:hover .ynadvalbum_button_add_to_area{
+    margin: 10px;
+    display: block;
+}
+.advalbum_view_more{
+    overflow: visible;
+}
+ul.thumbs > li.advalbum_albums_thumb{
+    height: 195px !important;
+}
+.advalbum_arrow_next{
+    padding-left: 423px;
+}
+#form-upload #album-element select{
+    width: 100%;
+}
+ul > li > p > span.advalbum_list_photos{
+    height: auto;
+}
+.ynalbum-list .advalbum_albums_thumb{
+    min-height: 220px;
+}
+.layout_advalbum_albums_search ul.advalbum_color_patterns li:hover:after,
+.layout_advalbum_albums_search ul.advalbum_color_patterns li.selected:after{
+    width: 32px;
+    height: 32px;
+}
+.ynalbum-list .advalbum_albums_thumb .album-photo-list{
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+body.ynresponsive-metro{
+    .adv-album-view-mode{
+        padding: 0 10px;
+    }
+    .ynalbum-grid-view{
+            margin: 0 -11px;
+        }
+    
+    #advalbum_photos_listing{
+        padding: 11px;
+    }
+    &#global_page_advalbum-album-view{
+        .ynadvalbum-listing-tab{
+            top: 2px;
+            right: 0;
+        }
+    }
+    &#global_page_advalbum-photo-view{
+        .layout_main{
+            .ynadvalbum_photo_detail-parent-btn{
+                padding-top: 5px;
+            }
+        }
+    }
+    .ynadvalbum-listing-tab{
+        top: 12px;
+        right: 10px;
+    }
+    .layout_core_container_tabs .ynadvalbum-listing-tab{
+        top: -52px;
+        right: 0;
+        margin-right: 5px;
+    }
+}
+body[class^=ynresponsivepurity-]{
+    .item_icon_album:before,
+    .item_icon_album_photo:before,
+    .activity_icon_advalbum_photo_new:before,
+    .activity_icon_tagged:before{
+        display: none !important;
+    }
+    &#global_page_advalbum-photo-change-location{
+    .form-elements{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important; 
+        #location-label{
+            display: none;
+        }
+    }
+}
+    &#global_page_advalbum-photo-edit-title{
+    .form-elements{
+        padding-top: 0 !important;
+    }
+}
+}
+ul.ynadvalbum_manage_photo-items{
+    li.ynadvalbum_manage_photo-item{
+        .ynadvalbum_manage_photo-parent{
+            .ynadvalbum_manage_photo-input-options{
+                .ynadvalbum_triangle_parent{
+                    left: 48.5%;
+                }
+            }
+            .ynadvalbum_manage_photo-typing-info{
+                .ynadvalbum_input_parent textarea{
+                    padding-top: 7px;
+                }
+            }
+        }
+    }
+}
+.layout_advalbum_albums_top_members > div.ynadvalbum_top_members{
+    padding: 0;
+}
+#global_page_advalbum-album-view #gotoPage > div:first-of-type > h2{
+    margin-top: 2px;
+}
+.ynalbum-list .ynadvalbum_albums_thumb .album-photo-lists{
+    line-height: 45px;
+}
+body[class^=ynresponsiveclean-],
+body.ynresponsive1,
+body[class^=ynresponsivepurity-]{
+    ul.feed .item_icon_advalbum_photo.feed_item_icon{
+        &:before{
+            display: none !important;
+        }
+    }
+}
+body.ynresponsive1,
+body[class^=ynresponsiveclean-]{
+    &#global_page_advalbum-photo-edit-title{
+        .form-elements{
+            padding-top: 0 !important;
+        }
+    }
+    &#global_page_user-edit-external-photo{
+        .form-elements{
+            padding-top: 20px !important;
+        }
+    }
+    &#global_page_advalbum-album-view{
+        .ynadvalbum_photo_detail_albums{
+            .ymb_photo_list .ynadvalbum_album_detail-stats{
+                .ynadvalbum-view-slideshow{
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    ul.ynadvalbum_manage_photo-items{
+        li.ynadvalbum_manage_photo-item{
+            .ynadvalbum_manage_photo-parent{
+                .ynadvalbum_manage_photo-input-options{
+                    .ynadvalbum_make-cover > div{
+                        padding: 0 31px;
+                    }
+                }
+            }
+        }
+    }
+}
+body.ynresponsive-photo,
+body.ynresponsive1,
+body[class^=ynresponsiveclean-],
+body.ynresponsive-metro{
+    ul.ynadvalbum_manage_photo-items{
+        li.ynadvalbum_manage_photo-item{
+            .ynadvalbum_manage_photo-parent{
+                .ynadvalbum_manage_photo-typing-info{
+                    label{
+                        padding-top: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+body.ynresponsive-photo{
+    &#global_page_advalbum-photo-change-location{
+        .form-description{
+            margin-bottom: 0 !important;
+        }
+    }
+    ul.ynadvalbum_manage_photo-items{
+        li.ynadvalbum_manage_photo-item{
+            .ynadvalbum_manage_photo-parent{
+                .ynadvalbum_manage_photo-input-options{
+                    .ynadvalbum_make-cover > div{
+                        padding: 0 27px;
+                    }
+                }
+            }
+        }
+    }
+    div.ynadvalbum-listing-tab{
+       top: 8px;
+       right: 4px;
+    }
+    div.layout_core_container_tabs .ynadvalbum-listing-tab{
+        top: -52px;
+        right: 0;
+    }
+    &#global_page_advalbum-album-view div.ynadvalbum-listing-tab{
+        top: 0;
+    }
+}
+body.ynresponsive-metro{
+    &#global_page_advalbum-photo-change-location{
+        .form-description{
+            margin-bottom: 0 !important;
+        }
+    }
+    .photo-list-content.ynalbum-grid-view .photo-grid-view,
+    .album-listing-view-mode > div.ynalbum-grid-view .ynadvalbum-grid-list,
+    ul.ynadvalbum_manage_photo-items{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &#global_page_advalbum-photo-view,
+    &#global_page_advalbum-album-view{
+        .layout_advalbum_user_other_albums .ynadvalbum_grid_view{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .layout_advalbum_photos_of_album{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+body[class^=ynresponsivepurity-]{
+    .ynadvalbum-listing-tab{
+        top: 12px;
+        right: 14px;
+    }
+    .layout_core_container_tabs .ynadvalbum-listing-tab{
+        top: -48px;
+        right: 0;
+    }
+}
+body[id=global_page_advalbum-album-view][class^=ynresponsivepurity-]{
+    .ynadvalbum-listing-tab{
+       top: 2px;
+       right: 0;
+    }
+}
+body[class^=ynresponsivepurity-],
+body.ynresponsive-metro{
+    ul.ynadvalbum_manage_photo-items{
+        li.ynadvalbum_manage_photo-item{
+            .ynadvalbum_manage_photo-parent{
+                .ynadvalbum_manage_photo-input-options{
+                    .ynadvalbum_make-cover > div{
+                        padding: 0 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+ul.ynadvalbum_manage_photo-items{
+    li.ynadvalbum_manage_photo-item{
+        .ynadvalbum_manage_photo-parent{
+            .ynadvalbum_manage_photo-typing-info{
+                label{
+                    padding-top: 6px;
+                }
+            }
+        }
+    }
+}
+body[id=global_page_advalbum-index-manage][class=ynresponsive-metro]{
+    .album-listing-view-mode > div.ynalbum-grid-view{
+    .ynadvalbum-grid-list{
+                margin-top: 15px;
+            }
+        }
+    }
+
+body[class^=ynresponsivepurity-][id=global_page_user-profile-index]{
+    div.ynadvalbum-listing-tab{
+        top: -44px;
+    }
+}
+body[class=ynresponsive-photo][id=global_page_user-profile-index]{
+    .ynadvalbum_most_comments_photo{
+        div.ynadvalbum-listing-tab{
+            top: -46px;
+        }
+    }
+}
+body[class=ynresponsive-metro][id=global_page_user-profile-index]{
+    .ynadvalbum_most_comments_photo{
+        div.ynadvalbum-listing-tab{
+            top: -46px;
+        }
+    }
+}
+body[class=ynresponsive1][id=global_page_user-profile-index],
+body[class^=ynresponsiveclean-][id=global_page_user-profile-index]{
+    .ynadvalbum_most_comments_photo{
+        div.ynadvalbum-listing-tab{
+            top: -50px;
+        }
+    }
+}
+body[class^=ynresponsive-photo]{
+    .ynalbum-list .ynadvalbum_albums_thumb .album-photo-lists{
+        max-height: 70px;
+    }
+}
+
+/*----- rtl -----*/
+html[dir="rtl"]{
+    body[class*=ynresponsivepurity-] .ynadvalbum-listing-tab{
+        left: 14px;
+        right: auto;
+    }
+    body[id^=global_page_advalbum-] .layout_advalbum_albums_search ul.advalbum_color_patterns li.selected:after,
+    body[id^=global_page_advalbum-]  .layout_advalbum_photos_search ul.advalbum_color_patterns li.selected:after{
+        margin-right: -3px;
+    }
+    body[id=global_page_advalbum-album-view][class^=ynresponsivepurity-]{
+        .ynadvalbum-listing-tab{
+           left: 2px;
+           right: auto;
+        }
+    }  
+    body[class^=ynresponsivepurity-]{
+        .layout_core_container_tabs{
+             .ynadvalbum-listing-tab{
+                right: auto;
+                left: 0;
+             }
+        }
+    }
+    body[id^=global_page_advalbum-]{
+        .paginationControl{
+            float: left;
+            & > li{
+                float: right;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1167px){
+
+    ul.ynadvalbum_manage_photo-items{
+
+        li.ynadvalbum_manage_photo-item{
+            .ynadvalbum_manage_photo-parent{
+                .ynadvalbum_manage_photo-input-options{
+                    display: block;
+                    .ynadvalbum_triangle_parent{
+                        left: auto;
+                        right: 13%;
+                    }
+                    & > li{
+                        width: 25%;
+                        float: left;
+                        &:nth-of-type(4){
+                            border-right: 0;
+                        }
+                    }
+                    .ynadvalbum_make-cover{
+                        width: 100%;
+                        float: none;
+                        input{
+                            margin-top: 3px;
+                        }
+                        label{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px){
+    .advalbum_responsive_slideshow_parallax{
+        display: none;
+    }
+    .advalbum_responsive_slideshow_flex{
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px){
+    body[id*='_advalbum-'] .layout_ynbootstrap3_grid div.col-md-3 .thumbnail-img .overflow-hidden{
+        height: 150px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    ul.thumbs.thumbs_nocaptions > li{
+        margin: 0 8px!important;
+    }
+}
+@media screen and (min-width: 992px){
+    body[id*='_advalbum-'] .layout_ynbootstrap3_grid div.col-md-3 .thumbnail-img .overflow-hidden{
+        height: 115px;
+    }
+}
+@media screen and (max-width: 991px){
+    .ynadvalbum_button_add_to_area{
+        position: absolute;
+        bottom: 0;
+        right: auto !important;
+        left: 0 !important;
+        .ynadvalbum_uix_button{
+            border-radius: 0 3px 0 0;
+            -moz-border-radius: 0 3px 0 0;
+            -webkit-border-radius: 0 3px 0 0;
+        }
+    }
+    #advalbum_slideshow_button{
+        display: block;
+    }
+    #global_page_advalbum-album-view{
+        #gotoPage{
+            .ynadvalbum_photo_detail_albums{
+                .ymb_photo_list{
+                    .ynadvalbum_album_detail-stats{
+                        .ynadvalbum-view-slideshow{
+                            margin-top: -6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+
+    body[class*=insignia]{
+        .layout_left,
+        .layout_right{
+            .layout_advalbum_user_other_albums ul.ynadvalbum-grid-list .advalbum_albums_grid_thumb{
+                width: 100%;        
+            }
+        }
+        .layout_advalbum_user_other_albums #ynadvalbum_link_temp .ynadvalbum_other_album_info{
+            bottom: 0 !important;
+        }
+        .layout_advalbum_user_other_albums .album-listing-view-mode .ynadvalbum_album_listing #ynadvalbum_link_temp label{
+            opacity: 1;
+        }
+    }
+
+    #advalbum-post-upload{
+        .files-contain{
+            .ynadvalbum_background_upload{
+                padding: 0 15px;
+                span{
+                    font-size: 18px !important;
+                }
+            }
+        }
+        .fileinput-button.btn-success > label{
+            white-space: normal;
+        }
+    }
+
+    .ynadvalbum-options{
+        opacity: 1;
+    }
+    .ynalbum-grid-view{
+        .ynadvalbum_photos_listing.thumbs_photo_grid{
+            .ynadvalbum_thumb_photo_info{
+                opacity: 1;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 150%;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    -moz-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    -o-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    -webkit-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    z-index: 1;
+                }
+            }
+        }
+    }
+    .layout_left,
+    .layout_right{
+        .layout_advalbum_user_other_albums{
+            ul.ynadvalbum-grid-list{
+                .advalbum_albums_grid_thumb{
+                    width: 50%;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    .ynadvalbum_albums_detail_title{
+        h2{
+            margin-bottom: 8px;
+        }
+    }
+
+    #global_page_advalbum-album-view{
+        .ymb_photo_list{
+            .ynadvalbum_album_detail-stats{
+                .ynadvalbum-view-slideshow a{
+                    display: none;
+                }
+            }
+        }
+        #gotoPage > div:first-of-type{
+            #ynadvalbum_album_detail_rating{
+                .ynadvalbum_album_detail_rating-text{
+                    float: none;
+                }
+            }
+        }
+    }
+
+    body[id^=global_page_advalbum-]{
+        .tabs_alt, .tabs_parent, .ybo_headline h3{
+            margin-bottom: 45px !important;
+        }
+    }
+
+    .layout_advalbum_photos_listing{
+        .photo-grid-view{
+            ul.ynadvalbum-grid-list{
+                li.advalbum_albums_grid_thumb{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .ynadvalbum_manage_photo_parent_button{
+        height: auto;
+        +ynadvalbum-display;
+        flex-direction: column;
+        padding: 0 10px;
+        & > button{
+            display: block;
+            width: 100%;
+            max-width: none;
+            margin-top: 8px;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+
+    .ynadvalbum_photo_detail_sub-menu{
+        display: none;
+    }
+
+    .ynadvalbum-options.ynadvalbum-second{
+        display: block !important;
+    }
+
+    ul.ynadvalbum_manage_photo-items{
+        li.ynadvalbum_manage_photo-item{
+            width: 50%;
+        }
+    }
+
+    .ms-dir-h{
+        display: none;
+    }
+
+    body[class^=ynresponsivepurity-]{
+        div.ynadvalbum-listing-tab{
+            top: 50px;
+            right: 15px;
+        }
+        div.layout_core_container_tabs div.ynadvalbum-listing-tab{
+            top: -36px;
+            right: 0;
+        }   
+    }
+
+    body.ynresponsive-photo{
+        div.ynadvalbum-listing-tab{
+            top: 50px;
+            right: 0;
+        }
+        div.layout_core_container_tabs div.ynadvalbum-listing-tab{
+            top: -36px;
+            right: 0;
+        }
+    }
+
+
+    body.ynresponsive-metro{
+        div.ynadvalbum-listing-tab{
+            top: 56px;
+            right: 10px;
+        }
+        .layout_core_container_tabs .ynadvalbum-listing-tab{
+            top: -38px;
+            right: 0;
+            margin-right: 0px;
+        }
+    }
+
+    body.ynresponsive1,
+    body[class^=ynresponsiveclean-]{
+        div.ynadvalbum-listing-tab{
+            top: 36px;
+            right: 0;
+        }
+        div.layout_core_container_tabs div.ynadvalbum-listing-tab{
+            top: -36px;
+            right: 0;
+        }
+    }
+
+    ul.ynalbum-grid-list{
+        .advalbum_albums_gird_thumb{
+            width: 49%;
+            margin-bottom: 20px;
+            float: left;
+            margin-left: 2%;
+            position: relative;
+            &:nth-child(3n+1){
+                margin-left: 2%;
+            }
+            &:nth-child(odd){
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    .advalbum_albums_gird_thumb{
+        width: 46%;
+        margin-left: 4%;
+    }
+
+    .thumbs_photo:hover .ynadvalbum_button_add_to_area{
+        left: 0;
+        bottom: 0;
+        right: inherit;
+        margin: 0;
+        display: block;
+        width: 29px !important;
+        height: 29px !important;
+    }
+
+    .ynalbum-pinterest-view .thumbs_photo:hover .ynadvalbum_button_add_to_area{
+        margin: 10px;
+    }
+    ul.ynadvalbum-grid-list .advalbum_albums_grid_thumb{
+        width: 50%;
+    }
+
+    .ynadvalbum_addTo_frame{
+        width: 150px;
+    }
+    .rotate_options{
+        float: left;
+        clear: both;
+    }
+    .photo_options{
+        height: 60px!important;
+    }
+    ul.thumbs.thumbs_nocaptions > li{
+        height: 195px!important;
+    }
+    .ynalbum-listing-tab{
+        position: static;
+        text-align: right;
+    }
+}
+@media screen and (max-width: 767px){
+    body[class*=insignia]{
+        .layout_left,
+        .layout_right{
+            .layout_advalbum_user_other_albums ul.ynadvalbum-grid-list .advalbum_albums_grid_thumb{
+                width: 33.33%;
+
+                .ynadvalbum_album_listing{
+                    height: 210px;
+
+                    & > span{
+                        height: 210px;
+                    }
+                }        
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px){
+    #global_page_advalbum-album-view #gotoPage > {
+        display: block;
+        width: 100%;
+    }
+    #global_page_advalbum-album-view #gotoPage{
+        & > div.ynadvalbum_albums_detail_title #ynadvalbum_album_detail_rating{
+            display: block;
+            width: 100%;
+            margin-top: 5px;
+        }
+        & > div:first-of-type > h2{
+            display: block;
+            width: 100%;
+            float: none;
+        }
+    }
+}
+@media screen and (max-width: 600px){
+    body[class*=insignia]{
+        .layout_left,
+        .layout_right{
+            .layout_advalbum_user_other_albums ul.ynadvalbum-grid-list .advalbum_albums_grid_thumb{
+                width: 50%;        
+            }
+        }
+    }
+    body[id^=global_page_advalbum-] .global_form_popup textarea{
+        word-break: break-word;
+        max-width: 280px;
+    }
+    .ynadvalbum_photo_detail_thumb-info{
+        .ynadvalbum_photo_detail_thumb-info-local, #advalbum_rating{
+            span:first-of-type{
+                margin-left: 0;
+            }
+        }
+    }
+    #global_page_advalbum-album-view{
+        #gotoPage{
+            .ynadvalbum_photo_detail_albums{
+                .ymb_photo_list{
+                    .ynadvalbum_album_detail-stats{
+                        .ynadvalbum-view-slideshow{
+                            position: absolute;
+                        }
+                        .ynadvalbum_photo_detail-stats-info{
+                            position: absolute;
+                            top: -35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px){
+    body[class*=insignia]{
+        .layout_left,
+        .layout_right{
+            .layout_advalbum_user_other_albums ul.ynadvalbum-grid-list .advalbum_albums_grid_thumb{
+                width: 100%;        
+            }
+        }
+    }
+    .layout_left,
+    .layout_right{
+        .layout_advalbum_user_other_albums{
+            ul.ynadvalbum-grid-list{
+                .advalbum_albums_grid_thumb{
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .ynadvalbum_photo_detail_addthis{
+        clear: both;
+    }
+    .ynadvalbum_photo_detail_thumb-info{
+        text-align: left;
+        .ynadvalbum_photo_detail_thumb-info-local{
+            width: 100%;
+        }
+    }
+    .layout_advalbum_photos_of_album .ynadvalbum-listing-tab{
+        top: 25px !important;
+    }
+    #global_page_advalbum-album-view{
+        .ynadvalbum_photo_detail_albums{
+            .ymb_photo_list{
+                .ynadvalbum_album_detail-stats{
+                    margin-bottom: 44px;
+                    top: 0;
+                }
+            }
+        }
+    }
+    #advalbum-post-upload .files-contain .ynadvalbum_background_upload span{
+        font-size: 18px !important;
+    }
+    .layout_advalbum_photos_listing{
+        .photo-grid-view{
+            ul.ynadvalbum-grid-list{
+                li.advalbum_albums_grid_thumb{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    ul.ynadvalbum_manage_photo-items li.ynadvalbum_manage_photo-item{
+        width: 100%;
+    }
+    .ynadvalbum_download-album-photo{
+        display: none;
+    }
+    #global_page_advalbum-album-view{
+        #gotoPage .ynadvalbum_menu_parent{
+            .ynadvalbum-options{
+                .ynadvalbum_dropdown_items{
+                    .ynadvalbum_album-download{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .layout_advalbum_featured_photos{
+        .ms-vertical-template{
+            #ynadvalbum_masterslider{
+                .ynadvalbum_photo_feature_bottom{
+                    .ynadvalbum_photo_feature_description{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    ul.ynadvalbum-grid-list .advalbum_albums_grid_thumb{
+        width: 100%;
+    }
+    .ynalbum-list .ynadvalbum_albums_thumb .ynalbum-content{
+        clear: left;
+    }
+    .ynadvalbum_albums_thumb{
+        .album-info{
+            span.advalbum_list_photos{
+                display: block;
+                width: 100% !important;
+            }
+            span.advalbum_album_statis{
+                width: 100%;
+            }
+        }
+    }
+    ul.ynalbum-grid-list{
+        .advalbum_albums_gird_thumb{
+            width: 100%;
+            margin-bottom: 20px;
+            float: left;
+            margin-left: 0%;
+            position: relative;
+            &:nth-child(3n+1){
+                margin-left: 0;
+            }
+            &:nth-child(odd){
+                margin-left: 0 !important;
+            }
+        }
+    }
+    ul.ynalbum-grid-list{
+        margin-left: 0px;
+    }
+    .advalbum_albums_gird_thumb{
+        width: 100%;
+        margin-left: 0%;
+    }
+    ul.thumbs.thumbs_album > li{
+        height: 285px !important;
+        width: 100%!important;
+        background: none;
+        margin-left: 0!important;
+    }
+    ul.thumbs.thumbs_album > li > a{
+        height: 180px!important;
+        width: 100%!important;
+        padding: 0!important;
+        margin: 0!important;
+    }
+    ul.thumbs.thumbs_nocaptions > li{
+        height: 280px!important;
+    }
+    ul.thumbs.thumbs_album > li > a > span{
+        height: 180px!important;
+        width: 100%!important;
+    }
+    .ynadvalbum_button_add_to_area_album{
+        padding-top: 113pt!important;
+        padding-left: 0pt!important;
+    }
+    .layout_left ul.thumbs.thumbs_nocaptions > li,
+    .layout_right ul.thumbs.thumbs_nocaptions > li{
+        margin: 0px;
+    }
+    .ynadvalbum_uix_button{
+        padding: 6px 8px;
+        border-radius: 0px 3px 0px 0px;
+        -webkit-border-radius: 0px 3px 0px 0px;
+        -moz-border-radius: 0px 3px 0px 0px;
+    }
+    .ynalbum-list .advalbum_albums_thumb .ynalbum-content{
+        width: 100%;
+    }
+    #global_page_advalbum-index-upload .progress{
+        width: 340px!important;
+    }
+    ul.thumbs.thumbs_nocaptions > li a span.ynadvalbum_button_add_to_area{
+        width: 29px!important;
+    }
+    html[dir="rtl"]{
+        .ynalbum-list{
+            .ynadvalbum_albums_thumb{
+                .ynalbum-content{
+                    clear: right;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+
+    #TB_window{
+        width: 275px !important;
+        left: 50% !important;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        iframe{
+            width: 100% !important;
+        }
+    }
+
+    #advalbum-post-upload{
+        .files-contain{
+            .ynadvalbum_background_upload{
+                span{
+                    font-size: 14px !important; 
+                }
+            }
+        }
+    }
+
+    .layout_advalbum_featured_photos{
+        .ms-vertical-template{
+            .ms-thumb-list.ms-dir-v{
+                width: 100px;
+                .ms-thumb-frame{
+                    height: 40px;
+                    width: 60px
+                }
+            }
+        }
+    }
+    #global_page_advalbum-index-upload .progress{
+        width: 225px!important;
+    }
+}
+

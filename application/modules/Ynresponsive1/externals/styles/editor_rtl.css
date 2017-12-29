@@ -1,0 +1,7 @@
+body{
+    direction:rtl;
+}
+.wysihtml5_area ul>li
+{
+    float: right!important;
+}

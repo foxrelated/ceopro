@@ -1,0 +1,230 @@
+body[id^=global_page_ynmember] .datepicker_dashboard {
+	height: 160px;
+	z-index: 9;
+}
+
+body[id^=global_page_ynmember] #global_content_simple .global_form div.form-label {
+	width: 100%;
+}
+
+#confirm_form {
+	margin-top: 0.5em;
+}
+
+#confirm_form > div {
+	width: 100%;
+}
+
+.ynmember-member-item {
+	max-width: 100%;
+}
+
+.template-ynresponsive-metro .layout_main .layout_middle > div {
+	padding: 1em;
+}
+
+.ynmember-birthday-input .ynicon {
+	right: 20px;
+	top: 10px;
+}
+
+.ynmember-member-item .ynmember-member-item-option .ynmember-member-item-option-hover #profile_options li {
+	padding: 0.3em 0.8em;
+	font-size: 1em;
+}
+
+.ynmember-member-items {
+	padding-bottom: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+	.ynmember-member-items > li {
+		width: 33.33%;
+	}
+	#ynmember-browse-listings.ynmember-browse-viewmode-grid > ul > li {
+		max-height: none;
+		.ynmember-browse-item .ynmember-item-information .ynmember-item-info{
+			min-height: 160px;
+		}
+	}
+}
+
+@media screen and (max-width:991px){
+	/*Improve Profile cover Reposition*/
+	.ynmember-profile-cover-picture{
+		background-size: cover !important;	
+		.ynmember-profile-cover-picture-img{display: none}
+	}
+	.ynmember-profile-cover{
+		a.cover-btn{
+			display: none !important;
+		}
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.ynmember-member-items > li,
+	#ynmember-browse-listings.ynmember-browse-viewmode-grid > ul > li {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 640px){
+
+	.layout_ynmember_profile_fields{
+		ul{
+			li{
+				display: flex;
+				display: -moz-flex;
+				display: -webkit-flex;
+				flex-direction: column;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				span:first-of-type{
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+		.layout_page_ynmember_review_detail{
+		.ynmember-review-detail{
+			.ynmember-review-detail-left{
+				float: none !important;
+				width: auto;
+			}
+		}
+	}
+
+	.ynmember-profile-place-item {
+		.ynmember-profile-place-item-item {
+			& > i {
+				width: 30px;
+				margin-top: 3px;
+				margin-right: 0;
+				font-size: 18px;
+			}
+
+			& > div {
+				float: none !important;
+			}
+
+			& > .ynmember-profile-place-info {
+				overflow: visible;
+			}		
+		}
+	}
+
+	html[dir="rtl"]{
+
+		div.field-privacy-selector.active{
+			ul{
+				right: 0;
+				left: auto;
+			}
+		}
+
+		.ynmember-form-edit-relationship{
+			.field-privacy-selector{
+				float: right;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.ynmember-member-items > li,
+	#ynmember-browse-listings.ynmember-browse-viewmode-grid > ul > li {
+		width: 100%;
+	}	
+
+	.ynmember-profile-cover-main .ynmember-profile-cover {
+		display: none;
+	}
+
+	#ynmember-browse-listings.ynmember-browse-viewmode-list .ynmember-browse-item .ynmember-item-avatar {
+		float: none !important;
+		margin-bottom: 0.3em;
+	}
+
+	#ynmember-browse-listings.ynmember-browse-viewmode-list .ynmember-browse-item > .ynmember-item-information > div.ynmember-item-action {
+		padding-left: 0;
+	}
+
+	.ynmember-profile-cover-main {
+		height: auto;
+	}
+
+	.layout_page_ynmember_review_index .ynmember-review-item .ynmember-review-item-left {
+		float: none !important;
+		width: auto;
+		border-right: 0;
+	}
+
+	.layout_page_ynmember_review_index .ynmember-review-item .ynmember-review-item-main {
+		min-height: 0;
+		border-left: 0;
+	}
+
+
+	.ynmember-profile-cover-main .ynmember-profile-info {
+		width: auto !important;
+		float: none !important;
+	}
+
+	.ynmember-profile-cover-main .ynmember-profile-info .ynmember-profile-information {
+		padding-right: 0;
+	}
+
+	.ynmember-profile-cover-main .ynmember-profile-info .ynmember-profile-avatar {
+		position: static;
+		margin: 0.5em auto;
+		text-align: center;
+		transform: translate(0);
+	}
+
+	.layout_page_ynmember_review_index .ynmember-review-item .ynmember-review-item-border{
+		margin-left: 0px;
+	}
+
+	body#global_page_ynmember-member-suggest-friend #global_content_simple{
+		width: 100%;
+
+		.ynmember-suggestion-item{
+			min-width: auto;
+		}
+		input[type=text], input[type=email], input[type=password], input.text, textarea{
+			max-width: 75%;
+		}
+	}
+	html[dir="rtl"]{
+
+		#ynmember-browse-listings.ynmember-browse-viewmode-list{
+			.ynmember-browse-item{
+				& > .ynmember-item-information{
+					& > div.ynmember-item-action{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+
+		.ynmember-profile-cover-main{
+			.ynmember-profile-info{
+				.ynmember-profile-information{
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+}
+
+/*----rtl -----*/
+html[dir="rtl"]{
+	body[id^=global_page_ynmember-][class^=ynresponsivepurity-]{
+		.paginationControl{
+			float: left;
+		}
+	}
+}

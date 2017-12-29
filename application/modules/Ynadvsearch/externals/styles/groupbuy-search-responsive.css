@@ -1,0 +1,132 @@
+.layout_page_ynadvsearch_search_groupbuy-search #filter_form
+{
+	padding: 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search #filter_form:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search #filter_form div#search-wrapper,
+.layout_page_ynadvsearch_search_groupbuy-search #filter_form  div#location-wrapper,
+.layout_page_ynadvsearch_search_groupbuy-search #filter_form  div#status-wrapper,
+.layout_page_ynadvsearch_search_groupbuy-search #filter_form  div#orderby-wrapper,
+.layout_page_ynadvsearch_search_groupbuy-search #filter_form  div#category-wrapper
+{
+	margin-left: 0;
+	float: none;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: -0.5em;
+	margin-right: -0.5em;
+	float: none;
+	width: auto;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li
+{
+	padding: 0 0.5em;
+	margin: 0 1% 1em 1% !important;
+	width: 48%;
+	height: 280px;
+	float: left;
+	border: 0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li .groupbuy_browse_photo
+{
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-style: solid;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li .groupbuy_browse_photo a
+{
+	display: block;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li .groupbuy_browse_photo a img
+{
+	width: 100% !important;
+	background-size: cover;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li .groupbuy_widget_value
+{
+	top: 130px;
+	bottom: inherit;
+	left: 0;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li .groupbuy_widget_value .groupbuy_widget_value_price
+{
+	height: 22px;
+	line-height: 22px;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li .groupbuy_widget_value .groupbuy_widget_value_price .groupbuy_widget_value_price_price
+{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li .groupbuy_browse_info
+{
+	border-left-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	border-style: solid;
+	padding: 0.5em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li .groupbuy_browse_info .groupbuy_browse_info_title
+{
+	border-bottom-width: 1px;
+	border-style: solid;
+	margin: 0 0 0.5em 0;
+	padding-bottom: 0.5em;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .layout_groupbuy_search_listing_deals ul.groupbuy_list > li {
+	min-height: 290px;
+	height: auto;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .groupbuy_browse_info_date {
+	padding-left: 20px;
+	min-height: 18px;
+	background: url(../images/icon-time.png) no-repeat 0px center;
+}
+
+.layout_page_ynadvsearch_search_groupbuy-search .groupbuy_browse_info_blurb {
+	padding-left: 20px;
+	min-height: 18px;
+	background: url(../images/icon_location.png) no-repeat 1px center;
+}

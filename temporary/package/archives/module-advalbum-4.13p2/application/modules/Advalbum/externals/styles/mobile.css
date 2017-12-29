@@ -1,0 +1,4637 @@
+@constants {
+    $theme_link_color: #576b95;
+    $theme_link_color_hover: #02a1dc;
+    $theme_button_background_color: #01a0db;
+    $theme_button_background_color_hover: #01a0db;
+}
+body[id^=global_page_advalbum-] {
+    #ynmb_siteWrapper .layout_right, #ynmb_siteWrapper .layout_left {
+        display: block;
+    }
+    .layout_left,
+    .layout_right {
+        .generic_layout_container {
+            display: none;
+            &.layout_advalbum_albums_search {
+                display: block;
+                #sort-wrapper, #sort-element, #category_id-wrapper {
+                    display: none;
+                }
+                .form-elements {
+                    & > div: not(#search-wrapper) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+
+=font-ynicon {
+    font-family: 'ynicon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+=ynadvalbum-box-shadow($shadow) {
+    box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+}
+=ynadvalbum-box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+=ynadvalbum-display {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+}
+=ynadvalbum-flex {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+}
+=ynadvalbum-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-word;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+=ynadvalbum-border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+=ynadvalbum-text-clamp($line) {
+    word-break: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: normal;
+    -webkit-line-clamp: $line;
+    line-height: 18px;
+    height: calc(18*$line)px;
+}
+body[id^=global_page_advalbum-] {
+    .tbox {
+        z-index: 10;
+    }
+    .global_form_popup{
+        textarea{
+            width: 100%;
+        }
+    }
+.ss_slideshow {
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 682px;
+    height: 552px;
+    padding: 0px 15px 0px 3px;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.ss_album_title {
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    font-family: Arial;
+    font-size: 9pt;
+    color: #888888;
+}
+.ss_album_title a,
+.ss_album_title a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+}
+.ss_closethis {
+    margin-top: 8px;
+    height: 12px;
+    line-height: 12px;
+    font-family: Arial;
+    float: right;
+    color: #FF0000;
+}
+a.ss_closethis {
+    color: #FF0000;
+}
+.ss_photo {
+    width: 680px;
+    height: 510px;
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #dde7ed;
+}
+.ss_more_info {
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    font-family: Arial;
+    font-size: 9pt;
+    color: #AAA;
+    text-align: center;
+}
+.ss_preload {
+    padding-top: 1px;
+    height: 1px;
+    overflow: hidden;
+    display: none;
+}
+#advalbum_slideshow_button {
+    height: 17px;
+    line-height: 20px;
+    float: right;
+    background: no-repeat url(~/application/modules/Advalbum/externals/images/advalbum_icon.png) -327px -201px;
+    padding-left: 24px;
+    font-size: 14px;
+    margin-right: 0px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#advalbum_slideshow_button.active {
+    background: no-repeat url(~/application/modules/Advalbum/externals/images/advalbum_icon.png) 5px -109px;
+}
+#advalbum_slideshow_menu li.active {
+    font-weight: 700;
+    background-position: 3px 2px;
+    background-repeat: no-repeat;
+    background-image: url(~/application/modules/Advalbum/externals/images/check.png);
+}
+#advalbum_slideshow_menu {
+    background-color: #fff;
+    display: none;
+    z-index: 78;
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 200px;
+    overflow: auto;
+    max-height: 300px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    top: 0;
+    padding-top: 10px;
+    margin-right: 1px;
+    box-shadow: 1px 2px 4px #D1E2EC;
+    -moz-box-shadow: 1px 2px 4px #D1E2EC;
+    -webkit-box-shadow: 1px 2px 4px #D1E2EC;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#D1E2EC')";
+    filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#D1E2EC');
+    background-image: -moz-linear-gradient(top, #fff 0, #efefef 100%);
+    background-image: -ms-linear-gradient(top, #fff 0, #efefef 100%);
+    background-image: -o-linear-gradient(top, #fff 0, #efefef 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
+    background-image: -webkit-linear-gradient(top, #ffffff 0, #efefef 100%);
+    background-image: linear-gradient(to bottom, #ffffff 0, #efefef 100%);
+    filter: progid: DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#fff, EndColorStr=#efefef);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-image: initial;
+    & > li {
+        list-style: none none outside;
+        line-height: 24px;
+        padding-left: 24px;
+        margin-bottom: 10px;
+    }
+}
+    /*----- Edit albums icons -----*/
+    
+    .icon_photos_new {
+        background-image: url(~/application/modules/Advalbum/externals/images/add.png);
+    }
+    .icon_photos_manage {
+        background-image: url(~/application/modules/Advalbum/externals/images/album_manage.png);
+    }
+    .icon_photos_settings {
+        background-image: url(~/application/modules/Advalbum/externals/images/album_editinfo.png);
+    }
+    .icon_photos_delete {
+        background-image: url(~/application/modules/Advalbum/externals/images/album_delete.png);
+    }
+    .pf_photo_main {
+        +foreground;
+        border: 1px solid $theme_foreground_border_color;
+    }
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    .rslides li:first-child {
+        position: relative;
+        display: block;
+        float: left;
+    }
+    .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        border: 0;
+    }
+    .callbacks_container {
+        position: relative;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .callbacks {
+        list-style: none outside none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+    .callbacks li {
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .callbacks img {
+        border: 0 none;
+        display: block;
+        height: auto;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    .callbacks .caption {
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+        bottom: 0;
+        color: #FFFFFF;
+        display: block;
+        font-size: 20px;
+        left: 0;
+        margin: 0;
+        max-width: none;
+        padding: 10px 20px;
+        position: absolute;
+        right: 0;
+        text-shadow: none;
+        z-index: 2;
+        line-height: 17px;
+    }
+    .layout_ynvideo_list_featured_videos .callbacks,
+    .layout_advalbum_featured_photos_middle .callbacks,
+    .layout_ynevent_feature_events .callbacks,
+    .layout_advgroup_featured_groups .callbacks,
+    .layout_advalbum_featured_photos .callbacks {
+        height: 300px;
+    }
+    .layout_ynvideo_list_featured_videos .callbacks > li,
+    .layout_advalbum_featured_photos_middle .callbacks > li,
+    .layout_ynevent_feature_events .callbacks > li,
+    .layout_advgroup_featured_groups .callbacks > li,
+    .layout_advalbum_featured_photos .callbacks > li {
+        text-align: center;
+        line-height: 300px;
+        height: 300px;
+        background-color: #fff;
+    }
+    .layout_ynvideo_list_featured_videos .callbacks > li > a > img,
+    .layout_advalbum_featured_photos_middle .callbacks > li > a > img,
+    .layout_ynevent_feature_events .callbacks > li > a > img,
+    .layout_advgroup_featured_groups .callbacks > li > a > img,
+    .layout_advalbum_featured_photos .callbacks > li > a > img {
+        width: auto;
+        float: none;
+        max-height: 300px;
+        display: inline;
+        vertical-align: middle;
+        max-width: 100%;
+    }
+    .layout_advgroup_featured_groups .callbacks_container {
+        margin: 8px 0 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-wrapper {
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        height: 100%;
+    }
+    .swiper-slide img {
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        border: 1px solid #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        -webkit-backface-visibility: hidden;
+        opacity: 0.5;
+    }
+    .swiper-slide-active img {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+    .swiper-slide .inner {
+        height: 100%;
+        padding: 0px 5px 0px;
+        +ynadvalbum-box-sizing;
+    }
+    .pagination {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        line-height: 40px;
+        height: 40px;
+        z-index: 20;
+    }
+    .swiper-pagination-switch {
+        vertical-align: middle;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: #000;
+        cursor: pointer;
+        margin: 0 1px;
+    }
+    .swiper-pagination-switch:first-child {
+        border-radius: 3px 0 0 3px;
+        -moz-border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+    }
+    .swiper-pagination-switch:last-child {
+        border-radius: 0 3px 3px 0;
+        -moz-border-radius: 0 3px 3px 0;
+        -webkit-border-radius: 0 3px 3px 0;
+    }
+    .swiper-visible-switch {
+        background: #888;
+    }
+    .swiper-active-switch {
+        background: #fff;
+    }
+    .slideview {
+        margin-left: 0px;
+        width: 564px;
+        height: 655px;
+        overflow: hidden!important;
+        background-color: #FFFFFF;
+    }
+    .carousel-box {
+        width: 564px;
+        height: 655px;
+        position: relative;
+        overflow: hidden!important;
+        border: 0;
+    }
+    .carousel-box .carousel ul {
+        padding: 0;
+        margin: 0;
+    }
+    .carousel-box .carousel ul li {
+        text-align: center;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .carousel-box .prev {
+        height: 66px;
+        width: 66px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 189px;
+        left: 1px;
+        z-index: 10;
+    }
+    .carousel-box .next {
+        height: 66px;
+        width: 66px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 189px;
+        right: 1px;
+        z-index: 10;
+    }
+    .viewframe {
+        width: 564px;
+        height: 645px;
+        overflow: hidden;
+    }
+    .vf_iframe {
+        width: 564px;
+        height: 640px;
+        overflow: hidden;
+    }
+    .viewframe_loading {
+        text-align: center;
+        padding: 200px 0px 500px 0px;
+    }
+    .pf_main {
+        margin: 0;
+        width: 562px;
+        height: 625px;
+        overflow: hidden;
+    }
+    .pf_title {
+        padding-left: 2px;
+        width: 560px;
+        height: 20px;
+        font-size: 13px;
+        line-height: 20px;
+        overflow: hidden;
+    }
+    .pf_desc {
+        padding-left: 2px;
+        width: 560px;
+        height: 15px;
+        font-size: 11px;
+        overflow: hidden;
+    }
+    .pf_photo_main {
+        width: 560px;
+        min-height: 436px;
+        overflow: hidden;
+    }
+    .pf_photo {
+        width: 560px;
+        height: 420px;
+        overflow: hidden;
+    }
+    .pf_tag {
+        width: 550px;
+        height: 16px;
+        line-height: 16px;
+        padding: 0px 5px;
+        font-size: 10px;
+    }
+    .pf_share {
+        font-size: 10px;
+    }
+    #media_photo {
+        text-align: center;
+    }
+    .pf_comment {
+        padding-left: 2px;
+        width: 558px;
+        height: 160px;
+        overflow: auto;
+        margin-top: 5px;
+        font-size: 11px;
+    }
+    .pf_comment div,
+    .pf_comment input {
+        font-size: 11px;
+    }
+    .pf_comment_text {
+        margin-top: 8px;
+        font-size: 12px;
+    }
+    .pf_comment_text .comments .comments_options {
+        font-size: 12px;
+    }
+    .pf_comment_text .comments .comments_info,
+    .pf_comment_text .comments .comments_info .comments_author {
+        font-size: 11px;
+    }
+    .pf_comment_text .comments .comments_info .comments_date {
+        font-size: 10px;
+    }
+    .sl_slideshow_view {
+        height: 24px;
+        line-height: 24px;
+        float: right;
+        background: url(~/application/modules/Advalbum/externals/images/slideshow.png) no-repeat;
+        padding-left: 28px;
+        font-size: 14px;
+    }
+    .swiper-container {
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        z-index: 1;
+    }
+    .swiper-wrapper {
+        position: relative;
+        width: 100%;
+        -webkit-transition-property: -webkit-transform, left, top;
+        -webkit-transition-duration: 0s;
+        -webkit-transform: translate3d(0px, 0, 0);
+        -webkit-transition-timing-function: ease;
+        -moz-transition-property: -moz-transform, left, top;
+        -moz-transition-duration: 0s;
+        -moz-transform: translate3d(0px, 0, 0);
+        -moz-transition-timing-function: ease;
+        -o-transition-property: -o-transform, left, top;
+        -o-transition-duration: 0s;
+        -o-transform: translate3d(0px, 0, 0);
+        -o-transition-timing-function: ease;
+        -o-transform: translate(0px, 0px);
+        -ms-transition-property: -ms-transform, left, top;
+        -ms-transition-duration: 0s;
+        -ms-transform: translate3d(0px, 0, 0);
+        -ms-transition-timing-function: ease;
+        transition-property: transform, left, top;
+        transition-duration: 0s;
+        transform: translate3d(0px, 0, 0);
+        transition-timing-function: ease;
+    }
+    .swiper-free-mode > .swiper-wrapper {
+        -webkit-transition-timing-function: ease-out;
+        -moz-transition-timing-function: ease-out;
+        -ms-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        margin: 0 auto;
+    }
+    .swiper-slide {
+        float: left;
+    }
+    /* IE10 Windows Phone 8 Fixes */
+    
+    .swiper-wp8-horizontal {
+        -ms-touch-action: pan-y;
+    }
+    .swiper-wp8-vertical {
+        -ms-touch-action: pan-x;
+    }
+    .smoothbox_nav {
+        clear: none;
+        height: 30px;
+        position: relative;
+    }
+    .smoothbox_popup_details {
+        float: left;
+        margin: 10px 0 2px;
+    }
+    .smoothbox_currentTextHolder {
+        color: #999;
+        font-family: Georgia;
+        font-size: 11px;
+        font-style: italic;
+        left: 75px;
+        line-height: 25px;
+        margin: 0;
+        padding-left: 10px;
+        position: absolute;
+        top: 2px;
+    }
+    .smoothbox_arrow_next {
+        background: url(~/application/modules/Advalbum/externals/images/lightbox/prettyPhoto/default/sprite.png) no-repeat -82px -4px;
+        width: 20px;
+        height: 20px;
+        background: url(~/application/modules/Advalbum/externals/images/lightbox/prettyPhoto/default/sprite.png) -82px -4px no-repeat;
+        display: block;
+        cursor: pointer;
+    }
+    .smoothbox_arrow_previous {
+        background: url(~/application/modules/Advalbum/externals/images/lightbox/prettyPhoto/default/sprite.png) no-repeat -30px -4px;
+        height: 20px;
+        width: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    /* re-define the slideshow css */
+    
+    .slideshow-captions {
+        font-size: 10px;
+        text-indent: 4px;
+        text-align: center;
+    }
+    .slideshow-captions-visible {
+        height: 18px;
+        line-height: 18px;
+        opacity: 0.5;
+        filter: alpha(opacity=50);
+        /* For IE8 and earlier */
+    }
+    .slideshow-images {
+        width: 680px;
+        height: 510px;
+    }
+    .slideshow {
+        width: 680px;
+        height: 510px;
+        margin: 0 auto;
+    }
+    .popupview {
+        margin-left: 0px;
+        width: 724px;
+        height: 1040px;
+        overflow: hidden!important;
+        background-color: #FFFFFF;
+    }
+    .carousel-box {
+        width: 724px;
+        height: 1040px;
+        position: relative;
+        overflow: hidden!important;
+        border: 0;
+    }
+    .carousel-box .carousel ul {
+        padding: 0;
+        margin: 0;
+    }
+    .carousel-box .carousel ul > li {
+        margin-right: 10px;
+        height: 1040px;
+        cursor: pointer;
+    }
+    .carousel-box .prev {
+        height: 66px;
+        width: 66px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 189px;
+        left: 1px;
+        z-index: 10;
+    }
+    .carousel-box .next {
+        height: 66px;
+        width: 66px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 189px;
+        right: 1px;
+        z-index: 10;
+    }
+    .viewframe {
+        width: 724px;
+        height: auto;
+    }
+    .viewframe_loading {
+        text-align: center;
+        padding: 200px 0px 1000px 0px;
+    }
+    .vf_iframe {
+        width: 724px;
+    }
+}
+.albums_viewmedia_info_tags {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_title + .albums_viewmedia_info_tags,
+div.albums_viewmedia_info .albums_viewmedia_info_caption + .albums_viewmedia_info_tags {
+    margin-top: 15px;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_tags {
+    font-size: .8em;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.thumbs_album_slide_description {
+    padding-top: 10pt;
+    padding-left: 20pt;
+    clear: both;
+}
+#global_page_advalbum-photo-view div.albums_viewmedia_info .albums_viewmedia_info_date_not_popup {
+    clear: both;
+    float: none;
+}
+div.albums_viewmedia_info .albums_viewmedia_info_date_not_popup {
+    font-size: .8em;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-top: 4px;
+    text-align: left;
+}
+.albums_viewmedia_info_date_not_popup {
+    text-align: left;
+    float: none;
+    padding: 0 15px;
+}
+/*----- Manage photos -----*/
+
+ul.ynadvalbum_manage_photo-items {
+    margin-left: -13px;
+    margin-right: -13px;
+    margin-bottom: 2px;
+    position: relative;
+    li.ynadvalbum_manage_photo-item {
+        width: 50%;
+        display: inline-block;
+        padding: 13px;
+        +ynadvalbum-box-sizing;
+        float: left;
+        &.ynadvalbum_drag {
+            .ynadvalbum_manage_photo-parent {
+                -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+                -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            }
+        }
+        .ynadvalbum_manage_photo-parent {
+            .ynadvalbum_manage_photo-owner {
+                +ynadvalbum-box-sizing;
+                border: 1px solid $theme_border_medium_color;
+                border-bottom: 0;
+                height: 242px;
+                padding: 4px 4px 0px 4px;
+                position: relative;
+                .ynadvalbum_manage_photo_tag-names {
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    font-size: 13px;
+                    color: #888;
+                    padding-bottom: 16px;
+                    padding-left: 14px;
+                    width: 100%;
+                    z-index: 1;
+                    +ynadvalbum-box-sizing;
+                    &:after {
+                        z-index: -1;
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 60px;
+                        left: 0;
+                        bottom: 0;
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                        -moz-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                        -o-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                        -webkit-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    }
+                    & > span.ynadvalbum_tag_first {
+                        color: #fff;
+                    }
+                    & > span.ynadvalbum_tag_second {
+                        color: $theme_link_color;
+                    }
+                }
+                .ynadvalbum_manage_photo-owner-checkbox {
+                    position: absolute;
+                    cursor: pointer;
+                    margin: 0;
+                    top: 16px;
+                    left: 16px;
+                    height: 14px;
+                    width: 14px;
+                    border: 1px solid #888;
+                    z-index: 1;
+                }
+                .ynadvalbum_setting {
+                    position: absolute;
+                    top: 10px;
+                    z-index: 1;
+                    right: 10px;
+                    ul.ynadvalbum-setting-option {
+                        display: none;
+                        top: 28px;
+                        position: absolute;
+                        right: 0;
+                        min-width: 200px;
+                        border: 3px solid $theme_button_background_color;
+                        box-shadow: 0px 0px 21px -5px #000000;
+                        -webkit-box-shadow: 0px 0px 21px -5px #000000;
+                        -moz-box-shadow: 0px 0px 21px -5px #000000;
+                        &.show {
+                            display: block !important;
+                        }
+                        li {
+                            cursor: pointer;
+                            border-top: 1px solid $theme_border_color;
+                            background-color: #fff;
+                            a {
+                                padding: 12px;
+                                display: block;
+                                font-size: 13px;
+                                color: $theme_link_color;
+                            }
+                            &:first-child {
+                                border-top: 0;
+                            }
+                            span.ynicon {
+                                min-width: 14px;
+                            }
+                        }
+                    }
+                    & > span.ynicon {
+                        border: 1px solid #ccc;
+                        +ynadvalbum-border-radius(2px);
+                        font-size: 16px;
+                        color: $theme_font_color_light;
+                        position: absolute;
+                        right: 0;
+                        background-color: #fff;
+                        cursor: pointer;
+                        padding: 7px;
+                        +ynadvalbum-box-sizing;
+                        &.color {
+                            background-color: $theme_button_background_color_hover;
+                            color: #fff;
+                            border: 1px solid $theme_button_background_color_hover;
+                        }
+                    }
+                }
+                & > span {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+                    label {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        cursor: pointer;
+                        z-index: 0;
+                    }
+                }
+            }
+            .ynadvalbum_manage_photo-info {
+                position: relative;
+                .ynadvalbum_manage_photo-input-info {
+                    display: none;
+                    background-color: #f6f6f6;
+                    position: absolute;
+                    +ynadvalbum-box-sizing;
+                    width: 100%;
+                    top: 0;
+                    z-index: 1;
+                    margin-top: -62px;
+                    border: 1px solid $theme_border_medium_color;
+                    padding: 10px;
+                    .ynadvalbum_names_wrapper {
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        padding: 5px 5px 0 5px;
+                        +ynadvalbum-box-sizing;
+                        .ynadvalbum_manage_photo_tagnames {
+                            span.tag {
+                                margin: 0 5px 5px 0;
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: #629dbd;
+                                background-color: #f3faff;
+                                padding: 6px;
+                                border: 1px solid #b4d2e3;
+                                a {
+                                    font-size: 10px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        .message-autosuggest {
+                            max-height: 180px;
+                            width: 100% !important;
+                            left: 0;
+                            top: 0;
+                            margin-top: 90px;
+                            overflow: hidden;
+                            overflow-y: auto !important;
+                            background-color: #fff;
+                            li.autocompleter-choices {
+                                +ynadvalbum-box-sizing;
+                                padding: 9px;
+                                height: 54px;
+                                .autocompleter-choice {
+                                    font-size: 13px;
+                                    color: $theme_font_color;
+                                    font-weight: bold;
+                                    line-height: 40px;
+                                    +ynadvalbum-truncate;
+                                }
+                                &.autocompleter-selected {
+                                    background-color: #f3faff;
+                                    .autocompleter-choice {
+                                        color: #609cbd;
+                                        font-size: 13px;
+                                        font-weight: bold;
+                                    }
+                                }
+                                img {
+                                    +ynadvalbum-box-sizing;
+                                    width: 40px;
+                                    height: 40px;
+                                    margin-right: 13px;
+                                }
+                            }
+                        }
+                    }
+                    input.ynadvalbum_manage_album-name,
+                    input.ynadvalbum_manage_album-local,
+                    div.ynadvalbum_manage_album-time {
+                        display: none;
+                    }
+                    .ynadvalbum_manage_album-time {
+                        border: 0 !important;
+                        padding: 0 !important;
+                        margin: 0;
+                        &.showdisplay {
+                            +ynadvalbum-display;
+                        }
+                        select {
+                            +ynadvalbum-box-sizing;
+                            +ynadvalbum-border-radius(0);
+                            font-size: 13px;
+                            color: $theme_font_color_light;
+                            width: 33.33%;
+                            float: left;
+                            height: 40px;
+                            border: 1px solid #ccc;
+                            margin: auto 5px;
+                            option {
+                                cursor: pointer;
+                                color: $theme_font_color_light;
+                                font-size: 13px;
+                            }
+                            &[name=ynadvalbum-day] {
+                                margin-left: 0px;
+                            }
+                            &[name=ynadvalbum-year] {
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                    .ynadvalbum_placeholder_publish {
+                        padding: 11px 10px;
+                        margin-top: 0;
+                        border: 1px solid #ccc;
+                        +ynadvalbum-box-sizing;
+                        width: 100%;
+                        height: 40px;
+                        min-width: 0;
+                        max-width: none;
+                        +ynadvalbum-border-radius(0);
+                    }
+                }
+                &.ynadvalbum_show_name {
+                    .ynadvalbum_manage_photo-input-info {
+                        z-index: 1;
+                        display: block;
+                        margin-top: -91px;
+                        height: 91px;
+                        .ynadvalbum_names_wrapper {
+                            height: 100% !important;
+                            max-height: 100%;
+                            overflow-y: auto;
+                        }
+                        .ynadvalbum_manage_album-name {
+                            display: inline-block;
+                            border: 0;
+                            float: left;
+                            width: 50px !important;
+                            outline: none;
+                            box-shadow: none;
+                            background-color: #fff;
+                            height: 30px;
+                            padding: 0;
+                        }
+                    }
+                }
+                &.ynadvalbum_show_color {
+                    .ynadvalbum_manage_photo-input-info {
+                        display: none;
+                        .ynadvalbum_names_wrapper {
+                            display: none;
+                        }
+                        .ynadvalbum_manage_album-local {
+                            display: none;
+                        }
+                    }
+                }
+                &.ynadvalbum_show_local {
+                    .ynadvalbum_manage_photo-input-info {
+                        display: block;
+                        .ynadvalbum_names_wrapper {
+                            display: none;
+                        }
+                        .ynadvalbum_manage_album-local {
+                            display: block;
+                        }
+                    }
+                }
+                &.ynadvalbum_show_datetime {
+                    .ynadvalbum_manage_photo-input-info {
+                        display: block;
+                        .ynadvalbum_names_wrapper {
+                            display: none;
+                        }
+                        .ynadvalbum_manage_album-time {
+                            +ynadvalbum-display;
+                        }
+                    }
+                }
+            }
+            .ynadvalbum_manage_photo-input-options {
+                position: relative;
+                border: 1px solid $theme_border_medium_color;
+                border-top: 0;
+                +ynadvalbum-display;
+                height: auto;
+                flex-wrap: wrap;
+                .ynadvalbum_triangle_parent {
+                    display: none;
+                    top: 50px;
+                    position: absolute;
+                    left: 50%;
+                    z-index: 3;
+                    &.ynadvalbum_triangle_parent_show {
+                        display: block;
+                    }
+                    .ynadvalbum_triangle_left {
+                        position: absolute;
+                        z-index: 1;
+                        left: 50%;
+                        margin-left: -10px;
+                        top: -10px;
+                        width: 0;
+                        height: 0;
+                        border-bottom: 10px solid #ccc;
+                        border-left: 10px solid transparent;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 0;
+                            top: 1px;
+                            left: -8px;
+                            height: 0;
+                            border-bottom: 9px solid #fff;
+                            border-left: 9px solid transparent;
+                        }
+                    }
+                    .ynadvalbum_triangle_right {
+                        position: absolute;
+                        z-index: 1;
+                        left: 50%;
+                        margin-right: -4px;
+                        top: -10px;
+                        width: 0;
+                        height: 0;
+                        border-bottom: 10px solid #ccc;
+                        border-right: 10px solid transparent;
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 2px;
+                            width: 0;
+                            height: 0;
+                            right: -9px;
+                            border-bottom: 9px solid #fff;
+                            border-right: 9px solid transparent;
+                        }
+                    }
+                }
+                & > li {
+                    float: left;
+                    cursor: pointer;
+                    border-right: 1px solid #eee;
+                    align-items: center;
+                    +ynadvalbum-display;
+                    justify-content: center;
+                    width: 50px;
+                    height: 50px;
+                    +ynadvalbum-box-sizing;
+                    &.active {
+                        background-color: #f6f6f6;
+                    }
+                }
+                .ynadvalbum_manage_photo_color-patterns {
+                    background-color: #fff;
+                    cursor: default;
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    display: none;
+                    border: 1px solid #ccc;
+                    z-index: 2;
+                    top: 49px;
+                    +ynadvalbum-box-sizing;
+                    padding: 10px 14px;
+                    -webkit-box-shadow: 0px 0px 24px -2px rgba(0, 0, 0, 0.3);
+                    -moz-box-shadow: 0px 0px 24px -2px rgba(0, 0, 0, 0.3);
+                    box-shadow: 0px 0px 24px -2px rgba(0, 0, 0, 0.3);
+                    &.ynadvalbum_patterns-show {
+                        display: flex !important;
+                        display: -webkit-flex !important;
+                        display: -moz-flex !important;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    li {
+                        cursor: pointer;
+                        height: 32px;
+                        width: 32px;
+                        float: left;
+                        margin: 4px;
+                        position: relative;
+                        +ynadvalbum-border-radius(100%);
+                        &.selected {
+                            & > span.ynicon {
+                                opacity: 1;
+                            }
+                        }
+                        &:nth-of-type(9) {
+                            border: 1px solid $theme_border_medium_color;
+                        }
+                        &:nth-of-type(1) {
+                            margin-left: 0;
+                        }
+                        &:nth-of-type(8) {
+                            margin-right: 0;
+                        }
+                        &.ynadvalbum-white {
+                            border: 1px solid #ececec;
+                            & > span.ynicon {
+                                color: #000;
+                            }
+                        }
+                        & > span.ynicon {
+                            position: absolute;
+                            color: #fff;
+                            top: 50%;
+                            left: 50%;
+                            margin-top: -8px;
+                            margin-left: -8px;
+                            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+                            -webkit-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+                            -moz-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+                            opacity: 0;
+                        }
+                    }
+                }
+                .ynadvalbum_add-color {
+                    & > span.ynicon {
+                        font-size: 15px;
+                        font-weight: bold;
+                        padding: 9px;
+                        +ynadvalbum-border-radius(100%);
+                        color: #fff;
+                        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+                        -moz-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+                        -webkit-text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+                    }
+                }
+                .ynadvalbum_make-cover {
+                    border-right: 0;
+                    width: auto;
+                    text-align: center;
+                    position: relative;
+                    border-top: 1px solid #eee;
+                    &.background {
+                        background-color: #e8f1f6;
+                        & > div > label.ynadvalbum_manage_photo_cover-title {
+                            color: $theme_link_color;
+                        }
+                    }
+                    & > div {
+                        padding: 0 27px;
+                        display: inline-block;
+                        input {
+                            margin-right: 4px;
+                            cursor: pointer;
+                            border: 1px solid #888;
+                            height: 14px;
+                            width: 14px;
+                        }
+                        label:first-of-type {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                            cursor: pointer;
+                        }
+                        label.ynadvalbum_manage_photo_cover-title {
+                            +ynadvalbum-truncate;
+                            display: inline-block;
+                            max-width: 84px;
+                            margin-bottom: 0;
+                            font-weight: normal;
+                            font-size: 13px;
+                            color: #888;
+                            width: auto;
+                            margin-right: 0;
+                        }
+                    }
+                }
+                span.ynicon {
+                    font-size: 16px;
+                    display: inline-block;
+                    color: #888;
+                }
+            }
+            .ynadvalbum_manage_photo-typing-info {
+                padding: 20px;
+                background-color: #fafafa;
+                border: 1px solid $theme_border_medium_color;
+                border-top: 0;
+                .ynadvalbum_manage_photo-typing-info-title {
+                    +ynadvalbum-box-sizing;
+                    +ynadvalbum-display;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #eaeaea;
+                }
+                .ynadvalbum_manage_photo-typing-info-caption {
+                    +ynadvalbum-display;
+                    padding-top: 20px;
+                }
+                .ynadvalbum_input_parent {
+                    width: 100%;
+                    textarea {
+                        padding-left: 6px;
+                        padding-top: 8px;
+                        min-height: auto;
+                        height: 62px;
+                        max-height: 62px;
+                    }
+                    input,
+                    textarea {
+                        background-color: transparent;
+                        width: inherit;
+                        +ynadvalbum-box-sizing;
+                        border: 0;
+                        font-size: 13px;
+                        max-width: none;
+                        color: $theme_font_color;
+                        outline: none !important;
+                        +ynadvalbum-box-shadow(none);
+                        &:focus, &:active {
+                            outline: none !important;
+                            +ynadvalbum-box-shadow(none);
+                        }
+                    }
+                }
+                label {
+                    padding-top: 8px;
+                    margin-bottom: 0;
+                    font-weight: normal;
+                    float: left;
+                    font-size: 13px;
+                    color: $theme_font_color_light;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+#global_page_advalbum-photo-view .layout_advalbum_photo_view_right {
+    margin-top: 1em;
+    ul.ynadvalbum-grid-list {
+        margin-left: 0px;
+    }
+    .advalbum_albums_grid_thumb {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .thumbs_photo_grid {
+        height: 140px;
+        span {
+            height: 140px;
+        }
+    }
+}
+ul.ynadvalbum_manage_photo-items {
+    li.ynadvalbum_manage_photo-item {
+        .ynadvalbum_manage_photo-parent {
+            .ynadvalbum_manage_photo-input-options {
+                .ynadvalbum_triangle_parent {
+                    left: auto;
+                    right: 13%;
+                }
+                & > li {
+                    width: 25%;
+                    &:nth-of-type(4) {
+                        border-right: 0;
+                    }
+                }
+                .ynadvalbum_make-cover {
+                    width: 100%;
+                    input {
+                        margin-top: 3px;
+                    }
+                    label {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.ynadvalbum-pinterest-listing {
+    position: relative;
+    .ynadvalbum_listing_item {
+        width: 220px;
+        background-color: $theme_body_background_color;
+        +ynadvalbum-box-sizing;
+        position: relative;
+        &:after {
+            bottom: 0;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $theme_button_background_color;
+            opacity: 1;
+        }
+        .thumbs_content {
+            padding: 10px;
+        }
+        .album-photo-list {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 10px 5px;
+            -webkit-box-shadow: 0 0 3px $theme_border_color;
+            -moz-box-shadow: 0 0 3px $theme_border_color;
+            box-shadow: 0 0 3px $theme_border_color;
+            text-decoration: none;
+            text-align: center;
+            span {
+                display: block;
+                width: 100%;
+                height: 100%;
+                line-height: 72px;
+                font-size: 0.9em;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+ul.thumbs > li.ynadvalbum_albums_thumb {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    padding: 0;
+    height: 190px !important;
+    width: 142px;
+    margin-left: 26px !important;
+}
+html[dir="rtl"] ul.thumbs > li.ynadvalbum_albums_thumb {
+    float: right;
+    margin: 0px 0px 0px 10px;
+}
+.layout_middle .global_form_box ul.thumbs.thumbs_nocaptions {
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+#global_page_advalbum-album-view .layout_middle {
+    padding: 0 10px 0 10px;
+}
+/*----- photo listing -----*/
+
+.photo-list-content {
+    &.ynalbum-pinterest-view {
+        .photo-grid-view {
+            display: none;
+        }
+        .photo-pinterest-view {
+            display: block;
+        }
+    }
+    &.ynalbum-grid-view {
+        .photo-grid-view {
+            margin-left: -11px;
+            margin-right: -11px;
+            display: block;
+        }
+        .photo-pinterest-view {
+            display: none;
+        }
+    }
+}
+.photo-pinterest-view {
+    position: relative;
+    .thumbs_info {
+        padding: 0 10px;
+    }
+    .thumbs_photo > p,
+    .ynadvalbum_start_rating {
+        padding: 10px 0;
+    }
+}
+.ynadvalbum_plus {
+    background: url(~/application/modules/Advalbum/externals/images/edit_icon.png) no-repeat;
+    width: 11px !important;
+    height: 11px !important;
+    background-color: white !important;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: -300px -235px;
+}
+.ynadvalbum_button_add_to_area_album {
+    position: absolute;
+    bottom: 0;
+    right: -1px;
+}
+.ynadvalbum_button_add_to_area {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+ul.thumbs > li.advalbum_albumview_photos {
+    float: left;
+    margin-right: 10px;
+    padding: 0;
+    height: 180px !important;
+}
+ul.thumbs>li.advalbum_albumview_photos {
+    height: 190px !important;
+}
+/*----- Albums Listing Grid View -----*/
+
+ul.ynadvalbum-grid-list {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    .advalbum_albums_grid_thumb {
+        width: 50%;
+        margin-bottom: 30px;
+        float: left;
+        padding: 0 11px;
+        position: relative;
+        margin-top: 0 !important;
+        +ynadvalbum-box-sizing;
+        box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+        &:before {
+            content: "";
+            border: 0 !important;
+        }
+    }
+}
+/*----- listing view -----*/
+
+.ynalbum-list {
+    .ynadvalbum_albums_thumb {
+        border-bottom: 1px solid $theme_border_color;
+        min-height: 185px;
+        padding: 20px 0;
+        &:first-child {
+            padding-top: 0;
+        }
+        .ynalbum-thumb {
+            background-image: url(~/application/modules/Advalbum/externals/images/background-list-view.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 182px;
+            height: 182px;
+            float: left;
+            margin-right: 20px;
+        }
+        .ynalbum-thumb .span-image {
+            display: block;
+            width: 150px;
+            height: 150px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 17px;
+        }
+        .ynalbum-content {
+            overflow: hidden;
+            .thumbs_title {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+        .album-info {
+            line-height: 18px;
+            margin-bottom: 12px;
+            .advalbum_list_photos {
+                width: 100%;
+                display: block;
+                margin-bottom: 4px;
+            }
+        }
+        .album-photo-lists {
+            max-height: 85px;
+        }
+        .album-photo-list {
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            border: 1px solid $theme_border_color;
+            padding: 5px;
+            margin-right: 3px;
+            span {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
+.no_title .ynadvalbum-listing-tab {
+    position: absolute;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.layout_page_advalbum_album_view .ynadvalbum-listing-tab {
+    position: static;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.layout_core_container_tabs .ynadvalbum-listing-tab {
+    top: -55px;
+}
+#global_page_advalbum-index-browse .layout_core_container_tabs > .generic_layout_container {
+    padding: 0 8px !important;
+    padding-top: 8px !important
+}
+.ynadvalbum-listing-tab {
+    position: absolute;
+    top: 0;
+    right: 0;
+    & > div {
+        display: inline-block;
+        cursor: pointer;
+        line-height: 12px;
+        position: relative;
+        padding: 4px;
+        color: #888;
+        +ynadvalbum-border-radius(3px);
+        +ynadvalbum-box-sizing;
+        &.active {
+            background-color: $theme_font_color;
+            &:before {
+                color: #fff !important;
+            }
+        }
+        &.list-view {
+            &:before {
+                content: "\\e9be";
+                +font-ynicon;
+                font-size: 20px;
+                color: #888;
+            }
+        }
+        &.grid-view {
+            &:before {
+                content: "\\e9bf";
+                +font-ynicon;
+                font-size: 20px;
+                color: #888;
+            }
+        }
+        &.pinterest-view {
+            &:before {
+                content: "\\e9bd";
+                +font-ynicon;
+                font-size: 20px;
+                color: #888;
+            }
+        }
+    }
+}
+.layout_advalbum_top_albums,
+.layout_advalbum_today_photos,
+.layout_advalbum_this_week_photos,
+.layout_advalbum_this_week_photos,
+.layout_advalbum_this_month_photos,
+.layout_advalbum_most_commented_photos,
+.layout_advalbum_most_viewed_photos,
+.layout_advalbum_recent_photos,
+.layout_advalbum_today_photos,
+.layout_advalbum_recent_albums,
+.layout_advalbum_albums_listing,
+.layout_advalbum_photos_listing,
+.layout_advalbum_random_albums,
+.layout_advalbum_random_photos,
+.layout_advalbum_most_liked_photos,
+.layout_advalbum_most_liked_albums,
+.layout_advalbum_most_commented_albums,
+.layout_advalbum_most_viewed_albums,
+.ynadvalbum_most_comments_photo {
+    position: relative;
+    margin-bottom: 20px;
+}
+.album-listing-view-mode > div {
+    overflow: hidden;
+    .ynadvalbum-grid-list {
+        margin-left: -11px;
+        display: block;
+        margin-right: -11px;
+    }
+}
+/*----- Top member -----*/
+
+.layout_advalbum_albums_top_members {
+    margin-bottom: 15px;
+    overflow: hidden;
+    clear: both;
+    & > div.ynadvalbum_top_members {
+        +foreground;
+        +rounded;
+        overflow: hidden;
+        border: none;
+    }
+}
+.layout_advalbum_albums_top_members .ynadvalbum_top_members_photo {
+    float: left;
+    line-height: 0px;
+    font-size: 0px;
+    margin: 3px;
+    a {
+        width: 43px;
+        height: 43px;
+        display: inline-block;
+    }
+}
+html[dir="rtl"] .layout_advalbum_albums_top_members .ynadvalbum_top_members_photo {
+    float: right;
+}
+.layout_advalbum_albums_top_members .ynadvalbum_top_members_photo img {
+    display: inline-block;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+/*----- Search widget -----*/
+
+body[id^=global_page_advalbum-] {
+    .layout_advalbum_albums_search {
+        ul.advalbum_color_patterns {
+            display: inline-block;
+            margin-left: -4px;
+        }
+        ul.advalbum_color_patterns li {
+            width: 32px !important;
+            height: 32px !important;
+            float: left;
+            cursor: pointer;
+            display: inline-block;
+            &.selected:after {
+                content: "";
+                position: absolute;
+                width: 36px !important;
+                height: 36px !important;
+                +ynadvalbum-border-radius(100%);
+                border: 1px solid $theme_link_color;
+                margin-top: -3px;
+                margin-left: -3px;
+            }
+        }
+        ul.advalbum_color_patterns li:focus,
+        ul.advalbum_color_patterns li:active {
+            box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        ul.advalbum_color_patterns {
+            margin-top: 12px;
+            margin-left: -3.5px;
+            margin-right: -3.5px;
+            padding-top: 0;
+            display: none;
+        }
+        p {
+            margin-left: 5px;
+        }
+    }
+    #filter_form ul.advalbum_color_patterns li {
+        margin: 3.5px !important;
+        &:nth-of-type(9) {
+            border: 1px solid $theme_border_medium_color;
+            +ynadvalbum-box-sizing;
+            &.selected {
+                border: 0;
+            }
+        }
+    }
+}
+/*--------- Custom ---------*/
+
+.menuShowing .ynadvalbum_manage_photo_parent_button {
+    -webkit-transform: translate3d(256px, 0, 0);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.menuClosing .ynadvalbum_manage_photo_parent_button {
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.layout_page_advalbum_index_browse {
+    #main_tabs {
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+}
+
+.ynalbum-list,
+.ynalbum-pinterest-list,
+.ynadvalbum-pinterest-listing,
+.photo-pinterest-view {
+    display: none;
+}
+.layout_advalbum_photos_of_album {
+    .ynadvalbum-listing-tab {
+        top: 1px;
+        right: 0;
+    }
+}
+div#tagger_form {
+    z-index: 10000 !important;
+    width: auto !important;
+    box-sizing: border-box;
+    padding: 10px;
+    li {
+        padding: 10px 5px;
+    }
+}
+#ynadvalbum_canloadmore {
+    display: inline-block;
+    height: 40px;
+    #ynadvalbum_loadmore {
+        position: absolute;
+        left: 45%;
+        height: 40px;
+        background-repeat: no-repeat;
+    }
+}
+body[id^="global_page_advalbum"] .adv-album-view-mode .ymb_thumb_slide {
+    padding-top: 0 !important;
+}
+#global_page_advalbum-index-listing,
+#global_page_advalbum-index-manage {
+    .ynadvalbum_search {
+        padding: 0 5px;
+        #filter_form {
+            margin-left: 0;
+        }
+    }
+}
+#album_listing_featured,
+.global_form_box,
+body[id^="global_page_advalbum"] .layout_advalbum_this_month_photos {
+    border: 0;
+}
+h3 {
+    padding: 8px;
+}
+body[id^=global_page_advalbum-] #global_wrapper {
+    background-color: #fff !important;
+}
+.layout_advalbum_albums_search,
+.layout_advalbum_photos_search {
+    .ynadvalbum_search {
+        background-image: url(~/application/modules/Advalbum/externals/images/bg_search.png);
+        background-repeat: repeat-x;
+        background-size: contain;
+    }
+}
+#search-label,
+#advalbum_button_search {
+    display: none;
+}
+/*----- End mobile -----*/
+
+#global_page_advalbum-album-view {
+    .advalbum_albums_grid_thumb {
+        .ynadvalbum_pinteres_photo_info {
+            span.ynadvalbum_thumb_stats {
+                margin-top: -10px;
+            }
+        }
+    }
+}
+.layout_page_advalbum_photo_view {
+    .comments .comments_options {
+        span {
+            font-weight: bold;
+        }
+    }
+}
+/*----- My album -----*/
+
+#global_page_advalbum-index-manage {
+    .ynadvalbum_album_listing_title {
+        .advalbum_list_photos {
+            margin-top: 1px;
+        }
+        .ynadvalbum_start_rating {
+            margin: 4px 0;
+        }
+    }
+}
+/* ITEM TYPE ICONS */
+
+.item_icon_album,
+.item_icon_album_photo,
+.activity_icon_advalbum_photo_new {
+    background-image: url(~/application/modules/Advalbum/externals/images/types/album.png);
+}
+body[id^=global_page_advalbum-] {
+    .ynadvalbum_pinteres_photo_info {
+        padding: 20px 10px;
+        .thumbs_title {
+            width: 100%;
+            a {
+                margin-top: 0;
+                line-height: 18px;
+                color: $theme_link_color;
+                font-size: 14px;
+                font-weight: normal;
+                max-width: 100%;
+            }
+        }
+        .ynadvalbum_thumb_stats {
+            margin-top: -6px;
+        }
+        .ynadvalbum_start_rating {
+            margin-top: 6px;
+        }
+    }
+    .ynadvalbum_thumb_photo_temp {
+        margin-bottom: 8px !important;
+        padding: 10px;
+        .ynadvalbum_start_rating {
+            line-height: 18px;
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 4px;
+            margin-top: 0 !important;
+        }
+        .ynadvalbum_album_detail-title {
+            width: 100%;
+            text-align: center;
+            a {
+                display: block;
+                +ynadvalbum-truncate;
+                color: #fff;
+                font-weight: normal;
+                font-size: 16px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+/*----- slide show photo detail ----- */
+
+
+/*----- album detail -----*/
+
+#global_page_advalbum-album-view {
+    #gotoPage {
+        & > div:first-of-type {
+            border-bottom: 1px solid $theme_border_color;
+            padding-bottom: 18px;
+            & > h2 {
+                margin-bottom: 0;
+                width: 100%;
+                font-size: 20px;
+                display: block;
+                float: left;
+                color: $theme_font_color;
+                & > a {
+                    color: $theme_link_color;
+                }
+            }
+            #ynadvalbum_album_detail_rating {
+                +ynadvalbum-display;
+                float: right;
+                width: 100%;
+                text-align: left;
+                margin-top: 10px;
+                span.ynicon {
+                    float: left;
+                    cursor: pointer;
+                    color: #ccc;
+                    font-size: 24px;
+                }
+                .ynadvalbum_album_detail_rating-text {
+                    order: 5;
+                    margin-right: 12px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: $theme_font_color_light;
+                    float: none;
+                    display: inline-block;
+                    max-width: 100%;
+                    +ynadvalbum-truncate;
+                }
+            }
+        }
+        .ynadvalbum_menu_parent {
+            position: relative;
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid $theme_border_color;
+            +ynadvalbum-box-sizing;
+            width: 100%;
+            z-index: 3;
+            .ynadvalbum_album_detail_addthis {
+                display: inline-flex !important;
+                display: -webkit-inline-flex !important;
+                display: -moz-inline-flex !important;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+            #atstbx {
+                display: flex !important;
+                -moz-display: flex !important;
+                -webkit-display: flex !important;
+                & > a {
+                    margin: 2px;
+                }
+            }
+            & > span.ynadvalbum_download-album-photo {
+                color: $theme_link_color;
+                margin-right: 42px;
+                float: right;
+                span.ynicon {
+                    font-size: 14px;
+                }
+                a {
+                    font-size: 13px;
+                }
+            }
+            .ynadvalbum-options {
+                opacity: 1;
+                line-height: normal;
+                right: 0;
+                top: 50%;
+                margin-top: -15px;
+                z-index: 0;
+                .ynadvalbum-options-button {
+                    background-color: $theme_button_background_color;
+                    margin: 0;
+                    span.ynicon {
+                        border: 1px solid $theme_button_background_color;
+                        ;
+                        color: #fff;
+                    }
+                }
+                .ynadvalbum_dropdown_items {
+                    top: 29px;
+                    right: 0;
+                    .ynadvalbum_album-download {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .ynadvalbum_album_detail-desctiption {
+            position: relative;
+            text-align: center;
+            &.hide_line {
+                &:after {
+                    content: "";
+                    background-color: #fff;
+                }
+            }
+            &:after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #eee;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 15px;
+                z-index: 1;
+                left: 0;
+            }
+            .ynadvalbum_album_detail_thumb-description-content {
+                display: block;
+                font-size: 14px;
+                line-height: 22px;
+                color: $theme_font_color;
+                text-align: left;
+                &.ynadvalbum_album_detail-description_toggle {
+                    max-height: 44px;
+                    overflow: hidden;
+                }
+            }
+            .ynadvalbum_album_detail_thumb-more {
+                margin-top: 20px;
+                font-size: 14px;
+                color: $theme_font_color;
+                padding: 7px 17px;
+                background-color: #eee;
+                text-align: center;
+                display: none;
+                cursor: pointer;
+                +ynadvalbum-border-radius(16px);
+                z-index: 2;
+                position: relative;
+                span.ynicon {
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+    .ynadvalbum_photo_detail_albums {
+        .ymb_photo_list {
+            position: relative;
+            padding-top: 0;
+            .tip {
+                padding-top: 35px;
+            }
+            .ynadvalbum_album_detail-stats {
+                position: relative;
+                top: 5px;
+                width: 100%;
+                z-index: 0;
+                line-height: 18px;
+                margin-bottom: 15px;
+                .ynadvalbum_photo_detail-stats-info {
+                    display: inline-flex;
+                    display: -moz-inline-flex;
+                    display: -webkit-inline-flex;
+                    float: left;
+                    div {
+                        font-size: 13px;
+                        color: $theme_font_color;
+                        font-weight: bold;
+                    }
+                }
+                .ynadvalbum-view-slideshow {
+                    display: none;
+                    float: right;
+                    margin-right: 75px;
+                    a {
+                        +ynadvalbum-border-radius(2px);
+                        +ynadvalbum-box-sizing;
+                        border: 1px solid $theme_link_color;
+                        padding: 6px 14px;
+                        color: $theme_link_color;
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        font-weight: bold;
+                        span.ynicon {
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+            .global_form_box {
+                padding: 0;
+                .ynadvalbum_album_detail-title {
+                    display: block;
+                    text-align: center;
+                    margin-top: 4px;
+                    a {
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+                .ynadvalbum_stats {
+                    margin-top: 4px;
+                }
+                .ynadvalbum-listing-tab {
+                    margin-bottom: 15px;
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+}
+/*----- photo detail -----*/
+
+#global_page_advalbum-photo-view {
+    .layout_main {
+        .layout_core_content {
+            div.clearfix {
+                margin-bottom: 10px;
+            }
+            & > div > div > div > h2 {
+                z-index: 0;
+                font-size: 21px !important;
+                color: $theme_link_color !important;
+                display: inline-block !important;
+                position: relative;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                white-space: inherit;
+                background-color: transparent;
+                a {
+                    color: $theme_link_color !important;
+                }
+                span {
+                    color: $theme_font_color;
+                }
+            }
+        }
+        .ynadvalbum_photo_detail-parent-btn {
+            float: right;
+            cursor: pointer;
+            #ynadvalbum_photo_detail_btn-down {
+                padding: 6px;
+                display: inline-block;
+                border: 1px solid #999;
+                +ynadvalbum-border-radius(2px);
+                +ynadvalbum-box-sizing;
+                color: #888;
+                &.ynadvalbum_button_photo_show {
+                    background-color: $theme_button_background_color;
+                    border: 1px solid $theme_button_background_color;
+                    color: #fff;
+                }
+                span.ynicon {
+                    &:first-of-type {
+                        margin-right: 8px;
+                    }
+                    &:last-of-type {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+        .ynadvalbum_photo_detail_thumb-option {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            +ynadvalbum-box-sizing;
+            border-bottom: 1px solid $theme_border_medium_color;
+            position: relative;
+            .ynadvalbum-options.ynadvalbum-second {
+                display: block;
+                z-index: 5;
+            }
+            .ynadvalbum_photo_detail_post-time {
+                float: left;
+                font-size: 13px;
+                color: $theme_font_color_light;
+            }
+            .ynadvalbum_photo_detail_sub-menu {
+                float: right;
+                & > a {
+                    font-size: 13px;
+                    color: $theme_link_color;
+                    font-weight: normal;
+                    span.ynicon {
+                        position: relative;
+                        top: 1px;
+                        margin-right: 6px;
+                    }
+                }
+                #ynadvalbum_addTo_downloadfullphoto {
+                    margin-right: 47px;
+                }
+            }
+            .ynadvalbum-options {
+                opacity: 1;
+                line-height: normal;
+                top: 50%;
+                margin-top: -15px;
+                .ynadvalbum-options-button {
+                    margin: 0;
+                    &.ynadvalbum_explained {
+                        span.ynicon {
+                            border: 1px solid $theme_button_background_color;
+                        }
+                    }
+                    span.ynicon {
+                        margin: 0;
+                        border: 1px solid $theme_border_dark_color;
+                        padding: 9px 6px;
+                        +ynadvalbum-border-radius(2px);
+                    }
+                }
+                .ynadvalbum_dropdown_items {
+                    top: 30px;
+                    right: 0;
+                }
+            }
+        }
+        .ynadvalbum_photo_detail_thumb-info {
+            height: 65px !important;
+            line-height: 20px !important;
+            padding-left: 5px;
+            .ynadvalbum_photo_detail_thumb-info-local {
+                float: left;
+                font-size: 13px;
+                color: $theme_font_color_light;
+                display: block;
+                width: 100%;
+                padding-top: 10px !important;
+                span.ynicon {
+                    margin-right: 4px;
+                }
+                a {
+                    color: $theme_link_color;
+                }
+            }
+            .ynadvalbum_photo_detail_thumb-rating {
+                display: block;
+                float: left;
+                margin-top: 10px;
+                margin-bottom: 8px;
+                width: 100%;
+                line-height: auto;
+                +ynadvalbum-box-sizing;
+                #rating_text {
+                    float: none;
+                    position: relative;
+                    top: 0;
+                }
+                span.ynicon {
+                    margin-left: -3px;
+                    font-size: 24px;
+                    color: #ccc;
+                }
+            }
+        }
+        .ynadvalbum_photo_detail_thumb-description {
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            &:after {
+                content: "";
+                width: 100%;
+                height: 1px;
+                background-color: #eee;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 15px;
+                z-index: 1;
+                left: 0;
+            }
+            .ynadvalbum_photo_detail_thumb-description-content {
+                display: block;
+                font-size: 14px;
+                line-height: 22px;
+                color: $theme_font_color;
+                text-align: left;
+                &.ynadvalbum_photo_detail-description_toggle {
+                    max-height: 42px;
+                    overflow: hidden;
+                }
+            }
+            .ynadvalbum_photo_detail_thumb-more {
+                margin-top: 20px;
+                font-size: 14px;
+                color: $theme_font_color;
+                padding: 7px 17px;
+                background-color: #eee;
+                text-align: center;
+                display: none;
+                cursor: pointer;
+                +ynadvalbum-border-radius(16px);
+                z-index: 2;
+                position: relative;
+                span.ynicon {
+                    margin-left: 7px;
+                }
+            }
+        }
+        .ynadvalbum_photo_detail_addthis {
+            margin-bottom: 18px;
+        }
+        #ynadvalbum_photo_detail_slide {
+            display: none;
+            border: 1px solid #ddd;
+            +ynadvalbum-box-sizing;
+            padding-left: 30px;
+            padding-right: 30px;
+            position: relative;
+            &:after {
+                content: "\\e979";
+                +font-ynicon;
+                position: absolute;
+                top: -12px;
+                right: 44px;
+                color: #ddd;
+                font-size: 18px;
+            }
+            &:before {
+                content: "";
+                height: 1px;
+                width: 12px;
+                top: -1px;
+                right: 47px;
+                position: absolute;
+                background-color: #fff;
+            }
+            .ynadvalbum_photo_detail_thumb-items {
+                display: block;
+                width: 100%;
+                height: auto;
+                & > a{
+                    width: 90px;
+                    height: 60px;
+                    display: inline-block;
+                    margin: 10px 0;
+                }
+                .ynadvalbum_photo_detail_thumb-item {
+                    display: inline-block;
+                    -webkit-filter: grayscale(100%);
+                    -moz-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    background-size: cover;
+                    background-position: center;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    border: 2px solid $theme_border_medium_color;
+                    +ynadvalbum-box-sizing;
+                    &.ynadvalbum_photo_current {
+                        -webkit-filter: grayscale(0);
+                        -moz-filter: grayscale(0);
+                        filter: grayscale(0);
+                    }
+                }
+            }
+            .owl-prev:before,
+            .owl-next:before {
+                +font-ynicon;
+                font-size: 14px;
+                color: #888;
+                position: absolute;
+                top: 50%;
+                margin-top: -8px;
+            }
+            .owl-prev {
+                &:before {
+                    content: "\\e97f";
+                    left: 12px;
+                }
+            }
+            .owl-next {
+                &:before {
+                    content: "\\e97d";
+                    right: 12px;
+                }
+            }
+        }
+    }
+    .layout_core_comments {
+        .comments {
+            .comments_body {
+                line-height: 18px;
+            }
+            ul {
+                li:first-of-type {
+                    padding: 12px;
+                }
+                li[id^="comment-"] {
+                    padding: 9px 11px;
+                    .comments_author_photo {
+                        img {
+                            height: 48px;
+                            width: 48px;
+                            border: 1px solid $theme_border_medium_color;
+                        }
+                    }
+                    .comments_info {
+                        padding-left: 10px;
+                        .comments_date {
+                            padding-top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #ynadvalbum_photo_detail-main-photo {
+        margin-top: 10px;
+        background-color: #eee;
+        position: relative;
+        .tagger_form {
+            font-size: initial !important;
+        }
+        &:after {
+            content: "";
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            -moz-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            -webkit-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            -o-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            bottom: 0;
+            z-index: 0;
+        }
+        #ynadvalbum_photo_detail-next-main-photo {
+            cursor: default;
+            img {
+                max-width: 100%;
+                max-height: none;
+                margin: auto;
+                display: block;
+            }
+            #lassoMask {
+                background-position: center !important;
+                background-size: contain !important;
+                background-origin: border-box !important;
+                box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                -webkit-box-sizing: content-box;
+                div, span:first-of-type {
+                    opacity: 0 !important;
+                }
+                div:first-of-type {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+/*----- Upload multi photo*/
+
+#compose-photo-preview-image {
+    max-width: 160px;
+}
+#compose-photo-form-fancy-file {
+    background-image: url(~/application/modules/Advalbum/externals/images/add.png);
+}
+#compose-photo-activator,
+#compose-photo-menu span {
+    background-image: url(~/application/modules/Advalbum/externals/images/album_upload.png);
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 4px center;
+}
+.files-contain {
+    .ynadvalbum_preview_loading {
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+    #advalbum-preview-list {
+        +ynadvalbum-display;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        .ynadvalbum_preview_item {
+            margin: 5px;
+            z-index: 1;
+            display: inline-block;
+            width: 64px;
+            height: 68px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            outline: 1px dashed #8bb8df;
+            cursor: move;
+            text-align: center;
+            outline-offset: 0px;
+            &.ynadvalbum_clone {
+                border: 4px solid #fff;
+                outline-offset: -999px;
+                box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.5);
+                -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.5);
+                -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.5);
+                position: relative;
+                z-index: 3;
+                box-sizing: content-box;
+                -webkit-box-sizing: content-box;
+                -moz-box-sizing: content-box;
+            }
+            .ynadvalbum_item_progress_bar-parent {
+                left: 5px;
+                right: 5px;
+                bottom: 15px;
+                position: absolute;
+                height: 4px;
+                +ynadvalbum-box-sizing;
+                z-index: 1;
+                display: inline-block;
+                transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                .ynadvalbum_item_progress_bar-background {
+                    background-color: #fff;
+                    bottom: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    transition: all 0.3s;
+                    -webkit-transition: all 0.3s;
+                    -moz-transition: all 0.3s;
+                    .ynadvalbum_item_progress_bar {
+                        background-color: #297fc7;
+                        left: 0;
+                        height: 4px;
+                        width: 0;
+                        bottom: 0;
+                        position: absolute;
+                        transition: all 0.3s;
+                        -webkit-transition: all 0.3s;
+                        -moz-transition: all 0.3s;
+                    }
+                }
+            }
+            .ynadvalbum-preview-remove {
+                display: none;
+                position: absolute;
+                font-size: 14px;
+                color: #fff;
+                z-index: 2;
+                left: 6px;
+                top: 6px;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}
+#global_page_advalbum-index-upload #form-upload > div {
+    width: 100%;
+}
+#global_page_advalbum-index-upload .files-contain {
+    background-color: #f5f7f8;
+    border: 2px dashed $theme_border_color;
+    +ynadvalbum-border-radius(5px);
+    padding: 10px 20px 30px 20px;
+    margin-top: 25px;
+    background-image: url(~/application/modules/Advalbum/externals/images/dragdrop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#advalbum-post-upload .files-contain {
+    border: 2px dashed $theme_border_medium_color;
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    min-height: 150px;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 20px;
+    .ynadvalbum_background_upload {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        margin-top: -52px;
+        padding: 0 25px;
+        span.ynicon {
+            display: block;
+            font-size: 30px;
+            margin-bottom: 10px;
+            color: $theme_font_color_light;
+        }
+        span.ynadvalbum_upload_text {
+            position: relative;
+            z-index: 0;
+            font-size: 15px;
+            color: $theme_font_color_light;
+        }
+    }
+}
+#global_page_advalbum-index-upload #files {
+    display: none;
+    list-style: none;
+    margin-top: 15px;
+    max-height: 193px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    & > li {
+        padding: 8px 8px 8px 28px;
+        font-size: .8em;
+        font-weight: normal;
+        background: #fff;
+        font-weight: bold;
+        background-repeat: no-repeat;
+        background-position: 6px 7px;
+        background-image: url(~/externals/fancyupload/assets/waiting.png);
+        background-repeat: no-repeat;
+        .file-success {
+            background-image: url(~/externals/fancyupload/assets/finished.png);
+            background-repeat: no-repeat;
+        }
+        .file-remove {
+            clear: right;
+            float: right;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        .file-info {
+            display: block;
+            clear: both;
+            overflow: hidden;
+            font-weight: normal;
+        }
+    }
+}
+#global_page_advalbum-index-upload #files > li + li {
+    border-top: 1px solid #ccc;
+}
+.progress-bar-success {
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    background-color: $theme_button_background_color !important;
+}
+button {
+    color: $theme_button_font_color !important;
+}
+.btn-success {
+    background-color: $theme_button_background_color !important;
+    border-color: $theme_input_border_colors !important;
+    color: $theme_button_font_color !important;
+}
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+    background-color: $theme_button_background_color_hover !important;
+    border-color: $theme_input_border_colors !important;
+    color: $theme_button_font_color !important;
+}
+.btn-success:active,
+.btn-success.active,
+.open .dropdown-toggle.btn-success {
+    background-image: none !important;
+}
+/*----- Photo popup -----*/
+
+.ynadvalbum_view_photo_popup {
+    background-color: #fff !important;
+    .tagger_form {
+        font-size: initial !important;
+    }
+    .ynadvalbum_dropdown_items {
+        li[class^=ynadvalbum_dropdown_item] {
+            a {
+                border-top: 1px solid $theme_border_color;
+            }
+            &:first-of-type {
+                a {
+                    border-top: 0;
+                }
+            }
+        }
+    }
+}
+#global_page_advalbum-photo-view,
+.layout_page_advalbum_album_view {
+    .rating_text {
+        height: 24px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 10px;
+        color: $theme_font_color_light;
+        padding-top: 11px;
+        +ynadvalbum-box-sizing;
+    }
+}
+.ynadvalbum_view_photo_popup > .ynadvalbum_left + .ynadvalbum_left {
+    padding-left: 10px;
+}
+.ynadvalbum_view_photo_popup > .ynadvalbum_left .comments,
+.ynadvalbum_view_photo_popup div.thumbs.thumbs_album_small > div {
+    width: 385px !important;
+}
+.ynadvalbum_view_photo_popup > .advalbum_clear {
+    clear: both;
+}
+#advalbum_view_photo a.advalbum_popup_viewPhoto {
+    text-align: center;
+    display: inline-block;
+    height: 520px;
+    +ynadvalbum-display;
+    justify-content: center;
+    align-items: center;
+    max-height: 520px;
+}
+#advalbum_view_photo img {
+    vertical-align: middle;
+}
+.ynadvalbum_view_photo_popup div.thumbs.thumbs_album_small > div {
+    margin: 0px;
+    height: 80px;
+}
+.ynadvalbum_view_photo_popup div.thumbs.thumbs_album_small > div .thumbs_info {
+    & > span.thumbs_title {
+        display: none;
+    }
+    & > span {
+        display: block;
+    }
+    & > span.ynadvalbum_upload_datetime,
+    span.ynadvalbum_popup_view_stats {
+        display: none;
+    }
+}
+.ynadvalbum_viewLeft {
+    position: relative;
+}
+.advalbum_viewPhoto_container {
+    display: none;
+}
+.advalbum_viewPhoto_container div {
+    color: #b3b3b3;
+    font-size: 13px;
+}
+.albums_viewmedia_info_date {
+    text-align: left;
+    float: none;
+    padding: 0 15px;
+}
+.albums_viewmedia_info_date > a:link,
+.albums_viewmedia_info_date > a:visited {
+    color: #76B670;
+}
+.advalbum_nav {
+    display: none;
+}
+.advalbum_arrow_previous,
+.advalbum_arrow_next {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+    i {
+        position: absolute;
+        top: 50%;
+        margin-top: -30px;
+        font-size: 60px;
+        color: #fff;
+    }
+}
+.advalbum_arrow_previous {
+    left: 0px;
+    padding-right: 400px;
+    span.ynicon {
+        left: 10px;
+    }
+}
+.advalbum_arrow_next {
+    right: 0px;
+    padding-left: 400px;
+    span.ynicon {
+        right: 10px;
+    }
+}
+.ynadvalbum_view_photo_popup #lassoImg,
+.ynadvalbum_view_photo_popup #lassoMask {
+    margin: 0 auto;
+}
+#smoothbox_window #global_page_advalbum-photo-view,
+#global_page_advalbum-photo-view #global_content_simple {
+    overflow: hidden;
+    height: auto;
+    position: initial;
+    z-index: 100;
+    min-height: 530px;
+}
+.tclose {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url("~/application/modules/Advalbum/externals/images/tinybox_close.png") no-repeat;
+    {
+        background-position: 0 -30px;
+    }
+}
+.tclose.advalbum_view_photo {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    background: none;
+    z-index: 999;
+    +ynadvalbum-box-sizing;
+    span.ynicon {
+        font-size: 22px;
+    }
+}
+.ynadvalbum_view_photo_popup .comments {
+    overflow: hidden;
+    width: 362px;
+    max-width: 100%;
+    margin-top: 15px;
+    .comments {
+        margin-top: 0;
+    }
+    #comment-form {
+        border-top: 1px solid $theme_border_color;
+        background-color: #f8f8f8;
+        +ynadvalbum-box-sizing;
+        padding: 12px;
+        textarea {
+            max-height: none !important;
+            height: auto !important;
+            padding: 11px 8px !important;
+            +ynadvalbum-box-sizing;
+        }
+    }
+    ul {
+        li:first-of-type {
+            padding: 17px 12px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid $theme_border_color;
+        }
+        li[id^="comment-"] {
+            background-color: transparent;
+            padding: 10px;
+            .comments_info {
+                padding-left: 10px;
+                font-size: 13px;
+                span.comments_author {
+                    a {
+                        font-weight: bold;
+                    }
+                }
+                span.comments_body {
+                    color: $theme_font_color;
+                }
+                .comments_date {
+                    padding-top: 6px;
+                    span {
+                        font-size: 11px;
+                        color: $theme_font_color_light;
+                    }
+                }
+            }
+        }
+    }
+}
+.ynadvalbum_view_photo_popup {
+    width: 1200px;
+    margin-bottom: 60px;
+    .ynadvalbum_view_photo_popup-info-bottom {
+        position: fixed;
+        z-index: 5;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        display: block;
+        background-color: #fff;
+        padding-right: 20px;
+        padding-left: 12px;
+        border-top: 1px solid $theme_border_medium_color;
+        +ynadvalbum-box-sizing;
+        clear: both;
+        .ynadvalbum_popup_view_stats {
+            float: right;
+            font-size: 13px;
+            +ynadvalbum-box-sizing;
+            color: $theme_link_color;
+            line-height: 60px;
+            .popup-photo-view-rating {
+                display: inline-block;
+                margin-right: 10px;
+                span.ynicon, a {
+                    color: $theme_link_color;
+                    font-size: 13px;
+                }
+            }
+        }
+        .ynadvalbum_popup_owner {
+            overflow: hidden;
+            height: 60px;
+            line-height: 60px;
+            display: inline-block;
+            & > div {
+                overflow: hidden;
+                line-height: normal;
+                display: inline-block;
+                &.ynadvalbum_popup_owner_info-name {
+                    +ynadvalbum-truncate;
+                    max-width: 300px;
+                }
+                a {
+                    font-size: 13px;
+                    color: $theme_link_color;
+                    span {
+                        color: $theme_font_color;
+                    }
+                }
+            }
+            .ynadvalbum_popup_owner_info-photo {
+                width: 36px;
+                height: 36px;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin-bottom: -12px;
+                border: 1px solid $theme_border_dark_color;
+                margin-right: 6px;
+                +ynadvalbum-box-sizing;
+            }
+            .ynadvalbum_popup_owner_info-title {
+                font-size: 13px;
+                color: $theme_font_color;
+            }
+        }
+    }
+}
+.ynadvalbum_view_photo_popup #advalbum_view_photo {
+    float: left;
+}
+.ynadvalbum_popup_photo_desc-toggle {
+    +ynadvalbum-truncate;
+    display: block;
+}
+.ynadvalbum_view_photo_popup #advalbum_view_photo {
+    width: 800px;
+    text-align: center;
+    background-color: #eee;
+    height: 520px;
+    margin: 10px 10px 0 10px;
+    .ynadvalbum_popup_photo-info {
+        position: fixed;
+        bottom: 70px;
+        z-index: 5;
+        width: 800px;
+        max-width: 100%;
+        &:after {
+            content: "";
+            left: 10px;
+            position: fixed;
+            width: 800px;
+            height: 120px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            -moz-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            -webkit-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            -o-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            bottom: 70px;
+            z-index: 0;
+        }
+    }
+    span.ynadvalbum_popup_photo-description {
+        float: left;
+        padding-left: 27px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 3;
+        position: relative;
+        +ynadvalbum-box-sizing;
+        width: 90%;
+        text-align: left;
+        font-size: 13px;
+        color: #fff;
+        line-height: 22px;
+        max-width: 680px;
+        span.ynadvalbum-title {
+            font-weight: bold;
+        }
+    }
+    .ynadvalbum_photo_detail_popup-more {
+        position: absolute;
+        bottom: 20px;
+        display: none;
+        right: 10px;
+        padding: 4px 9px;
+        background-color: #fff;
+        z-index: 3;
+        +ynadvalbum-border-radius(13px);
+        cursor: pointer;
+        span {
+            +ynadvalbum-truncate;
+            max-width: 76px;
+            display: inline-block;
+            top: 3px;
+            left: 12px;
+            line-height: normal;
+            font-size: 13px;
+            color: $theme_font_color_light;
+        }
+    }
+}
+#advalbum_view_photo {
+    .ynadvalbum_test {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+.ynadvalbum_view_photo_popup > .ynadvalbum_left {
+    float: left;
+    height: 520px;
+    position: fixed;
+    border-left: 1px solid $theme_border_color;
+    &:after {
+        content: "";
+        position: absolute;
+        height: 26px;
+        width: 1px;
+        background-color: $theme_border_color;
+        bottom: -11px;
+        right: -1px;
+    }
+}
+.ynadvalbum_view_photo_popup > .advalbum_right {
+    width: 380px;
+    +ynadvalbum-box-sizing;
+    float: right;
+    padding-right: 17px;
+    .advalbum_right_content {
+        padding-top: 15px;
+    }
+}
+.advalbum_right .popup-photo-view-rating {
+    border-top: 1px solid $theme_border_color;
+    border-bottom: 1px solid $theme_border_color;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+.advalbum_right .popup-photo-view-rating .rating {
+    overflow: hidden;
+    clear: none;
+}
+/*----- Feature photo -----*/
+
+.ms-vertical-template.ms-tabs-vertical-template {
+    max-width: 100%;
+    padding: 0;
+}
+.layout_advalbum_featured_photos .ms-vertical-template {
+    .ms-inner-controls-cont {
+        max-width: 100% !important;
+    }
+    .ms-view {
+        left: 0 !important;
+    }
+    .ms-nav-next {
+        right: 0;
+        top: 50%;
+        background: none;
+        margin-top: -45px;
+        left: auto;
+        z-index: 1;
+        &.ynadvalbum_btn_hide {
+            display: none !important;
+        }
+        &:after {
+            content: "\\e97d";
+            +font-ynicon;
+            font-size: 60px;
+            color: #fff;
+            position: absolute;
+            right: 20px;
+        }
+    }
+    .ms-nav-prev {
+        left: 20px;
+        top: 50%;
+        background: none;
+        margin-top: -45px;
+        z-index: 1;
+        &.ynadvalbum_btn_hide {
+            display: none !important;
+        }
+        &:after {
+            content: "\\e97f";
+            +font-ynicon;
+            font-size: 60px;
+            color: #fff;
+            position: absolute;
+            left: 20px;
+        }
+    }
+    .ms-thumb-list.ms-dir-v {
+        transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        position: absolute;
+        right: -140px;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100px;
+        height: 100%;
+        top: auto;
+        bottom: 40px;
+        padding-top: 50px;
+        +ynadvalbum-box-sizing;
+        &.show {
+            right: 0;
+        }
+        .ms-thumblist-fwd,
+        .ms-thumblist-bwd {
+            display: none;
+        }
+        .ms-thumb-frame {
+            opacity: 1;
+            margin: 5px 20px;
+            width: 60px;
+            height: 40px;
+            img {
+                height: 100%;
+            }
+            &.ms-thumb-frame-selected {
+                border: 3px solid #fff;
+                +ynadvalbum-box-sizing;
+            }
+        }
+    }
+    .ms-bullets.ms-dir-h {
+        position: absolute;
+        z-index: 2;
+        margin-right: 0px;
+        right: 45px;
+        width: auto;
+        .ms-bullets-count {
+            right: 0;
+            .ms-bullet {
+                background: none;
+                width: 8px;
+                height: 8px;
+                border: 2px solid #fff;
+                &:nth-last-child {
+                    float: right;
+                }
+                &.ms-bullet-selected {
+                    background-color: #fff;
+                }
+            }
+        }
+        .ms-bullets-count:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: "";
+            clear: both;
+            height: 0;
+        }
+    }
+    #ynadvalbum_masterslider {
+        overflow: hidden;
+        margin-top: 10px !important;
+        margin-bottom: 35px !important;
+        .ms-slide-bgcont {
+            background-size: contain;
+        }
+        .ynadvalbum_photo_feature_bottom {
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            z-index: 1;
+            .ynadvalbum_photo_feature_description {
+                color: #fff;
+                +ynadvalbum-box-sizing;
+                padding-left: 13px;
+                display: block;
+                line-height: 40px;
+                span {
+                    display: none;
+                }
+            }
+        }
+        .ynadvalbum_photo_feature_button {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            text-align: center;
+            +ynadvalbum-box-sizing;
+            cursor: pointer;
+            span.ynicon {
+                font-size: 16px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-left: -8px;
+                margin-top: -8px;
+            }
+        }
+    }
+}
+/*----- Statistic -----*/
+
+.ynadvalbum_statistic {
+    margin-bottom: 15px;
+    padding: 0px 15px 15px 15px;
+    .ynadvalbum_statistic-albums, .ynadvalbum_statistic-photos {
+        display: block;
+        width: 100%;
+        & > div {
+            display: inline-block;
+            padding-right: 30px;
+            +ynadvalbum-box-sizing;
+        }
+        .ynadvalbum_statistic-albums_label,
+        .ynadvalbum_statistic-photos_label {
+            float: left;
+        }
+        .ynadvalbum_statistic-albums-value,
+        .ynadvalbum_statistic-photos-value {
+            float: right;
+        }
+    }
+}
+/*----- Search -----*/
+
+div.layout_advalbum_albums_search,
+.layout_advalbum_photos_search {
+    .quicklinks {
+        margin-bottom: 15px;
+    }
+    div.form-elements {
+        padding: 0;
+        div.form-wrapper {
+            margin-bottom: 0;
+            &:first-child {
+                margin-top: 0 !important;
+            }
+        }
+        .form-element {
+            input, select {
+                max-width: none;
+                padding: 10px;
+                width: 100%;
+                +ynadvalbum-box-sizing;
+            }
+        }
+    }
+}
+/*----- Categories -----*/
+
+.layout_advalbum_albums_categories .global_form_box {
+    background-color: transparent;
+}
+.ynadvalbum_categories {
+    margin-bottom: 15px;
+    padding: 0px;
+    li {
+        font-weight: bold;
+        padding: 5px 5px 5px 10px;
+    }
+}
+/*----- Show feed -----*/
+
+#ynadvalbum_upload_error {
+    display: none;
+    padding: 18px 20px;
+    background-color: #fff9df;
+    max-height: 200px;
+    overflow: auto;
+    border-top: 0;
+    border: 1px solid #ebdfa9;
+    & > div {
+        margin-bottom: 5px;
+        span {
+            font-size: 14px;
+            color: #ffa800;
+        }
+    }
+    #ynadvalbum_upload_error_list {
+        li.ynadvalbum_error_item {
+            float: left;
+            width: 33.33%;
+            font-size: 12px;
+            color: $theme_font_color;
+            line-height: 25px;
+            +ynadvalbum-truncate;
+            display: inline-block;
+            max-width: 100%;
+            padding-right: 8px;
+        }
+    }
+}
+.compose-body {
+    overflow: visible;
+}
+.feed_attachment_advalbum_photo:last-child {
+    a {
+        position: relative;
+    }
+}
+.ynadvalbum_more_photos_parent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 0.8em;
+    +ynadvalbum-box-sizing;
+    display: flex;
+    display: -moz-flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    .ynadvalbum_more_photos {
+        font-weight: normal;
+        font-size: 24px;
+        color: #fff;
+    }
+}
+ul.feed div.feed_item_attachments {
+    padding: 12px;
+}
+ul.feed {
+    .feed_attachment_advalbum_photo {
+        +ynadvalbum-box-sizing;
+        width: 25%;
+        float: left;
+        padding: 2px;
+        & > div {
+            margin: 0;
+            width: 100%;
+            padding: 0 !important;
+            & > a {
+                font-size: 0 !important;
+                margin: 0 !important;
+                width: 100%;
+                outline: 1px solid $theme_border_medium_color;
+                outline-offset: -1px;
+                padding-bottom: 0 !important;
+                img {
+                    border: 0 !important;
+                    +ynadvalbum-box-sizing;
+                    width: 100%;
+                    max-width: none;
+                    max-height: none;
+                }
+            }
+        }
+    }
+    .feed_attachment_advalbum_photo:nth-child(9) ~ span {
+        display: none;
+    }
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(8),
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(8) ~ span,
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(5) ~ span {
+        width: 25% !important;
+    }
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(2),
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(2) ~ span,
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(4),
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(4) ~ span,
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(3) ~ span {
+        width: 50% !important;
+        margin: 0 !important;
+    }
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(7),
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(5),
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(3),
+    .feed_attachment_advalbum_photo:first-of-type {
+        width: 100% !important;
+    }
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(6),
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(6) ~ span,
+    .feed_attachment_advalbum_photo:first-child:nth-last-child(7) ~ span {
+        width: 33.33% !important;
+        display: block !important;
+    }
+    .feed_attachment_advalbum_photo:nth-child(5) {
+        display: inline-block !important;
+    }
+}
+/*---------------------*/
+
+.photo-grid-view,
+.photo-pinterest-view {
+    .ynadvalbum_start_rating {
+        span.ynicon {
+            font-size: 16px;
+        }
+    }
+}
+/*----- Feature album -----*/
+
+#album_listing_featured {
+    padding: 0;
+    margin-top: 10px;
+    #album_listing_featured_view {
+        overflow: initial;
+    }
+    .ynadvalbum_effect_shadow {
+        &:after, &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            top: 90%;
+            bottom: 7px;
+            left: 20px;
+            right: 20px;
+            +ynadvalbum-border-radius(100%);
+        }
+    }
+    .ynalbum-list {
+        margin-bottom: 35px;
+        .ynadvalbum_albums_thumb {
+            border-bottom: 0;
+            min-height: 180px;
+            padding: 5px;
+            text-align: center;
+            position: relative;
+            +ynadvalbum-box-sizing;
+            margin-bottom: 8px;
+            padding-top: 0;
+            .ynadvalbum_feature_photo_thumb {
+                background-image: none;
+                width: 100%;
+                height: 270px;
+                float: left;
+                margin-right: 0;
+                span.ynicon.ynadvalbum_disable {
+                    color: #ccc;
+                }
+            }
+            .ynadvalbum_feature_photo_content {
+                overflow: initial;
+                clear: both;
+                border: 1px solid $theme_border_color;
+                border-top: 0;
+                +ynadvalbum-box-sizing;
+                background-color: #fff;
+                height: 74px;
+                .ynadvalbum_feature_photo_info {
+                    float: left;
+                    padding: 18px;
+                    +ynadvalbum-box-sizing;
+                    width: 100%;
+                    .ynadvalbum_feature_photo_info-owner {
+                        & > span:first-of-type {
+                            +ynadvalbum-truncate;
+                        }
+                        & > span {
+                            color: #888;
+                            display: block;
+                            & > span {
+                                display: inline-block;
+                            }
+                            &:last-of-type {
+                                margin-top: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+            .ynadvalbum_feature_photo_thumb .ynadvalbum_feature_photo {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                background-origin: border-box;
+                +ynadvalbum-box-sizing;
+                position: relative;
+                overflow: hidden;
+                &:after {
+                    content: "";
+                    z-index: 0;
+                    background-color: transparent;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    position: absolute;
+                }
+                & > a {
+                    position: absolute;
+                    width: 100%;
+                    height: 270px;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+                & > div:first-of-type {
+                    +ynadvalbum-box-sizing;
+                    padding-right: 8px;
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    -moz-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    -o-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    -webkit-background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 2;
+                    padding-top: 60px;
+                    .ynadvalbum_feature_photo_owner {
+                        width: 73px;
+                        height: 73px;
+                        float: left;
+                        padding: 8px;
+                        +ynadvalbum-box-sizing;
+                        .ynadvalbum_feature_photo_owner-bg {
+                            width: 53px;
+                            height: 53px;
+                            border: 2px solid #b6b6b6;
+                            +ynadvalbum-border-radius(100%);
+                            display: inline-block;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            position: relative;
+                            a {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                +ynadvalbum-border-radius(100%);
+                            }
+                        }
+                    }
+                }
+                .ynadvalbum_feature_photo-title {
+                    font-size: 18px;
+                    color: #fff;
+                    +ynadvalbum-truncate;
+                    display: block;
+                    margin-top: 15px;
+                }
+                .ynadvalbum_start_rating {
+                    font-size: 16px;
+                    margin-top: 0;
+                }
+            }
+            .album-info {
+                padding: 5px 0;
+            }
+            .album-photo-list {
+                display: inline-block;
+                width: 72px;
+                height: 72px;
+                border: 1px solid $theme_border_color;
+                padding: 5px;
+                margin-right: 3px;
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+            .advalbum_list_photos {
+                display: block;
+            }
+        }
+    }
+    .owl-controls {
+        .owl-pagination {
+            text-align: center;
+            .owl-page {
+                span {
+                    +ynadvalbum-border-radius(0);
+                    background-color: #fff;
+                    border: 2px solid #999;
+                    width: 6px;
+                    height: 6px;
+                    margin: 2px 5px;
+                    box-sizing: content-box;
+                    -webkit-box-sizing: content-box;
+                    -moz-box-sizing: content-box;
+                }
+                &.active {
+                    border: 2px solid $theme_link_color;
+                    span {
+                        width: 7px;
+                        height: 7px;
+                        background-color: $theme_link_color;
+                        border: 2px solid #fff;
+                        margin: 0;
+                        box-sizing: content-box;
+                        -webkit-box-sizing: content-box;
+                        -moz-box-sizing: content-box;
+                    }
+                }
+            }
+        }
+        .owl-nav{
+            width: 100%;
+            .owl-prev, .owl-next {
+                position: absolute;
+                +ynadvalbum-border-radius(100%);
+                width: 40px;
+                height: 40px;
+                background-image: none;
+                padding: 0;
+                background-color: #fff;
+                opacity: 1;
+                top: 40%;
+                margin-top: -40px;
+            }
+            .owl-prev {
+                box-shadow: -2px 1px 8px 0px rgba(0, 0, 0, 0.15);
+                -webkit-box-shadow: -2px 1px 8px 0px rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: -2px 1px 8px 0px rgba(0, 0, 0, 0.15);
+                left: 10px;
+                &:before {
+                    content: "\\e97f";
+                    +font-ynicon;
+                    font-size: 24px;
+                    color: $theme_font_color;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    margin-top: -12px;
+                    margin-left: -12px;
+                }
+            }
+            .owl-next {
+                right: 10px;
+                box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.15);
+                -webkit-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.15);
+                &:before {
+                    content: "\\e97d";
+                    +font-ynicon;
+                    font-size: 24px;
+                    color: $theme_font_color;
+                    position: absolute;
+                    right: 50%;
+                    top: 50%;
+                    margin-top: -12px;
+                    margin-right: -14px;
+                }
+            }
+        }
+    }
+}
+/*----- Photo detail popup -----*/
+
+.advalbum_right_content {
+    .thumbs_album_small {
+        padding-left: 12px;
+    }
+}
+.ynadvalbum_ratings {
+    color: #ffa800 !important;
+}
+.ynadvalbum_view_photo_popup {
+    position: relative;
+    .rating {
+        overflow: initial;
+    }
+    .comments_options {
+        margin-bottom: 0;
+        font-weight: normal;
+        font-size: 13px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        border-bottom: 1px solid $theme_border_color;
+        span:first-of-type {
+            font-weight: normal;
+        }
+    }
+    #comments {
+        overflow: visible;
+        overflow-y: auto;
+        max-height: 480px;
+    }
+    .comments_likes {
+        a {
+            font-size: 13px;
+            font-weight: normal;
+            color: 888;
+        }
+        &:before {
+            content: "\\e93c";
+            +font-ynicon;
+            font-size: 13px;
+            color: $theme_font_color_light;
+        }
+    }
+    .albums_viewmedia_info_tags {
+        font-size: 13px;
+        margin-top: 16px;
+        +ynadvalbum-text-clamp(2);
+        display: block;
+        color: $theme_link_color;
+        height: auto;
+        max-height: 36px;
+        span.media_tag_listcontainer {
+            a.tag_activator {
+                font-weight: normal;
+                font-size: 13px;
+            }
+        }
+        span.ynadvalbum_tagged {
+            color: $theme_font_color;
+        }
+    }
+    span.advalbum_rating_star_big_generic.ynicon {
+        font-size: 24px;
+        color: #ccc;
+        float: left;
+    }
+    div.thumbs_album_small {
+        div[id^="thumbs-photo-album-"] {
+            background: none;
+            height: auto;
+            width: 100% !important;
+            a.thumbs_photo {
+                display: none;
+                span {
+                    background-image: none !important;
+                }
+            }
+        }
+    }
+}
+/*----- Upload multi photo -----*/
+
+.ynadvalbum_drag_photo_focus {
+    .files-contain {
+        background-color: #f3faff !important;
+        border: 2px dashed $theme_link_color_hover !important;
+    }
+    .ynadvalbum_background_upload {
+        span {
+            color: $theme_link_color_hover !important;
+        }
+    }
+}
+.ynadvalbum_has_photo {
+    .ynadvalbum_background_upload {
+        display: none;
+    }
+    .btn-success {
+        float: left;
+        margin-left: 20px !important;
+    }
+}
+#advalbum-post-upload {
+    .form-element {
+        padding-right: 19px;
+        padding-left: 19px;
+        text-align: center;
+        padding-bottom: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid $theme_border_medium_color;
+        position: relative;
+        .ynadvalbum-cancel-upload {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 18px;
+        }
+    }
+    .fileinput-button.btn-success {
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        padding: 9px 14px;
+        background-color: $theme_button_background_color !important;
+        +ynadvalbum-box-sizing;
+        border: 1px solid $theme_button_background_color !important;
+        & > label {
+            color: #fff !important;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 0;
+            i {
+                margin-right: 5px;
+            }
+        }
+        input {
+            position: absolute;
+            left: -999px;
+        }
+    }
+    .btn-success * {
+        cursor: pointer;
+    }
+}
+/*----- Button option -----*/
+
+.ynadvalbum_explained {
+    background-color: $theme_button_background_color !important;
+    span.ynicon {
+        border: 1px solid $theme_button_background_color !important;
+        color: #fff;
+    }
+}
+.ynadvalbum_show {
+    opacity: 1 !important;
+}
+a.ynadvalbum_photo_listing_temp_link.advalbum_smoothbox {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 1;
+}
+.ynadvalbum-options {
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    top: 0;
+    .ynadvalbum-options-button {
+        background-color: #fff;
+        color: $theme_font_color_light;
+        +ynadvalbum-box-sizing;
+        +ynadvalbum-border-radius(3px);
+        cursor: pointer;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+        z-index: 4;
+        position: relative;
+        text-align: center;
+        span.ynicon {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 10px;
+            padding-top: 9px;
+            border: 1px solid #ccc;
+            +ynadvalbum-box-sizing;
+            +ynadvalbum-border-radius(3px);
+        }
+    }
+    /*----- Dropdown option -----*/
+    
+    .ynadvalbum_dropdown_items {
+        z-index: 5;
+        position: absolute;
+        right: 10px;
+        top: 39px;
+        min-width: 220px;
+        display: none;
+        border: 3px solid $theme_button_background_color;
+        box-shadow: 0px 0px 21px -5px #000000;
+        -webkit-box-shadow: 0px 0px 21px -5px #000000;
+        -moz-box-shadow: 0px 0px 21px -5px #000000;
+        .ynadvalbum_dropdown_item:first-of-type {
+            & ~ li {
+                margin-top: 0 !important;
+            }
+            a {
+                border-top: 0;
+            }
+        }
+        a {
+            font-weight: normal;
+            margin-top: 0;
+            background-image: none;
+            text-align: left;
+            border-top: 1px solid $theme_border_color;
+            font-size: 13px;
+            padding: 7px;
+            height: 30px;
+            display: block;
+            background-color: #fff;
+            color: $theme_link_color;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            span.ynicon {
+                color: $theme_link_color;
+                display: inline-block;
+                min-width: 23px;
+            }
+        }
+    }
+}
+.ynadvalbum-options-popup {
+    display: inline-block;
+    +ynadvalbum-box-sizing;
+    position: relative;
+    .ynadvalbum-options-button-popup {
+        display: inline-block;
+        margin-bottom: -9px;
+        width: 30px;
+        height: 30px;
+        background-color: $theme_button_background_color;
+        position: relative;
+        +ynadvalbum-border-radius(3px);
+        cursor: pointer;
+        span.ynicon {
+            position: absolute;
+            font-size: 16px;
+            color: #fff;
+            left: 50%;
+            top: 50%;
+            margin-left: -8px;
+            margin-top: -8px;
+        }
+    }
+    .ynadvalbum_dropdown_items {
+        display: none;
+        position: absolute;
+        margin-bottom: 0;
+        min-width: 200px;
+        right: 0;
+        line-height: normal;
+        border: 3px solid $theme_button_background_color;
+        bottom: 44px;
+        box-shadow: 0px 0px 21px -5px #000000;
+        -webkit-box-shadow: 0px 0px 21px -5px #000000;
+        -moz-box-shadow: 0px 0px 21px -5px #000000;
+        a {
+            font-size: 13px;
+            line-height: 13px;
+            padding: 12px;
+            display: block;
+            background-color: #fff;
+            color: $theme_link_color;
+            span.ynicon {
+                color: $theme_link_color;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+/*----- Photos listing -----*/
+/*----- Girdview -----*/
+
+.ynadvalbum_photos_listing.thumbs_photo_grid,
+.ynadvalbum_album_listing.thumbs_photo_grid {
+    height: 210px;
+    width: 100%;
+    position: relative;
+    span.ynadvalbum_background {
+        background-size: cover;
+        width: 100%;
+        display: block;
+        height: 210px;
+        background-position: center;
+        position: relative;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        +ynadvalbum-box-sizing;
+        background-origin: border-box;
+        label {
+            z-index: 2;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-left: -12px;
+            margin-bottom: -12px;
+            padding: 9px 12px;
+            +ynadvalbum-border-radius(18px);
+            &:after {
+                content: "\\e900";
+                +font-ynicon;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+.ynalbum-grid-view {
+    .ynadvalbum_photos_listing.thumbs_photo_grid {
+        position: relative;
+        .ynadvalbum_thumb_photo_info {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 2;
+            opacity: 1;
+            &:after {
+                content: "";
+                bottom: 0px;
+                z-index: 1;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+                -moz-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+                -webkit-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+                -o-background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            }
+            .ynadvalbum_thumb_photo_temp {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                z-index: 3;
+                margin-bottom: 22px;
+                +ynadvalbum-box-sizing;
+                & > div {
+                    text-align: center;
+                    &.ynadvalbum_thumbs_info_owner {
+                        color: #ccc;
+                        font-size: 14px;
+                        margin-top: 3px;
+                        display: block;
+                        width: 100%;
+                        line-height: 18px;
+                        margin-bottom: 1px;
+                        &.ynadvalbum_thumbs_info_owner {
+                            color: #ccc;
+                            font-size: 14px;
+                            margin-top: 3px;
+                            display: block;
+                            width: 100%;
+                            line-height: 18px;
+                            margin-bottom: 1px;
+                            & > span {
+                                overflow: hidden;
+                                display: inline-block;
+                            }
+                            & > a {
+                                color: $theme_link_color;
+                                max-width: 110px;
+                                display: inline-block;
+                                +ynadvalbum-truncate;
+                            }
+                        }
+                    }
+                    &.ynadvalbum_stats {
+                        color: #ccc;
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                    &.ynadvalbum_start_rating {
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*----- Printerest -----*/
+
+.ynalbum-pinterest-view {
+    .advalbum_albums_grid_thumb.ynadvalbum_border_temp {
+        & > div:first-of-type {
+            position: relative;
+            font-size: 0;
+        }
+    }
+}
+.advalbum_albums_grid_thumb {
+    +ynadvalbum-box-sizing;
+    .ynadvalbum_pinteres_thumbs-photo {
+        width: 100%;
+        +ynadvalbum-box-sizing;
+        outline: solid 1px rgba(0, 0, 0, 0.1);
+        outline-offset: -1px;
+    }
+    .ynadvalbum_pinteres_photo_info {
+        padding: 13px 10px;
+        text-align: center;
+        border: 1px solid $theme_border_medium_color;
+        border-top: 0;
+        .ynadvalbum_pinteres_photo_info_owner {
+            text-align: center;
+            display: block;
+            line-height: 18px;
+            font-size: 14px;
+            font-weight: normal;
+            span {
+                overflow: hidden;
+                display: inline-block;
+                color: $theme_font_color_light;
+            }
+            a {
+                +ynadvalbum-truncate;
+                display: inline-block;
+                max-width: 77px;
+            }
+        }
+        span.ynadvalbum_thumb_stats {
+            display: block;
+            width: 100%;
+            margin-top: -1px;
+            margin-bottom: 8px;
+            line-height: 18px;
+            font-size: 12px;
+            font-weight: normal;
+            color: $theme_font_color_light;
+        }
+        .ynadvalbum_start_rating {
+            line-height: 18px;
+            text-align: center;
+            padding: 0;
+            margin: 0 !important;
+            span.ynicon {
+                color: #ccc;
+            }
+        }
+    }
+}
+/*----- Album listing -----*/
+/*----- Girdview -----*/
+
+.ynalbum-pinterest-view,
+.ynalbum-list-view,
+.ynalbum-grid-view {
+    .ynadvalbum_album_listing_title {
+        display: block;
+        position: relative !important;
+        color: $theme_font_color_light;
+        background-color: #fff;
+        padding: 15px 0 10px 0 !important;
+        top: auto !important;
+        width: auto !important;
+        left: auto !important;
+        .ynadvalbum_start_rating {
+            margin: 0;
+            display: block;
+            line-height: 18px;
+            margin-top: 2px;
+        }
+        & > a {
+            color: $theme_link_color;
+            +ynadvalbum-truncate;
+            display: inline-block;
+            max-width: 100%;
+        }
+        & > a:first-of-type {
+            font-weight: bold !important;
+            font-size: 14px !important;
+            color: $theme_link_color !important;
+            line-height: 18px;
+        }
+        span.advalbum_list_photos {
+            line-height: 18px;
+            display: block;
+            font-size: 12px;
+            color: $theme_font_color_light;
+            margin-top: 1px;
+            +ynadvalbum-truncate;
+            max-width: 100%;
+            a {
+                max-width: 100%;
+                color: $theme_link_color;
+                font-size: 12px;
+            }
+            span {
+                display: inline-block;
+            }
+        }
+        & > span:last-of-type {
+            display: block;
+            line-height: 18px;
+            font-size: 12px;
+            color: $theme_font_color_light;
+            margin-top: 0px;
+        }
+    }
+}
+.advalbum_rating_star_generic {
+    display: none;
+    background-image: none;
+}
+.ynadvalbum_start_rating {
+    margin-top: 2px;
+    margin-bottom: 3px;
+    span.ynicon {
+        margin-right: -3px;
+        color: #ffa800;
+        line-height: 18px;
+        &.ynadvalbum_disable {
+            color: #ccc;
+        }
+    }
+}
+#ynadvalbum_link_temp {
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 1;
+}
+.ynadvalbum_album_listing.thumbs_photo_grid {
+    &:before, &:after {
+        right: 8px;
+        height: 4px;
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 8px;
+        content: "";
+        border: 1px solid $theme_border_dark_color;
+        border-top: 0;
+        z-index: 1;
+    }
+    &:after {
+        bottom: -9px;
+        right: 14px;
+        left: 14px;
+    }
+}
+/*----- Printerestview -----*/
+
+.ynadvalbum-pinterest-listing {
+    li {
+        .ynadvalbum_thumbs_content {
+            .ynadvalbum_thumbs_image-info {
+                padding: 10px 15px;
+                +ynadvalbum-box-sizing;
+                border: 1px solid $theme_border_medium_color;
+                border-top: 0;
+                .album-author-image {
+                    display: none;
+                }
+                & > a {
+                    font-size: 18px;
+                    color: $theme_font_color;
+                    +ynadvalbum-truncate;
+                    display: block;
+                }
+                .album-content {
+                    margin-top: 5px;
+                    overflow: hidden;
+                    .advalbum_list_photos {
+                        +ynadvalbum-truncate;
+                        display: block;
+                        color: $theme_link_color;
+                        font-size: 12px;
+                        span {
+                            color: $theme_font_color_light;
+                        }
+                        a {
+                            color: $theme_link_color;
+                        }
+                    }
+                    .ynadvalbum_start_rating {
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .ynadvalbum_thumbs_image {
+                position: relative;
+                line-height: 0;
+                img {
+                    width: 100%;
+                    +ynadvalbum-box-sizing;
+                    outline: solid 1px rgba(0, 0, 0, 0.1);
+                    outline-offset: -1px;
+                }
+                label {
+                    z-index: 5;
+                    min-width: 30px;
+                    color: #fff;
+                    font-size: 12px;
+                    line-height: 12px;
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    +ynadvalbum-border-radius(18px);
+                    background-color: rgba(0, 0, 0, 0.7);
+                    margin-left: -12px;
+                    margin-bottom: -12px;
+                    padding: 9px 12px;
+                    &:after {
+                        content: "\\e900";
+                        +font-ynicon;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .ynadvalbum_thumbs_stats {
+            text-align: center;
+            +ynadvalbum-display;
+            padding-bottom: 5px;
+            margin-top: 11px;
+            .ynadvalbum_thumbs_stats-info:first-of-type {
+                padding-left: 0;
+            }
+            .ynadvalbum_thumbs_stats-info:last-of-type {
+                padding-right: 0;
+            }
+            .ynadvalbum_thumbs_stats-info {
+                width: 33.33%;
+                +ynadvalbum-display;
+                +ynadvalbum-flex;
+                text-align: left;
+                padding: 2px 20px 0 20px;
+                box-sizing: content-box;
+                -webkit-box-sizing: content-box;
+                -moz-box-sizing: content-box;
+                label {
+                    padding-bottom: 4px;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: $theme_font_color;
+                }
+                span {
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: $theme_font_color_light;
+                }
+                &.ynadvalbum_border {
+                    border-right: 1px solid $theme_border_color;
+                    border-left: 1px solid $theme_border_color;
+                }
+            }
+        }
+    }
+}
+/*----- Aboth column -----*/
+/*----- widget search -----*/
+
+.layout_advalbum_albums_search,
+.layout_advalbum_photos_search {
+    #search-label .optional {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: $theme_font_color;
+    }
+    .form-element select {
+        color: $theme_font_color_light;
+    }
+    ul.advalbum_color_patterns {
+        button#advalbum_button_search {
+            margin-top: 15px;
+            width: 100%;
+        }
+        li {
+            +ynadvalbum-border-radius(100%);
+            border: 0;
+        }
+    }
+    ul.navigation {
+        li {
+            .icon_photos_new {
+                border: 1px solid $theme_button_border_color;
+                +ynadvalbum-border-radius(3px);
+                text-align: center;
+                padding: 0;
+                background-image: none;
+                font-weight: bold;
+                padding-left: 0;
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 12px;
+                padding: 12px 0;
+                display: block;
+                &:before {
+                    content: "\\e901";
+                    +font-ynicon;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+#category_id-wrapper {
+    margin-bottom: 0 !important;
+}
+#global_page_advalbum-album-view {
+    .slideshow_button {
+        +ynadvalbum-border-radius(2px);
+        +ynadvalbum-box-sizing;
+        border: 1px solid $theme_link_color;
+        padding: 6px 14px;
+        color: $theme_link_color;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: bold;
+        background-image: none !important;
+        display: inline-block;
+        margin: 5px auto;
+        float: right !important;
+    }
+}
+.icon_photos_download {
+    background: url(~/application/modules/Advalbum/externals/images/icon-download.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+div.layout_advalbum_photos_search:before {
+    background-image: url(~/application/modules/Advalbum/externals/images/icon_sprites.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -5px -4px;
+    content: '';
+    height: 20px;
+    left: 10px;
+    position: absolute;
+    top: 13px;
+    width: 18px;
+}
+div.layout_advalbum_albums_search {
+    padding-bottom: 0;
+    margin-top: 15px !important;
+}
+.ynadvalbum_albums_thumb {
+    .album-info {
+        span.advalbum_album_statis {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    ul.ynadvalbum_manage_photo-items {
+        li.ynadvalbum_manage_photo-item {
+            width: 100%;
+        }
+    }
+    ul.ynadvalbum-grid-list {
+        .advalbum_albums_grid_thumb {
+            width: 100%;
+        }
+    }
+    .ynalbum-grid-view .ynadvalbum_photos_listing.thumbs_photo_grid .ynadvalbum_thumb_photo_info .ynadvalbum_thumb_photo_temp > div.ynadvalbum_thumbs_info_owner > span:last-of-type {
+        margin-left: 0;
+    }
+    .ynalbum-list {
+        .ynadvalbum_albums_thumb {
+            .ynalbum-content {
+                clear: both;
+            }
+            .album-info {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+.ynadvalbum_download-album-photo {
+    display: none;
+}
+#global_page_advalbum-album-view {
+    #gotoPage .ynadvalbum_menu_parent {
+        .ynadvalbum-options {
+            .ynadvalbum_dropdown_items {
+                .ynadvalbum_album-download {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.ynadvalbum_photo_detail_sub-menu {
+    display: none;
+}
+.ym_view_slideshow_photo .ymb_mobile_slideshow,
+.ym_view_list_photo .ymb_photo_list {
+    display: block;
+    clear: both;
+}
+.ym_view_slideshow_photo .ymb_photo_list,
+.ym_view_list_photo .ymb_mobile_slideshow {
+    display: none;
+}
+
+.ynadvalbum_manage_photo_parent_button {
+    height: 60px;
+    background-color: #f8f8f8;
+    border: 1px solid $theme_border_medium_color;
+    +ynadvalbum-box-sizing;
+    +ynadvalbum-display;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    button {
+        width: 33.33%;
+        span.ynicon {
+            margin-right: 4px;
+        }
+        &#ynadvalbum_manage_photo_save-btn {
+            margin-right: 0;
+            visibility: hidden;
+            position: relative;
+            margin-left: 6px;
+            +ynadvalbum-border-radius(0);
+            padding: 0;
+            &:before {
+                content: "\\e96e";
+                font-size: 18px;
+                +font-ynicon;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #01a0db;
+                border: 1px solid #01a0db;
+                +ynadvalbum-display;
+                justify-content: center;
+                align-items: center;
+                visibility: visible;
+            }
+        }
+        &#ynadvalbum_manage_photo_delete-btn {
+            visibility: hidden;
+            position: relative;
+            margin-right: 6px;
+            +ynadvalbum-border-radius(0);
+            padding: 0;
+            &:before {
+                content: "\\e945";
+                font-size: 18px;
+                +font-ynicon;
+                background-color: #D12F2F;
+                border: 1px solid #D12F2F;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                +ynadvalbum-display;
+                justify-content: center;
+                align-items: center;
+                visibility: visible;
+            }
+        }
+        &#ynadvalbum_manage_photo_move-btn {
+            margin-left: 6px;
+            margin-right: 6px;
+            visibility: hidden;
+            position: relative;
+            +ynadvalbum-border-radius(0);
+            padding: 0;
+            &:before {
+                content: "\\e99c";
+                font-size: 18px;
+                +font-ynicon;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #01a0db;
+                border: 1px solid #01a0db;
+                +ynadvalbum-display;
+                justify-content: center;
+                align-items: center;
+                visibility: visible;
+            }
+        }
+    }
+}
+#global_page_advalbum-index-upload {
+    #photos-element {
+        input {
+            margin: 5px auto;
+        }
+    }
+}
+ul.ymb_menuRight_wapper li a:link {
+    background-color: #1c1c1c;
+}
+.ynalbum-list-view {
+    .thumbs_title {
+        width: 100%;
+        a {
+            max-width: 100%;
+            display: block;
+            +ynadvalbum-truncate;
+        }
+    }
+}
+/*--------- End Custom ---------*/

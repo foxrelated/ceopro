@@ -1,0 +1,46 @@
+.layout_ynresponsivepurity_main_menu{
+	top: -50px;
+}
+body[class^=ynresponsivepurity-].purity-fixed{
+	.layout_ynresponsivepurity_main_menu{
+		position: fixed;
+		width: 100%;
+		top: 0;
+		z-index: 99;
+		-webkit-transition: all 500ms;
+		transition: all 500ms;
+	}
+}
+
+/*----------  Z-INDEX MENUMINI BEHIDE MENU SYSTEM  ----------*/
+.layout_ynresponsivepurity_mini_menu{
+	position: relative;
+	z-index: 99;
+}
+
+/*----------  FIX MULTIPLE LISTING  ----------*/
+@media screen and (min-width: 991px){
+	.tabs.ynmultilisting-menu-top.navigation-over-list{
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	body[class^=ynresponsivepurity-].purity-fixed{
+		padding-top: 0 !important;
+		.layout_ynresponsivepurity_main_menu{
+			position: static;
+		}
+	}
+}
+
+html[id^=smoothbox] body{
+	background: #FFF !important;
+
+	.form-ynlisting-choose-theme .item-form-theme-choose{
+		margin-right: 0;
+	}
+}
+#global_content_simple form{
+	padding: 10px;
+}

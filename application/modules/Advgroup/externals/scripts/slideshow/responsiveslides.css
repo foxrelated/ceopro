@@ -1,0 +1,128 @@
+/*! http://responsiveslides.com v1.54 by @viljamis */
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+.callbacks_container {
+    position: relative;
+    margin-left:-8px;
+    margin-right:-8px;
+}
+.callbacks {
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.callbacks li {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.callbacks img {
+    border: 0 none;
+    display: block;
+    height: auto;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.callbacks .caption {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    color: #FFFFFF;
+    display: block;
+    font-size: 20px;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    text-shadow: none;
+    z-index: 2;
+    line-height:17px;
+}
+.callbacks_nav {
+    background: url("themes.gif") no-repeat scroll left top rgba(0, 0, 0, 0);
+    height: 61px;
+    left: 0;
+    margin-top: -45px;
+    opacity: 0.7;
+    overflow: hidden;
+    position: absolute;
+    text-decoration: none;
+    text-indent: -9999px;
+    top: 52%;
+    width: 38px;
+    z-index: 3;
+}
+.callbacks_nav:active {
+    opacity: 1;
+}
+.callbacks_nav.next {
+    background-position: right top;
+    left: auto;
+    right: 0;
+}
+.layout_ynvideo_list_featured_videos .callbacks,
+.layout_advalbum_featured_photos_middle .callbacks,
+.layout_ynevent_feature_events .callbacks,
+.layout_advgroup_featured_groups .callbacks,
+.layout_advalbum_featured_photos .callbacks{
+	height:300px;
+}
+.layout_ynvideo_list_featured_videos .callbacks > li,
+.layout_advalbum_featured_photos_middle .callbacks > li,
+.layout_ynevent_feature_events .callbacks > li,
+.layout_advgroup_featured_groups .callbacks > li,
+.layout_advalbum_featured_photos .callbacks > li{
+	text-align:center;
+	line-height: 300px;
+	height:300px;
+}
+.layout_ynvideo_list_featured_videos .callbacks > li > a > img,
+.layout_advalbum_featured_photos_middle .callbacks > li > a > img,
+.layout_ynevent_feature_events .callbacks > li > a > img,
+.layout_advgroup_featured_groups .callbacks > li > a > img,
+.layout_advalbum_featured_photos .callbacks > li > a > img{
+	width:auto;
+	float:none;
+	max-height:300px;
+	display:inline;
+	vertical-align: middle;
+}
+.layout_advgroup_featured_groups .callbacks_container{
+	margin:8px 0 0;
+}

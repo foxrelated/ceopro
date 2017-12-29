@@ -1,0 +1,4 @@
+@scan "application/modules" "externals/styles/mobile.css" "Mobi";
+@include "~/application/modules/Mobi/externals/styles/mobile.css";
+@include "../ynresponsivepurity-blue/mobile.css";
+@include "constants.css";

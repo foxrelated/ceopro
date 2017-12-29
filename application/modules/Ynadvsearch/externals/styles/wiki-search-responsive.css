@@ -1,0 +1,46 @@
+/*** wiki ***/
+.layout_page_ynadvsearch_search_wiki-search ul.ynwiki_browse
+{
+	padding: 0;
+	margin: 0 !important;
+	border: none;
+}
+
+.layout_page_ynadvsearch_search_wiki-search ul.ynwiki_browse:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.layout_page_ynadvsearch_search_wiki-search ul.ynwiki_browse li
+{
+	clear: none;
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+	padding: 1em 0;
+}
+
+.layout_page_ynadvsearch_search_wiki-search ul.ynwiki_browse li:nth-child(2n)
+{
+	margin-right: 0;
+}
+
+.layout_page_ynadvsearch_search_wiki-search ul.ynwiki_browse li .ynwiki_browse_info_blurb
+{
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	line-height: normal;
+	-webkit-line-clamp: 3;
+	max-height: none;
+	line-height: 18px;
+	max-height: 54px;
+}
+
+.layout_ynwiki_listing_pages .ynwiki_browse li:nth-child(2) {
+	border-top: 0;
+}

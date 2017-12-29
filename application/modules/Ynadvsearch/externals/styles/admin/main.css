@@ -1,0 +1,33 @@
+#global_page_ynadvsearch-admin-faqs-index {
+	.buttons {
+		overflow: visible;
+	}
+}
+body[id^=global_page_ynadvsearch-admin-]{
+	.pages{
+		margin-top: 10px;
+	}
+}
+
+.add_link  {
+	margin: 10px 0px;
+}
+
+
+.ynsocial_table, .admin_table, .result_count {
+	margin-bottom: 10px;
+}
+
+#manage_faqs_form {
+	overflow: auto;
+}
+
+.add_faq {
+	background-image: url("~/application/modules/Ynadvsearch/externals/images/add.png") !important; 
+	background-repeat: no-repeat;
+
+	&.buttonlink{
+		padding-left: 21px !important;
+	}
+}
+

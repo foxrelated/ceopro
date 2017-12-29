@@ -1,0 +1,138 @@
+#global_page_ynwiki-index-browse .ynwiki_wiki_space
+{
+	height:auto;
+}
+
+.layout_ynwiki_listing_pages .ynwiki_browse_info_blurb
+{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+
+.layout_ynwiki_recent_viewed_pages ul.ynwiki_browse>li,
+.layout_ynwiki_most_commented_pages ul.ynwiki_browse>li,
+.layout_ynwiki_most_viewed_pages ul.ynwiki_browse>li
+{
+	padding-bottom: 0px;
+	
+}
+
+.layout_ynwiki_recent_viewed_pages ul.ynwiki_browse > li .ynwiki_browse_photo,
+.layout_ynwiki_most_commented_pages ul.ynwiki_browse > li .ynwiki_browse_photo,
+.layout_ynwiki_most_viewed_pages ul.ynwiki_browse > li .ynwiki_browse_photo
+{
+	padding-bottom: 10px;
+}
+
+#global_page_ynwiki-index-browse .ynwiki_wiki_space
+{
+	height: 60px;
+}
+
+.layout_ynwiki_profile_detail .layout_middle
+{
+	box-sizing: border-box;
+	width: 100% !important;
+}
+
+@media (max-width: 992px)
+{		
+	#global_page_ynwiki-index-manage-follow ul.ynwiki_browse > li,
+	#global_page_ynwiki-index-manage-favourite ul.ynwiki_browse > li
+	{
+		position: relative;		
+	}
+	#global_page_ynwiki-index-manage-follow ul.ynwiki_browse > li .ynwiki_browse_options,
+	#global_page_ynwiki-index-manage-favourite ul.ynwiki_browse > li .ynwiki_browse_options
+	{
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		width: auto;
+	}
+	
+	#global_page_ynwiki-index-manage-favourite ul.global_form_box,
+	#global_page_ynwiki-index-manage-follow ul.global_form_box
+	{
+		display:none;
+	}
+	#global_page_ynwiki-index-history .layout_middle,
+	#global_page_ynwiki-index-attach .layout_middle
+	{
+		float: none !important;
+		width: auto !important;
+	}	
+}
+
+@media (max-width: 768px){
+	.layout_page_ynwiki_index_view{
+		.layout_ynwiki_profile_detail .ynwiki_content p img{
+			width: 100%;
+		    height: auto;
+		}
+	}
+	.ynwiki_content{
+		overflow-x: auto;
+		table{
+			width: auto;
+		}
+	}
+}
+
+@media (max-width: 767px)
+{
+	.layout_ynwiki_profile_options img.thumb_profile,
+	#global_page_ynwiki-index-history img.thumb_profile,
+	#global_page_ynwiki-index-attach img.thumb_profile
+	{
+		width: 100%;
+		max-width: 100% !important;
+	}
+	.layout_ynwiki_profile_detail .layout_middle
+	{
+		width: 100% !important;
+	}	
+	.layout_ynwiki_profile_options li.ynwiki_print,
+	.layout_ynwiki_profile_options li.ynwiki_pdf
+	{
+		display: none;
+	}
+	#global_page_ynwiki-index-manage-favourite ul.ynwiki_browse>li{
+		padding-bottom: 30px;
+	}
+	
+}
+
+@media (max-width: 480px)
+{		
+	#global_page_ynwiki-index-browse .ynwiki_wiki_space
+	{
+		width: 98%;
+	}
+	
+	#global_page_ynwiki-index-move-location ul.message-autosuggest
+	{
+		width: 250px;
+	}
+    
+    #global_page_ynwiki-index-view .layout_ynwiki_profile_detail .ynwiki_content table tr th:nth-child(4),
+    #global_page_ynwiki-index-view .layout_ynwiki_profile_detail .ynwiki_content table tr td:nth-child(4) {
+        display: none;
+    }
+
+    #global_page_ynwiki-index-view .layout_ynwiki_profile_detail .ynwiki_content table tr td:nth-child(5) a {
+        font-size: 0;
+        line-height: 0;
+    }
+
+    #global_page_ynwiki-index-view .layout_ynwiki_profile_detail .ynwiki_content table tr td:nth-child(5) a:before {        
+        width: 20px;
+        height: 20px;
+        font-family: 'Glyphicons Halflings';
+        content: "\\e014";
+        font-size: 16px;
+        line-height: 36px;
+        display: block;
+    }	
+}

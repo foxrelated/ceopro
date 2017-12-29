@@ -1,0 +1,745 @@
+{
+  "type": "module",
+  "name": "socialbridge",
+  "version": "4.04p10",
+  "revision": null,
+  "path": "application\/modules\/Socialbridge",
+  "repository": null,
+  "date": "Wed, 17 May 2017 08:27:09 +0000",
+  "title": "YNC - Social Bridge",
+  "description": "This is Social Bridge plugin.",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNetCo\" target=\"_blank\">YouNetCo<\/a>"
+  ],
+  "meta": {
+    "date": "Wed, 17 May 2017 08:27:09 +0000",
+    "title": "YNC - Social Bridge",
+    "description": "This is Social Bridge plugin.",
+    "developer": null,
+    "authors": [
+      "<a href=\"http:\/\/socialengine.younetco.com\/\" title=\"YouNetCo\" target=\"_blank\">YouNetCo<\/a>"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Socialbridge\/settings\/install.php",
+    "class": "Socialbridge_Installer",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Socialbridge": {
+      "type": "directory",
+      "path": "application\/modules\/Socialbridge",
+      "structure": [
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 238,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Abstract.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 12590,
+          "sha1": "e5d807fce24f1c13876a2cb037bc4e358ea50620"
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1003,
+          "sha1": "f9c6a18744f0c2153bf7414794ad888ddc12deb3"
+        },
+        {
+          "path": "Api\/Facebook.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 25788,
+          "sha1": "ef9680138e86985a22a101ef5dcfd3755e37bf0a"
+        },
+        {
+          "path": "Api\/Linkedin.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 29267,
+          "sha1": "0d571aae292843f4157862636a466bc3aa02d72b"
+        },
+        {
+          "path": "Api\/Twitter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 25218,
+          "sha1": "8d822c15d0f5bdbeeeac2a5a6754b6937e77e72f"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 218,
+          "sha1": "6fffae6e50803d5dc68707ac1838a31dc5956c8e"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 5564,
+          "sha1": "305951f9b22618aa35f76ac6fbda5e7883b4410a"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1695,
+          "sha1": "ba3f78b0f75d9ff12fc177f10e8be5501ebb15f0"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 144,
+          "sha1": "47bb36a5f03278d4b6ea5804e494c00ccb02e8e1"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 238,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/default_user.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1626,
+          "sha1": "a0ec4c875527ba996e2274b6016e2d4ae2a888bc"
+        },
+        {
+          "path": "externals\/images\/default_user_1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 5116,
+          "sha1": "b3615b572b176f5d2066c716ba3bf765880e4d85"
+        },
+        {
+          "path": "externals\/images\/nocover_album.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 18522,
+          "sha1": "de0c943aff45e7f2f8522c1f3e338b8855210da5"
+        },
+        {
+          "path": "externals\/images\/service",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/service\/facebook.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4911,
+          "sha1": "d1f2e9a9735c4771a092df4a818fa53f9dfca187"
+        },
+        {
+          "path": "externals\/images\/service\/linkedin.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 11719,
+          "sha1": "a6e5fef431902925b6c2feb09032ab152ee10680"
+        },
+        {
+          "path": "externals\/images\/service\/twitter.jpg",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 10263,
+          "sha1": "7e6622dab92b1c34591d3ad274f8fc3b116efcef"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts\/fb.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2928,
+          "sha1": "d8443cb2b1238a520273652d4cf38c8ee0fe284b"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 751,
+          "sha1": "fba7fc675a64356a41053b5305402951b83d9b51"
+        },
+        {
+          "path": "externals\/styles\/ynresponsive1.css",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 51,
+          "sha1": "22e58d292be38d846fee4e220e536513d2705937"
+        },
+        {
+          "path": "fb.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1962,
+          "sha1": "d9bf163ff616c2f38b71b2308de6e7b337bd3445"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Fbsettings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1501,
+          "sha1": "ffc05e1612bd6d5722fe55ff7b62bd4e5663bed5"
+        },
+        {
+          "path": "Form\/Admin\/Lisettings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1472,
+          "sha1": "d9ed85d9c8a8d9587f256910b783e8d8af520f9d"
+        },
+        {
+          "path": "Form\/Admin\/Twsettings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2190,
+          "sha1": "499f2f4f7b5e7d6619b1411cb71f0828fcc2667c"
+        },
+        {
+          "path": "li.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3093,
+          "sha1": "4b4abe5d7158e27609220b35b7eaf4d3c648f970"
+        },
+        {
+          "path": "Libs",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "Libs\/facebook.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 46895,
+          "sha1": "c364cf4e8d6e4e1f090a213c2c6e9a4f6f8dfd22"
+        },
+        {
+          "path": "Libs\/linkedin.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 12808,
+          "sha1": "610af494a1869d5cd20ae617eeb6e8586e2279e2"
+        },
+        {
+          "path": "Libs\/twitter.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 138266,
+          "sha1": "93020ba6ca4b3b9af92e98902dc5dd3e00479caf"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 238,
+          "sha1": null
+        },
+        {
+          "path": "Model\/Apisetting.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 71,
+          "sha1": "c0967f0474cbb3d4c58848f2ea641d2179baed57"
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 238,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model\/DbTable\/Apisettings.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 135,
+          "sha1": "b5242000b6be851ccb7a3d4cd4c3783adf08894f"
+        },
+        {
+          "path": "Model\/DbTable\/Queues.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 125,
+          "sha1": "4cf50482a5641a020991b0b8c2d557b4e370a11b"
+        },
+        {
+          "path": "Model\/DbTable\/Statistics.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 133,
+          "sha1": "53aa4c76f0b65e23129daa937d0e36620db644dc"
+        },
+        {
+          "path": "Model\/DbTable\/Tokens.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 125,
+          "sha1": "932a5a0f17f78a2b725be1c189cd35b38261d5fe"
+        },
+        {
+          "path": "Model\/Queue.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 65,
+          "sha1": "a567941715de5763c689678853ada203773921f8"
+        },
+        {
+          "path": "Model\/Statistic.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 71,
+          "sha1": "fe65935cfeebe5f679c04558d14bfbcc5c608bf1"
+        },
+        {
+          "path": "Model\/Token.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 67,
+          "sha1": "6bf1e1ad4e70ef0896fbbb4e8cf932fc3a3f04ad"
+        },
+        {
+          "path": "Plugin",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 329,
+          "sha1": "49929bcd05bf06addac90661643a2bdd4ea1a560"
+        },
+        {
+          "path": "Plugin\/Task",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Plugin\/Task\/Queues.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4239,
+          "sha1": "1c7fd69e9f1a14a2be3f2c9e73e3ad17df475128"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 544,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 268,
+          "sha1": "a6687e0ef3e6375e82d9ea9eb790f1b59dc86866"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2315,
+          "sha1": "a9b0512e4e68559b238943d0034d1173ea35db86"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1504,
+          "sha1": "95ddeb3ce3d8ea5d8f712848800c64fc53bd05d7"
+        },
+        {
+          "path": "settings\/my-upgrade-4.01-4.02.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 758,
+          "sha1": "dad0fdf4d29928253f98b0d2875593951a0fe333"
+        },
+        {
+          "path": "settings\/my-upgrade-4.02-4.03.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03-4.03p1.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 116,
+          "sha1": "d897ff83780f82300df755c1799d1000ccbc24ce"
+        },
+        {
+          "path": "settings\/my-upgrade-4.03p1-4.03p2.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 116,
+          "sha1": "da833a01fc85f7e0ee1a8fd6a7d193bbf3bcdb4b"
+        },
+        {
+          "path": "settings\/my-upgrade-4.04p4-4.04p5.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 116,
+          "sha1": "8110d08bc19b4f813f6f65edc52b8c8cd17ea70f"
+        },
+        {
+          "path": "settings\/my-upgrade-4.04p5-4.04p6.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 116,
+          "sha1": "cd5f873ccd414c6a226580d721e1e5ffd2059ad7"
+        },
+        {
+          "path": "settings\/my-upgrade-4.04p6-4.04p7.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 266,
+          "sha1": "1a25e4bf51bb81116fb7fe7d32d72cf4b39f0cfd"
+        },
+        {
+          "path": "settings\/my-upgrade-4.04p7-4.04p8.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 117,
+          "sha1": "7f602508b99374e220217445eb29032a8eb9b7fc"
+        },
+        {
+          "path": "settings\/my-upgrade-4.04p8-4.04p9.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 117,
+          "sha1": "285a68824728a493d96f793f1b5bd332977e5686"
+        },
+        {
+          "path": "settings\/my-upgrade-4.04p9-4.04p10.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 118,
+          "sha1": "4a8d5fe7e6d01f14aa679d3b0927e95b3f0362c2"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4386,
+          "sha1": "5954770217fe585f147e304cb50aeced7297eb13"
+        },
+        {
+          "path": "task.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 358,
+          "sha1": "d843c3de70622c14c7ee93cc8829f6d2bc6544cd"
+        },
+        {
+          "path": "tw.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2079,
+          "sha1": "4cc3058eedef114456857a60cf1c7af1e8374a48"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/_manage_social.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 6785,
+          "sha1": "8c5e6b727e49545d9dc0a47ff92b7b1fe25a8cac"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 204,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/fbsetting.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 693,
+          "sha1": "faf801b7c2ccd99d9605033d8a74b2fc0e6ab94c"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/lisetting.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 405,
+          "sha1": "285e528c393598f3a043a2c75a626b13b36b2c9a"
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/twsetting.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 405,
+          "sha1": "285e528c393598f3a043a2c75a626b13b36b2c9a"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 140,
+          "sha1": "de41503495f4c9db3f549afbb9ce027402606ad6"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu",
+          "dir": true,
+          "file": false,
+          "perms": "0755",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/browse-menu\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 309,
+          "sha1": "2b80f96f7a4eef53c93921280966c53623c7ea85"
+        },
+        {
+          "path": "widgets\/browse-menu\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 280,
+          "sha1": "6f51264c6e09b61c95b5b10098a8213edca032cc"
+        }
+      ]
+    },
+    "application\/languages\/en\/socialbridge.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/socialbridge.csv",
+      "structure": {
+        "path": "socialbridge.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0644",
+        "size": 1408,
+        "sha1": "1cf59242d274e116436e2148148a22c3e08a1937"
+      }
+    }
+  }
+}

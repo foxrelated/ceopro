@@ -1,0 +1,58 @@
+﻿a.yntooltip > span 
+{ 
+	width:370px; 
+	padding: 10px; 
+	margin-left: -3px; /*----Fix horizontal scroll bar appear----*/
+	opacity: 0; 
+	visibility: hidden; 
+	z-index: 10; 
+	position: absolute; 
+	font-family: Arial; 
+	font-size: 12px; 
+	font-style: normal; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	-o-border-radius: 3px; 
+	border-radius: 3px; 
+	-webkit-box-shadow: 2px 2px 2px #999; 
+	-moz-box-shadow: 2px 2px 2px #999; 
+	box-shadow: 2px 2px 2px #999; 
+	-webkit-transition-property:opacity, margin-top, visibility, margin-left; 
+	-webkit-transition-duration:0.4s, 0.3s, 0.4s, 0.3s; 
+	-webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out; 
+	-moz-transition-property:opacity, margin-top, visibility, margin-left; 
+	-moz-transition-duration:0.4s, 0.3s, 0.4s, 0.3s; 
+	-moz-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out; 
+	-o-transition-property:opacity, margin-top, visibility, margin-left; 
+	-o-transition-duration:0.4s, 0.3s, 0.4s, 0.3s; 
+	-o-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out; 
+	transition-property:opacity, margin-top, visibility, margin-left; 
+	transition-duration:0.4s, 0.3s, 0.4s, 0.3s; 
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out; 
+	text-decoration: none;
+} 
+a.yntooltip > span:hover,
+a.yntooltip:hover > span
+{ 
+	opacity: 1; 
+	visibility: visible; 
+	overflow: visible; 
+	display: inline; 
+	margin-left: -60px; 
+	text-decoration: none;
+} 
+a.yntooltip > span 
+{ 
+	color: #FFF; 
+	background: #1D1D1D; 
+	background: -moz-linear-gradient(top, #1D1D1D 0%, #1D1D1D 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1D1D1D), 
+	color-stop(100%,#1D1D1D)); 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1D1D1D', endColorstr='#1D1D1D',GradientType=0 );
+	border: 1px solid #CFB57C; 
+	text-decoration: none;
+}
+a.yntooltip:hover
+{
+	text-decoration: none;
+}	 

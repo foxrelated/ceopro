@@ -1,0 +1,150 @@
+{
+  "type": "language",
+  "name": "english",
+  "version": "4.9.4p4",
+  "revision": null,
+  "path": "application\/languages\/en",
+  "repository": null,
+  "sku": null,
+  "date": "Mon, 09 Oct 2017 09:37:44 +0000",
+  "title": "English",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Mon, 09 Oct 2017 09:37:44 +0000",
+    "title": "English",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/languages\/en": {
+      "type": "directory",
+      "path": "application\/languages\/en",
+      "structure": [
+        {
+          "path": "activity.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 15473,
+          "sha1": "2e4d601fdcb7d8b93c99d9bb65a83ab32cfa36c7"
+        },
+        {
+          "path": "announcement.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1735,
+          "sha1": "ec587a247cc68209e7e936e535db9afdf6fff280"
+        },
+        {
+          "path": "payment.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 17048,
+          "sha1": "a6e9be766d235d50f5e0a79fedd66e7643b7f3ac"
+        },
+        {
+          "path": "authorization.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3865,
+          "sha1": "b81895b63c281033311291f2d0e725ea180cabe3"
+        },
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 434,
+          "sha1": "477a781e889e1cdea36077f5de04854b0985bef6"
+        },
+        {
+          "path": "core.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 73869,
+          "sha1": "05e4769625fe3ee313bb134dc9faa5b0f175a091"
+        },
+        {
+          "path": "fields.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4784,
+          "sha1": "d2bebf20623411755a6a60f92121a34c4e4d5e70"
+        },
+        {
+          "path": "network.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2873,
+          "sha1": "f93a7064d42777e14ae3a6b88a0261a11bfd94d3"
+        },
+        {
+          "path": "invite.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4141,
+          "sha1": "90af2af76c92819a950f1946555f72977c233185"
+        },
+        {
+          "path": "storage.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1573,
+          "sha1": "4f94f038473e545824c18484dde04c876b7f6a6a"
+        },
+        {
+          "path": "messages.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 2993,
+          "sha1": "b6611254ca6069a66f0be0b7fcc1cea01c2192d0"
+        },
+        {
+          "path": "hello-world.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0755",
+          "size": 829,
+          "sha1": "69aa432f1f0564762b7185154dbe25d983e9b0df"
+        },
+        {
+          "path": "user.csv",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 39044,
+          "sha1": "e90af66811adf2108a657a12f92082e72a95ff33"
+        }
+      ]
+    }
+  }
+}

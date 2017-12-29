@@ -1,0 +1,73 @@
+{
+  "type": "widget",
+  "name": "fancymenu",
+  "version": "4.9.4p4",
+  "revision": null,
+  "path": "application\/widgets\/fancymenu",
+  "repository": null,
+  "sku": null,
+  "date": "Mon, 09 Oct 2017 09:37:45 +0000",
+  "title": "Fancy Menu",
+  "description": "Displays a fancy menu for your site",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Shane Barcinas"
+  ],
+  "meta": {
+    "date": "Mon, 09 Oct 2017 09:37:45 +0000",
+    "title": "Fancy Menu",
+    "description": "Displays a fancy menu for your site",
+    "developer": null,
+    "authors": [
+      "Shane Barcinas"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "remove"
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/widgets\/fancymenu": {
+      "type": "directory",
+      "path": "application\/widgets\/fancymenu",
+      "structure": [
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 4270,
+          "sha1": "2908c03737bc2f82fc419513121317e739ba424b"
+        },
+        {
+          "path": "Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 1377,
+          "sha1": "f95486a252a934ed48409c1c19e17ce1621ed2cb"
+        },
+        {
+          "path": "index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 3838,
+          "sha1": "8281de7d130dcc830f69535ea0c71fee4809c991"
+        }
+      ]
+    }
+  }
+}

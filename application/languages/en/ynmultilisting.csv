@@ -1,0 +1,863 @@
+"YNMULTILISTING_SETTINGS_GLOBAL_DESCRIPTION";"General settings of Multiple Listings plugin. These settings affect all members in your community."
+"YNMULTILISTING_SETTINGS_LEVEL_DESCRIPTION";"There settings applied per member level basic. If certain actions are not allowed for certain member level, users of said member level aren't able to perform them. Start by selecting member level you want to modify, then adjust the settings for that level below according to your preferences."
+"YNMULTILISTING_AUTH_VIEW_DESCRIPTION";"Your members can choose from any of the options checked below when they decide who can view their listings. If you do not check any options, settings will default to the last saved configuration. If you select only one option, members of this level will not have a choice."
+"YNMULTILISTING_AUTH_COMMENT_DESCRIPTION";"Your members can choose from any of the options checked below when they decide who can comment on their listings. If you do not check any options, settings will default to the last saved configuration. If you select only one option, members of this level will not have a choice."
+"YNMULTILISTING_AUTH_SHARE_DESCRIPTION";"Your members can choose from any of the options checked below when they decide who can share their listings. If you do not check any options, settings will default to the last saved configuration. If you select only one option, members of this level will not have a choice."
+"YNMULTILISTING_AUTH_PHOTO_DESCRIPTION";"Your members can choose from any of the options checked below when they decide who can add photos to their listings. If you do not check any options, settings will default to the last saved configuration. If you select only one option, members of this level will not have a choice."
+"YNMULTILISTING_AUTH_VIDEO_DESCRIPTION";"Your members can choose from any of the options checked below when they decide who can add videos to their listings. If you do not check any options, settings will default to the last saved configuration. If you select only one option, members of this level will not have a choice."
+"YNMULTILISTING_AUTH_DISCUSSION_DESCRIPTION";"Your members can choose from any of the options checked below when they decide who can add discussions to their listings. If you do not check any options, settings will default to the last saved configuration. If you select only one option, members of this level will not have a choice."
+"YNMULTILISTING_FAQ_MANAGE_DESCRIPTION";"FAQs are effective in helping member to understand how things work. This page allows you to add and manage FAQs."
+"YNMULTILISTING_MANAGE_MODULES_DESCRIPTION";"This place is to manage modules whose content could be imported as new listings. This feature allow you to add as many modules as you want."
+"YNMULTILISTING_MANAGE_QUICKLINK_DESCRIPTION";"This place is to manage quick links to some specific listings based on your criteria. You can add as many quick links as you need, them apply them to widget Listing Quick Links - Slideshow or Listing Quick Links - Link only. This feature is useful in case you want to introduce some listing to your users."
+"YNMULTILISTING_MANAGE_MENU_DESCRIPTION";"This is a place for you to change the appearance of listing types on listing menus. Each listing type has 3 sections: Top Categories, More Categories and Promotion Place where you have ability to change their content as your needs. By default, we pick 5 first categories of this listing type (including parent and sub categories) for both Top Categories and More Categories. We also add the default picture for Promotion Place."
+
+"YNMULTILISTING_AUTH_VIEW_IMPORT_DESCRIPTION";"Who may view these listings."
+"YNMULTILISTING_AUTH_COMMENT_IMPORT_DESCRIPTION";"Who may comment on these listings."
+"YNMULTILISTING_AUTH_SHARE_IMPORT_DESCRIPTION";"Who may share these listings."
+"YNMULTILISTING_AUTH_PHOTO_IMPORT_DESCRIPTION";"Who may add photos to these listings."
+"YNMULTILISTING_AUTH_VIDEO_IMPORT_DESCRIPTION";"Who may add videos to these listings."
+"YNMULTILISTING_AUTH_DISCUSSION_IMPORT_DESCRIPTION";"Who may add discussions to these listings."
+
+"YNMULTILISTING_AUTH_VIEW_LABEL";"View Privacy"
+"YNMULTILISTING_AUTH_COMMENT_LABEL";"Comment Privacy"
+"YNMULTILISTING_AUTH_SHARE_LABEL";"Share Privacy"
+"YNMULTILISTING_AUTH_PHOTO_LABEL";"Photo Privacy"
+"YNMULTILISTING_AUTH_VIDEO_LABEL";"Video Privacy"
+"YNMULTILISTING_AUTH_DISCUSSION_LABEL";"Discussion Privacy"
+
+"YNMULTILISTING_IMPORT_DESCRIPTION";"Here is the place you can import listings from your excel file or from other modules. Please note the following rules about file format.<br/>
+1. The order of columns in your excel file must be exactly matched with the order of default fields in creation form. It means first column is ""Listing Title"",
+the second is ""Tags"", then ""Short Description"", ""Description"", ""About Us"", ""Price"", ""Location"", ""Location Longitude"", ""Location Latitude"", the last is ""Category and Sub - Category"".<br/>
+2. Listing Title and Short Description are required.</br>
+3. If the or category does not match any item on database, the corresponding listing will not be created."
+
+"YNMULTILISTING_ADMIN_IMPORT_DESCRIPTION";"Here is the place you can import listings from your excel file or from other modules. Please note the following rules about file format.<br/>
+1. The order of columns in your excel file must be exactly matched with the order of default fields in creation form. It means first column is ""Listing Title"",
+the second is ""Tags"", then ""Short Description"", ""Description"", ""About Us"", ""Price"", ""Location"",  ""Location Longitude"", ""Location Latitude"", ""Category and Sub - Category"", the last is ""Listing Owner's Email"".<br/>
+2. Listing Title and Short Description are required.</br>
+3. If the email of listing owner or category does not match any item on database, the corresponding listing will not be created."
+
+# notify_ynmultilisting_listing_follow
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_TITLE";"Multiple Listings - Follow Owner create new listing"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_DESCRIPTION";"Your Follow Owner has created a new listing."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_SUBJECT";"[sender_title] has create a new listing"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_BODY";"[header]
+
+Your Follow Owner,[sender_title], has create a new listing. Click following link to find out why:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynmultilisting_listing_approve
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_APPROVE_TITLE";"Multiple Listings - Approve Listing"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_APPROVE_DESCRIPTION";"Your listing has been approved."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_APPROVE_SUBJECT";"Approve Listing"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_APPROVE_BODY";"[header]
+
+Your listing has been approved. Click following link to find out why:
+
+http://[host][object_link]
+
+[footer]"
+
+
+# MYNT on BOTTOM
+
+"YNMULTILISTING_DASHBOARD_PACKAGE_DESC";"Here are list of available packages. You can change packages for your listing any time you want. Please be noted that once you change package, all the settings of your listing can be changed as well. Your listing will be hidden from the listing until you make payment for new package successfully."
+"YNMULTILISTING_DASHBOARD_PACKAGE_WARNING";"Are you sure that you want to change package from %1s to %2s? Please be note that once you change package, all the settings of your listing can be changed as well. Your listing will be hidden from the listing until you make payment for new package successfully."
+"YNMULTILISTING_DASHBOARD_PACKAGE_MAKENEW";"Are you sure that you want to make payment on package %1s? Your listing will be hidden from the listing until you make payment for new package successfully."
+
+
+# ynmultilisting_email_to_friends
+"_EMAIL_YNMULTILISTING_EMAIL_TO_FRIENDS_TITLE";"Listing Introduction"
+"_EMAIL_YNMULTILISTING_EMAIL_TO_FRIENDS_DESCRIPTION";"This is the email that gets sent when user wants to introduce a listing to friends."
+"_EMAIL_YNMULTILISTING_EMAIL_TO_FRIENDS_SUBJECT";"You have received an introduction to view the listing [object_title]!"
+"_EMAIL_YNMULTILISTING_EMAIL_TO_FRIENDS_BODY";"[header]
+
+[message]
+
+Check out this awesome listing
+<img src='http://[host][object_photo]' />[object_description]
+http://[host][object_link]
+I'm sure you will love it.
+
+[footer]"
+
+# ynmultilisting_listing_created
+"_EMAIL_YNMULTILISTING_LISTING_CREATED_TITLE";"Create Listing Successfully"
+"_EMAIL_YNMULTILISTING_LISTING_CREATED_DESCRIPTION";"This is the email is sent to listing owner when create listing successfully."
+"_EMAIL_YNMULTILISTING_LISTING_CREATED_SUBJECT";"Create Listing Successfully"
+"_EMAIL_YNMULTILISTING_LISTING_CREATED_BODY";"The listing <a href='[listing_link]'>[listing_name]</a> has just been created successfully. <br />
+<a href='[website_link]'>[website_name]</a>"
+
+# ynmultilisting_listing_approved
+"_EMAIL_YNMULTILISTING_LISTING_APPROVED_TITLE";"Listing Approved"
+"_EMAIL_YNMULTILISTING_LISTING_APPROVED_DESCRIPTION";"This is the email is sent to listing owner when create his/her listing was approved."
+"_EMAIL_YNMULTILISTING_LISTING_APPROVED_SUBJECT";"Listing Approved"
+"_EMAIL_YNMULTILISTING_LISTING_APPROVED_BODY";"The listing <a href='[listing_link]'>[listing_name]</a> has just been approved and published. <br />
+<a href='[website_link]'>[website_name]</a>"
+
+# ynmultilisting_listing_expired
+"_EMAIL_YNMULTILISTING_LISTING_EXPIRED_TITLE";"Listing Expired"
+"_EMAIL_YNMULTILISTING_LISTING_EXPIRED_DESCRIPTION";"This is the email is sent to listing owner when create his/her listing was expired."
+"_EMAIL_YNMULTILISTING_LISTING_EXPIRED_SUBJECT";"Listing Expired"
+"_EMAIL_YNMULTILISTING_LISTING_EXPIRED_BODY";"The listing <a href='[listing_link]'>[listing_name]</a> has just been expired. <br />
+<a href='[website_link]'>[website_name]</a>"
+
+# ynmultilisting_listing_reviewed
+"_EMAIL_YNMULTILISTING_LISTING_REVIEWED_TITLE";"Listing Reviewed"
+"_EMAIL_YNMULTILISTING_LISTING_REVIEWED_DESCRIPTION";"This is the email is sent to listing owner when create his/her listing has new reviews	."
+"_EMAIL_YNMULTILISTING_LISTING_REVIEWED_SUBJECT";"Listing Reviewed"
+"_EMAIL_YNMULTILISTING_LISTING_REVIEWED_BODY";"The listing <a href='[listing_link]'>[listing_name]</a> has new reviews. <br />
+<a href='[website_link]'>[website_name]</a>"
+
+"REPORTS_VIEW_YNMULTILISTING_ADMINMANAGE_INDEX_DESCRIPTION";"This page lists all of the report entries about abusive discussion your users have posted. You can use this page to monitor and moderate discussions of listings easily. For other type of report visit <a href='%1$s'>Abuse Reports</a>."
+"YNMULTILISTING_ADMIN_PACKAGE_LEVEL";"Select the Member Levels to which this Package should be available. Only users belonging to the selected Member Levels will be able to create business of this package."
+"YNMULTILISTING_ADMIN_PACKAGE_PRICE";"The amount to charge from business owner. Setting this to zero will make this a free package."
+"YNMULTILISTING_ADMIN_CATEGORY_DESCRIPTION";"This page is where admin creates and organizes categories. Drag and Drop feature allows admin to easily change order of categories."
+"YNMULTILISTING_ADMIN_STATISTICS_DESCRIPTION";"Statistics of Listings on your site. General statistics provides detail number of listings and Graph Statistics provides detail number of listings and Graph Statistics provides visual aid to illustrate the change in listings over a period of time."
+
+# notify_ynmultilisting_listing_package_change
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_PACKAGE_CHANGE_TITLE";"Listing Package Changed"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_PACKAGE_CHANGE_DESCRIPTION";"This email is sent to listing owner when package of their listings changed."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_PACKAGE_CHANGE_SUBJECT";"Listing Package Changed"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_PACKAGE_CHANGE_BODY";"
+The current applied [sender_title] package for the listing [object_title] has been [status].
+
+Click here to find out:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynmultilisting_listing_new_transaction
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_NEW_TRANSACTION_TITLE";"New Transaction"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_NEW_TRANSACTION_DESCRIPTION";"This email is sent to admin when new transaction has been made."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_NEW_TRANSACTION_SUBJECT";"New Transaction"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_NEW_TRANSACTION_BODY";"
+A new transaction has been made for the listing [object_title].
+
+Click here to find out:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynmultilisting_listing_status_change
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_STATUS_CHANGE_TITLE";"Listing Status Changed"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_STATUS_CHANGE_DESCRIPTION";"This email is sent to listing owner when status of their listings changed."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_STATUS_CHANGE_SUBJECT";"Listing Status Changed"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_STATUS_CHANGE_BODY";"
+The listing [object_title] has just been [status].
+
+Click here to find out:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynmultilisting_listing_add_item
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_ADD_ITEM_TITLE";"Listing New Item"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_ADD_ITEM_DESCRIPTION";"This email is sent to listing owner when their listings has new item."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_ADD_ITEM_SUBJECT";"Listing New [label]"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_ADD_ITEM_BODY";"
+A [label] has just been added to listing [object_title].
+
+Click here to find out:
+
+http://[host][sender_link]
+
+[footer]"
+
+# notify_ynmultilisting_listing_follow_owner
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_OWNER_TITLE";"Listing Follow Alert"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_OWNER_DESCRIPTION";"This email is sent to listing owner when users have just followed him."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_OWNER_SUBJECT";"Listing Follow Alert"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_OWNER_BODY";"
+[sender_title] is following your listing.
+
+Click here to find out:
+
+http://[host][sender_link]
+
+[footer]"
+
+# notify_ynmultilisting_listing_follow
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_TITLE";"Listing Follow Alert"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_DESCRIPTION";"This email is sent to listing follower when following seller has added new listing."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_SUBJECT";"Listing Follow Alert"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_FOLLOW_BODY";"
+[sender_title] has create a new listing [object_title].
+
+Click here to find out:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynmultilisting_discussion_reply
+"_EMAIL_NOTIFY_YNMULTILISTING_DISCUSSION_REPLY_TITLE";"Listing Discussion Reply"
+"_EMAIL_NOTIFY_YNMULTILISTING_DISCUSSION_REPLY_DESCRIPTION";"This email is sent to the member when people reply to discussion topics that the member created."
+"_EMAIL_NOTIFY_YNMULTILISTING_DISCUSSION_REPLY_SUBJECT";"A member has posted a reply to your topic ""[object_title]"" in the listing ""[object_parent_title]"""
+"_EMAIL_NOTIFY_YNMULTILISTING_DISCUSSION_REPLY_BODY";"[header]
+
+[sender_title] has posted a reply to your topic ""[object_title]"" in the listing ""[object_parent_title]"":
+
+""[message]""
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynmultilisting_discussion_response
+"_EMAIL_NOTIFY_YNMULTILISTING_DISCUSSION_RESPONSE_TITLE";"Listing Discussion Response"
+"_EMAIL_NOTIFY_YNMULTILISTING_DISCUSSION_RESPONSE_DESCRIPTION";"This email is sent to the member when people reply to discussion topics that the member replied to."
+"_EMAIL_NOTIFY_YNMULTILISTING_DISCUSSION_RESPONSE_SUBJECT";"A member has posted a reply to the topic ""[object_title]"" you replied to in the listing ""[object_parent_title]"""
+"_EMAIL_NOTIFY_YNMULTILISTING_DISCUSSION_RESPONSE_BODY";"[header]
+
+[sender_title] has posted a reply to the topic ""[object_title]"" you replied to in the listing ""[object_parent_title]"":
+
+""[message]""
+
+Please click the following link to view it:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynmultilisting_listing_approve
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_APPROVE_TITLE";"Ynlistings - Approve Listing"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_APPROVE_DESCRIPTION";"Your listing has been approved."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_APPROVE_SUBJECT";"Approve Listing"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_APPROVE_BODY";"[header]
+
+Your listing has been approved. Click following link to find out:
+
+http://[host][object_link]
+
+[footer]"
+
+# notify_ynmultilisting_listing_deny
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_DENY_TITLE";"Ynlistings - Deny Listing"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_DENY_DESCRIPTION";"Your listing has been denied."
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_DENY_SUBJECT";"Deny Listing"
+"_EMAIL_NOTIFY_YNMULTILISTING_LISTING_DENY_BODY";"[header]
+
+Your listing has been denied. Click following link to find out:
+
+http://[host][object_link]
+
+[footer]"
+
+
+"YouNet Multiple Listings Plugin";"YouNet Multiple Listings Plugin"
+"YNMULTILISTING_ADMIN_LISTINGTYPE_DESCRIPTION";"This place is for you to add many listing types such as: Antiques, Art, Books, Business, Real Estate, etc. In the listing types, you also need to add corresponding categories/sub categories as well as configure member
+level settings for theme. Each listing type has its own rating criteria for User/Editors reviews. You could add just a single Overall Rating criterion or you would create multiple rating criteria and the overall rating will automatically calculated as average of individual criteria. <br />
+<br />
+Each listing type is a widgetized page and you can include more attractive widgets on it. Moreover, you can manage listings belong to the listing type and create as many Quick Links to specific listings as you want."
+
+"YNMULTILISTING_DELETE_LISTING_TYPE_DESCRIPTION";"Are you sure you want to delete this listing type? All existing data such as categories, listings, rating criteria will be moved to another listing tpye. However, all member level settings as well as Listing Quick Links of this type will be deleted."
+"YNMULTILISTING_MANAGE_LISTINGS_DESCRIPTION";"This page lists all listings avaiable on your site. There are several actions that can be performed such as View Details, Close, Open, Edit, Delete, Feature/Unfeature, Highlight and Import, in addition to several bulk actions. <br /><br />
+Filter option provides Admin a quick way to sort through all listings available on your site."
+
+"Custom background color of menu";"Custom background color of menu"
+"No, use theme default color";"No, use theme default color"
+"Yes, use custom color";"Yes, use custom color"
+"Changes saved";"Changes saved"
+"Album deleted";"Album deleted"
+"You don't have permission to do this.";"You don't have permission to do this."
+"The request is invalid.";"The request is invalid."
+"Your listings is maximum.";"Your listings is maximum."
+"Can not import from module now. Please contact with the administrator for more information.";"Can not import from module now. Please contact with the administrator for more information."
+"No categories available now for import listings. Please contact to the administrator for more imformation";"No categories available now for import listings. Please contact to the administrator for more imformation"
+"Can not find the module.";"Can not find the module."
+"Can not find the category.";"Can not find the category."
+"%s listing has been imported";"%s listing has been imported";"%s listings has been imported"
+"Unsubscribed sucessfully!";"Unsubscribed sucessfully!"
+"You do not have permission to do this.";"You do not have permission to do this."
+"Please select package or set feature day.";"Please select package or set feature day."
+"Invalid feature day.";"Invalid feature day."
+"Success...";"Success..."
+"There are no payment gateways.";"There are no payment gateways."
+"Invalid gateway.";"Invalid gateway."
+"Can not find order.";"Can not find order."
+"Can not pay with credit.";"Can not pay with credit."
+"Can not find order.";"Can not find order."
+"Buy Listing";"Buy Listing"
+"Feature Listing";"Feature Listing"
+"Pay with Credit!";"Pay with Credit!"
+"Error!";"Error!"
+"Please select package.";"Please select package."
+"The image you selected was too large.";"The image you selected was too large."
+"SocialEngine Site";"SocialEngine Site"
+"You don't have permission to delete this listing.";"You don't have permission to delete this listing."
+"Listing doesn't exists or not authorized to delete.";"Listing doesn't exists or not authorized to delete."
+"This listing has been deleted.";"This listing has been deleted."
+"Change theme successfully!";"Change theme successfully!"
+"You don't have permission to close this listing.";"You don't have permission to close this listing."
+"Listing has been opened.";"Listing has been opened."
+"Listing has been closed.";"Listing has been closed."
+"Listing does not exists.";"Listing does not exists."
+"You already is owner of this listing.";"You already is owner of this listing."
+"This listing is tranferred successfully.";"This listing is tranferred successfully."
+"The image you selected was too large.";"The image you selected was too large."
+"Request not found!";"Request not found!"
+"Max file size limit exceeded (probably).";"Max file size limit exceeded (probably)."
+"Invalid request method";"Invalid request method"
+"No file";"No file"
+"Invalid Upload";"Invalid Upload"
+"Exceeded filesize limit.";"Exceeded filesize limit."
+"An error occurred.";"An error occurred."
+"Photo deleted";"Photo deleted"
+"The changes to your post have been saved.";"The changes to your post have been saved."
+"Post deleted.";"Post deleted."
+"The report will be sent to admin";"The report will be sent to admin"
+"You have reviewed this listing";"You have reviewed this listing"
+"Review Submitted Successfully.";"Review Submitted Successfully."
+"Edit Rate Successfully.";"Edit Rate Successfully."
+"Review does not exists.";"Review does not exists."
+"You don't have permission to delete this review.";"You don't have permission to delete this review."
+"Listing doesn't exists.";"Listing doesn't exists."
+"This review has been deleted.";"This review has been deleted."
+"Invalid request method.";"Invalid request method."
+"This review is not existed.";"This review is not existed."
+"Can not set useful";"Can not set useful"
+"This has been closed for posting.";"This has been closed for posting."
+"Topic renamed.";"Topic renamed."
+"Topic deleted.";"Topic deleted."
+"The report will be sent to admin";"The report will be sent to admin"
+"Wish List name must not be empty!";"Wish List name must not be empty!"
+"Add to Wish List successfully!";"Add to Wish List successfully!"
+"This wish list is already yours!";"This wish list is already yours!"
+"This wish list is added successfully!";"This wish list is added successfully!"
+"This Wish List has been deleted.";"This Wish List has been deleted."
+"Create Wish List successfully!";"Create Wish List successfully!"
+"Edit Wish List successfully!";"Edit Wish List successfully!"
+"Listing %s is not in this Wish List";"Listing %s is not in this Wish List"
+"Listing %s has been remove from this Wish List.";"Listing %s has been remove from this Wish List."
+"Title";"Title"
+"Description";"Description"
+"Create Album";"Create Album"
+"cancel";"cancel"
+"Delete Album";"Delete Album"
+"Are you sure you want to delete this album?";"Are you sure you want to delete this album?"
+"Edit Album";"Edit Album"
+"Search Albums";"Search Albums"
+"View";"View"
+"All Members Albums";"All Members Albums"
+"Only My Albums";"Only My Albums"
+"Browse By";"Browse By"
+"Most Recent";"Most Recent"
+"Most Commented";"Most Commented"
+"Search";"Search"
+"Select File";"Select File"
+"Choose a file XLS, CSV to import.";"Choose a file XLS, CSV to import."
+"Approve Listings";"Approve Listings"
+"Approve these listings automatically";"Approve these listings automatically"
+"These listings must wait for approval";"These listings must wait for approval"
+"Everyone";"Everyone"
+"All Registered Members";"All Registered Members"
+"Friends and Networks";"Friends and Networks"
+"Friends of Friends";"Friends of Friends"
+"Friends Only";"Friends Only"
+"Just Me";"Just Me"
+"Import Listings";"Import Listings"
+"Listing Type";"Listing Type"
+"Category";"Category"
+"Search Owner";"Search Owner"
+"All owners";"All owners"
+"Some specific owners";"Some specific owners"
+"Delete Listing Photo";"Delete Listing Photo"
+"Are you sure you want to delete this photo?";"Are you sure you want to delete this photo?"
+"Delete Photo";"Delete Photo"
+"Edit Photo";"Edit Photo"
+"Delete";"Delete"
+"Save Changes";"Save Changes"
+"Choose photos on your computer to add to this listing. (%s Kb maximum)";"Choose photos on your computer to add to this listing. (%s Kb maximum)"
+"Save Photos";"Save Photos"
+"Reply";"Reply"
+"Body";"Body"
+"Send me notifications when other members reply to this topic.";"Send me notifications when other members reply to this topic."
+"Post Reply";"Post Reply"
+"Delete Post";"Delete Post"
+"Are you sure you want to delete this post?";"Are you sure you want to delete this post?"
+"Edit Post";"Edit Post"
+"Report Post";"Report Post"
+"Report wrong post in a topic to admin";"Report wrong post in a topic to admin"
+"Report";"Report"
+"Review Title";"Review Title"
+"Title of the review...";"Title of the review..."
+"Pros";"Pros"
+"Cons";"Cons"
+"Your Review";"Your Review"
+"Review";"Review"
+"Delete Review";"Delete Review"
+"Are you sure you want to delete this review?";"Are you sure you want to delete this review?"
+"Save changes";"Save changes"
+"Keyword";"Keyword"
+"For Listing";"For Listing"
+"Member Only";"Member Only"
+"Editor Only";"Editor Only"
+"%s star";"%s star";"%s stars"
+"Reviewer";"Reviewer"
+"Sort By";"Sort By"
+"Most Useful";"Most Useful"
+"Most Recent";"Most Recent"
+"Most Rated";"Most Rated"
+"Least Rated";"Least Rated"
+"View Reviews";"View Reviews"
+"Post Discussion Topic";"Post Discussion Topic"
+"Message";"Message"
+"Post New Topic";"Post New Topic"
+"Delete Topic";"Delete Topic"
+"Are you sure you want to delete this topic?";"Are you sure you want to delete this topic?"
+"Rename Topic";"Rename Topic"
+"Report Topic";"Report Topic"
+"Report wrong activities of topic to admin";"Report wrong activities of topic to admin"
+"Search Topics";"Search Topics"
+"Status";"Status"
+"All Topics";"All Topics"
+"Only Open Topics";"Only Open Topics"
+"Only Closed Topics";"Only Closed Topics"
+"View";"View"
+"All Members Topics";"All Members Topics"
+"Only My Topics";"Only My Topics"
+"Browse By";"Browse By"
+"Latest";"Latest"
+"Latest Replied";"Latest Replied"
+"Most Viewed";"Most Viewed"
+"Most Replied";"Most Replied"
+"No Replied";"No Replied"
+"Video Title";"Video Title"
+"Video Description";"Video Description"
+"Delete Video";"Delete Video"
+"Search Videos";"Search Videos"
+"Most Liked";"Most Liked"
+"Highest Rated";"Highest Rated"
+"Add Listing to Wish List";"Add Listing to Wish List"
+"Select Wish List";"Select Wish List"
+"Create New Wish List";"Create New Wish List"
+"Wish List name";"Wish List name"
+"View Privacy";"View Privacy"
+"Who may see this Wish List?";"Who may see this Wish List?"
+"Add to Wish List";"Add to Wish List"
+"Create New Wish List";"Create New Wish List"
+"Edit Wish List";"Edit Wish List"
+"Search Wish List";"Search Wish List"
+"Member's Name/Email";"Member's Name/Email"
+"Wish List";"Wish List"
+"All Wish List";"All Wish List"
+"My Friend's Wish List";"My Friend's Wish List"
+"Change Package";"Change Package"
+"Listing Title";"Listing Title"
+"Tags (Keywords)";"Tags (Keywords)"
+"Separate tags with commas.";"Separate tags with commas."
+"Short Description";"Short Description"
+"About Us";"About Us"
+"Main Video";"Main Video"
+"Main Photo";"Main Photo"
+"Currency";"Currency"
+"Price";"Price"
+"Include in search results?";"Include in search results?"
+"Yes, include in search results.";"Yes, include in search results."
+"No, hide from search results.";"No, hide from search results."
+"Feature this listing with %s per day";"Feature this listing with %s per day"
+"Number of featured days";"Number of featured days"
+"Who may view this listing?";"Who may view this listing?"
+"Who may comment on this listing?";"Who may comment on this listing?"
+"Who may share this listing";"Who may share this listing"
+"Share Privacy";"Share Privacy"
+"Photo Creation";"Photo Creation"
+"Who may add photos to this listing?";"Who may add photos to this listing?"
+"Video Creation";"Video Creation"
+"Who may add videos to this listing?";"Who may add videos to this listing?"
+"Discussion Creation";"Discussion Creation"
+"Who may add discussions to this listing?";"Who may add discussions to this listing?"
+"Publish Listing";"Publish Listing"
+"Save as Draft";"Save as Draft"
+"Delete Listing";"Delete Listing"
+"Are you sure you want to delete this listing? All of the information of this listing will be erased.";"Are you sure you want to delete this listing? All of the information of this listing will be erased."
+"Send this listing to your friends.";"Send this listing to your friends."
+"Recipients";"Recipients"
+"Please enter only valid email addresses.";"Please enter only valid email addresses."
+"Custom Message";"Custom Message"
+"Send Emails";"Send Emails"
+"Export Listings";"Export Listings"
+"Which type of file do you want to export?";"Which type of file do you want to export?"
+"Export Listings";"Export Listings"
+"It costs %s to feature listing in 1 day";"It costs %s to feature listing in 1 day"
+"How many days do you want to feature listing?";"How many days do you want to feature listing?"
+"Feature";"Feature"
+"Search Listings";"Search Listings"
+"Listings Status";"Listings Status"
+"Only Open Listings";"Only Open Listings"
+"Only Closed Listings";"Only Closed Listings"
+"Only Draft Listings";"Only Draft Listings"
+"Only Expired Listings";"Only Expired Listings"
+"Alphabetic";"Alphabetic"
+"Most Discussed";"Most Discussed"
+"Radius (mile)..";"Radius (mile).."
+"Radius (mile)";"Radius (mile)"
+"Email Address";"Email Address"
+"Get Job Now !";"Get Job Now !"
+"Listing Owner Transfer";"Listing Owner Transfer"
+"Please choose a member you want to transfer the owner role to:";"Please choose a member you want to transfer the owner role to:"
+"Submit";"Submit"
+"None";"None"
+"Overal Rating";"Overal Rating"
+"Latest Review";"Latest Review"
+"Number of Review";"Number of Review"
+"Buy Listing from %s'";"Buy Listing from %s'"
+"Allow adding photos to Photos tab";"Allow adding photos to Photos tab"
+"Allow adding videos to Videos tab";"Allow adding videos to Videos tab"
+"Allow adding discussions to Discussions tab";"Allow adding discussions to Discussions tab"
+"&#187; Albums";"&#187; Albums"
+"Back to Listing";"Back to Listing"
+"By";"By"
+"No albums have been uploaded.";"No albums have been uploaded."
+"Create a %1snew one%2s.";"Create a %1snew one%2s."
+"Back to Album List";"Back to Album List"
+"Add More Photos";"Add More Photos"
+"No photos have been uploaded in this album yet.";"No photos have been uploaded in this album yet."
+"Prev";"Prev"
+"Next";"Next"
+"Ratings & Reviews";"Ratings & Reviews"
+"Ratings";"Ratings"
+"Reviews";"Reviews"
+"Latest Review";"Latest Review"
+"LISTING SPECIFICATIONS";"LISTING SPECIFICATIONS"
+"%s review";"%s review";"%s reviews"
+"by";"by"
+"Editor";"Editor"
+" Pros:";" Pros:"
+" Cons:";" Cons:"
+"No listings for comparison";"No listings for comparison"
+"No FAQs has been added.";"No FAQs has been added."
+"listing(s) have been imported.";"listing(s) have been imported."
+"Total";"Total"
+"Import Listings From Files";"Import Listings From Files"
+"Import Listings From Modules";"Import Listings From Modules"
+"Rollback";"Rollback"
+"Cancel Import Listings";"Cancel Import Listings"
+"Are you sure you want to cancel this process? Some of listings can not be imported successfully.";"Are you sure you want to cancel this process? Some of listings can not be imported successfully."
+"Ok";"Ok"
+" or ";" or "
+"Rollback Import Listings";"Rollback Import Listings"
+"Are you sure you want to rollback this process?";"Are you sure you want to rollback this process?"
+"Import has been rollbacked";"Import has been rollbacked"
+"Import listings process has been rollbacked.";"Import listings process has been rollbacked."
+"Import reaches limit";"Import reaches limit"
+"Import successful";"Import successful"
+"%s item can import from module %s.";"%s item can import from module %s.";"%s items can import from module %s."
+"Item";"Item"
+"Can't import any listings from %s.";"Can't import any listings from %s."
+"Your listings are reach limit. Please delete some listings for creating new.";"Your listings are reach limit. Please delete some listings for creating new."
+"All Packages";"All Packages"
+"Free";"Free"
+"Create Listing";"Create Listing"
+"duration";"duration"
+"%s day";"%s day";"%s days"
+"support";"support"
+"There are no available packages.";"There are no available packages."
+"Edit Listing";"Edit Listing"
+"Select Theme";"Select Theme"
+"Add Photos";"Add Photos"
+"Add Videos";"Add Videos"
+"Add Discussions";"Add Discussions"
+"Close Listing";"Close Listing"
+"Open Listing";"Open Listing"
+"Make Payment";"Make Payment"
+"Transfer Owner";"Transfer Owner"
+" - by ";" - by "
+"%s view";"%s view";"%s views"
+"%s like";"%s like";"%s likes"
+"Category: ";"Category: "
+"Location: ";"Location: "
+"unknown";"unknown"
+"Listing Status: ";"Listing Status: "
+"Approved Status: ";"Approved Status: "
+"No listings found.";"No listings found."
+"Payment Confirm";"Payment Confirm"
+"You are about to subscribe to the item: %1$s";"You are about to subscribe to the item: %1$s"
+"Are you sure you want to do this? You will be charged: %1$s Credits";"Are you sure you want to do this? You will be charged: %1$s Credits"
+"Current Balance";"Current Balance"
+"Credits";"Credits"
+"Subscribe";"Subscribe"
+"Review Your Order";"Review Your Order"
+"You have chosen %1s - %2s - Period %3s days";"You have chosen %1s - %2s - Period %3s days"
+"You have chosen %1s featured days (%2s)";"You have chosen %1s featured days (%2s)"
+"Total cost: %s";"Total cost: %s"
+"Select gateway to place order";"Select gateway to place order"
+"Pay with";"Pay with"
+" or ";" or "
+"Pay with Credit";"Pay with Credit"
+"Location not found.";"Location not found."
+"Get Direction";"Get Direction"
+"Starting location";"Starting location"
+"Enter a location";"Enter a location"
+"Get current position";"Get current position"
+"Destination";"Destination"
+"Get Direction";"Get Direction"
+"Current location...";"Current location..."
+"Browser doesn't support Geolocation";"Browser doesn't support Geolocation"
+"Browser doesn't support Geolocation";"Browser doesn't support Geolocation"
+"Missing location from";"Missing location from"
+"Missing location to";"Missing location to"
+"Change Package";"Change Package"
+"You're currently using package <b>%s1</b> with the following information:";"You're currently using package <b>%s1</b> with the following information:"
+"Features supported";"Features supported"
+"Package price";"Package price"
+"Valid until";"Valid until"
+"Please select another package to apply to this listing. Note that some information of this listing could be hidden based on settings of new package.";"Please select another package to apply to this listing. Note that some information of this listing could be hidden based on settings of new package."
+"Your package is now expired. Please make payment to publish your listing again";"Your package is now expired. Please make payment to publish your listing again"
+"Available packages";"Available packages"
+"duration";"duration"
+"Add your Review";"Add your Review"
+"You have revieweded.";"You have revieweded."
+"Print Listing";"Print Listing"
+"Back";"Back"
+"No Photo";"No Photo"
+"Select Themes";"Select Themes"
+"Select";"Select"
+"Start typing...";"Start typing..."
+"You have reached the photo limitation.";"You have reached the photo limitation."
+"There is no photos found.";"There is no photos found."
+"Click %s to listing manage page.";"Click %s to listing manage page."
+"Type a tag or select a name from the list.";"Type a tag or select a name from the list."
+"of";"of"
+"Photo";"Photo"
+"Tagged:";"Tagged:"
+"Added";"Added"
+"Share";"Share"
+"Make Profile Photo";"Make Profile Photo"
+"for ";"for "
+"Show %s review";"Show %s review";"Show %s reviews"
+"No reviews.";"No reviews."
+" &#187; Discussions";" &#187; Discussions"
+"Back to Listing";"Back to Listing"
+"Post New Topic";"Post New Topic"
+"reply";"reply";"replies"
+"Last Replied";"Last Replied"
+"No topics have been posted in this listing yet.";"No topics have been posted in this listing yet."
+"Back to Topics";"Back to Topics"
+"Watch Topic";"Watch Topic"
+"Stop Watching Topic";"Stop Watching Topic"
+"Report Topic";"Report Topic"
+"Post Reply";"Post Reply"
+"Make Sticky";"Make Sticky"
+"Close";"Close"
+"Open";"Open"
+"Rename";"Rename"
+"This topic has been closed.";"This topic has been closed."
+"said";"said"
+"Quote";"Quote"
+"&#187; Videos";"&#187; Videos"
+"You have reached the video limitation.";"You have reached the video limitation."
+"Add New Video";"Add New Video"
+"There is no videos found.";"There is no videos found."
+"Edit Video";"Edit Video"
+"Delete Video";"Delete Video"
+"Your video is in queue to be processed - you will be notified when it is ready to be viewed.";"Your video is in queue to be processed - you will be notified when it is ready to be viewed."
+"Your video is currently being processed - you will be notified when it is ready to be viewed.";"Your video is currently being processed - you will be notified when it is ready to be viewed."
+"Video conversion failed. Please try %1$suploading again%2$s.";"Video conversion failed. Please try %1$suploading again%2$s."
+"Video conversion failed. Video format is not supported by FFMPEG. Please try %1$sagain%2$s.";"Video conversion failed. Video format is not supported by FFMPEG. Please try %1$sagain%2$s."
+"Video conversion failed. Audio files are not supported. Please try %1$sagain%2$s.";"Video conversion failed. Audio files are not supported. Please try %1$sagain%2$s."
+"Video conversion failed. You may be over the site upload limit.  Try %1$suploading%2$s a smaller file, or delete some files to free up space.";"Video conversion failed. You may be over the site upload limit.  Try %1$suploading%2$s a smaller file, or delete some files to free up space."
+"You do not have any videos.";"You do not have any videos."
+"Delete Wish List?";"Delete Wish List?"
+"Are you sure that you want to delete this Wish List? It will not be recoverable after being deleted.";"Are you sure that you want to delete this Wish List? It will not be recoverable after being deleted."
+"%s Listing";"%s Listing";"%s Listings"
+"View Wish List";"View Wish List"
+"Edit Wish List";"Edit Wish List"
+"Delete Wish List";"Delete Wish List"
+"No wish lists found.";"No wish lists found."
+"Remove from Wish List?";"Remove from Wish List?"
+"Are you sure that you want to remove listing %s from this Wish List?";"Are you sure that you want to remove listing %s from this Wish List?"
+"Created by: ";"Created by: "
+"Map View";"Map View"
+"Pin View";"Pin View"
+"Grid View";"Grid View"
+"List View";"List View"
+"Click to remove this entry.";"Click to remove this entry."
+"Rate";"Rate"
+"Comment";"Comment"
+"Liked";"Liked"
+"Like";"Like"
+"Followed Seller";"Followed Seller"
+"Followe Seller";"Followe Seller"
+"Mail to Seller";"Mail to Seller"
+"Print Listing";"Print Listing"
+"Remove from Compare";"Remove from Compare"
+"Add to Compare";"Add to Compare"
+"Publish";"Publish"
+"More Categories Section";"More Categories Section"
+"Can add up to 8 categories";"Can add up to 8 categories"
+"No categories for selection.";"No categories for selection."
+"Top Categories Section";"Top Categories Section"
+"No categories for selection.";"No categories for selection."
+"There are no listings view on this map.";"There are no listings view on this map."
+"Preview Theme";"Preview Theme"
+"Price from";"Price from"
+"to";"to"
+"General Rating";"General Rating"
+"Here are listings you may be interested in from ";"Here are listings you may be interested in from "
+"VIEW LISTING >>";"VIEW LISTING >>"
+"UNSUBSCRIBE >>";"UNSUBSCRIBE >>"
+"Was this useful?";"Was this useful?"
+"Yes";"Yes"
+"No";"No"
+"By %s";"By %s"
+"%1$s view";"%1$s view"
+"Categories";"Categories"
+"Contact Seller";"Contact Seller"
+"Following";"Following"
+"Create Album";"Create Album"
+"Browse Albums";"Browse Albums"
+"Untitle Album";"Untitle Album"
+"Previous";"Previous"
+"No albums have been uploaded to this listing yet.";"No albums have been uploaded to this listing yet."
+"Like this listing";"Like this listing"
+"Unlike this listing";"Unlike this listing"
+"View All Discussions";"View All Discussions"
+"listing specifications";"listing specifications"
+"View more ";"View more "
+"by ";"by "
+"General Reviews";"General Reviews"
+"Full Reviews";"Full Reviews"
+"Reviewed by Members";"Reviewed by Members"
+"Reviewed by Editors";"Reviewed by Editors"
+"(My Review)";"(My Review)"
+"No reviews have been posted in this listing yet.";"No reviews have been posted in this listing yet."
+"show all";"show all"
+"No videos have been added in this listing yet.";"No videos have been added in this listing yet."
+"My %s";"My %s"
+"Browse %s";"Browse %s"
+"%s comment";"%s comment";"%s comments"
+"%s discussion";"%s discussion";"%s discussions"
+"View more <span class="fa fa-arrow-right"></span> ";"View more <span class="fa fa-arrow-right"></span> "
+"Review for %s";"Review for %s"
+"Email must not be empty!";"Email must not be empty!"
+"Email is invalid!";"Email is invalid!"
+"Radius is invalid!";"Radius is invalid!"
+"Radius must be a Integer!";"Radius must be a Integer!"
+"Top listings in %s";"Top listings in %s"
+"%s Wish List";"%s Wish List";"%s Wish Lists"
+"Home Page";"Home Page"
+"Create New Listing;"@@Create New Listing"
+"Browse Review";"Browse Review"
+"FAQs";"FAQs"
+"Location";"Location"
+"Shop by Category";"Shop by Category"
+"Subscribe Listings";"Subscribe Listings"
+"Recent Reviews";"Recent Reviews"
+"Tags";"Tags"
+"Recent Listing";"Recent Listing"
+"Most Reviewed";"Most Reviewed"
+"High Rated";"High Rated"
+"Browse Listing";"Browse Listing"
+"Browse Listings";"Browse Listings"
+"List Categories";"List Categories"
+"Please choose one video.";"Please choose one video."
+"Post New Listing";"Post New Listing"
+"Review By";"Review By"
+"Average Rating";"Average Rating"
+"All Categories";"All Categories"
+"Photos";"Photos"
+"Videos";"Videos"
+"Discussions";"Discussions"
+"Activity";"Activity"
+"Info";"Info"
+"Email to Friends";"Email to Friends"
+" Photo";" Photo"
+" Video";" Video"
+"Expired";"Expired"
+"Print";"Print"
+"More";"More"
+"You have reviewed.";"You have reviewed."
+"(%s review)";"(%s review)";"(%s reviews)"
+"All";"All"
+"Browse Videos";"Browse Videos"
+"Edit";"Edit"
+" &#187; Videos";" &#187; Videos"
+"Member";"Member"
+"Related Listings";"Related Listings"
+"YNMULTILISTING_ADMIN_CATEGORY_FIELD_DESCRIPTION";"Create profile questions that allow listings in this category to describe themselves. To reorder the profile questions, click on their names and drag them up or down."
+"Follow Seller";"Follow Seller"
+"UnFollow Seller";"UnFollow Seller"
+
+"YNCREDIT_MODULE_YNMULTILISTING";"Multi Listing"
+"YNCREDIT_ACTION_TYPE_YNMULTILISTING_NEW";"Post a new listing"
+"ACTIVITY_TYPE_YNMULTILISTING_DISCUSSION_REPLY";"When people reply to discussion topics that I've replied to."
+"ACTIVITY_TYPE_YNMULTILISTING_DISCUSSION_RESPONSE";"When people reply to discussion topics that I create."
+"ACTIVITY_TYPE_YNMULTILISTING_LISTING_ADD_ITEM";"When an item has been added to the your listing."
+"ACTIVITY_TYPE_YNMULTILISTING_LISTING_APPROVE";"When your listing is approved."
+"ACTIVITY_TYPE_YNMULTILISTING_LISTING_DENY";"When your listing id denied."
+"ACTIVITY_TYPE_YNMULTILISTING_LISTING_FOLLOW";"When the seller that you follow has added a new listing."
+"ACTIVITY_TYPE_YNMULTILISTING_LISTING_FOLLOW_OWNER";"When someone follows your."
+"ACTIVITY_TYPE_YNMULTILISTING_LISTING_NEW_TRANSACTION";"When a new transaction is made from your listing."
+"ACTIVITY_TYPE_YNMULTILISTING_LISTING_PACKAGE_CHANGE";"When the package of listing changes."
+"ACTIVITY_TYPE_YNMULTILISTING_LISTING_STATUS_CHANGE";"When your listing status changes."
+
+"_ACTIVITY_ACTIONTYPE_YNMULTILISTING_LISTING_CREATE";"When I create a listing."
+"_ACTIVITY_ACTIONTYPE_YNMULTILISTING_LISTING_TRANSFER";"When I transfer the listing owner."
+"_ACTIVITY_ACTIONTYPE_YNMULTILISTING_PHOTO_UPLOAD";"When I upload the photos to listing."
+"_ACTIVITY_ACTIONTYPE_YNMULTILISTING_REVIEW_CREATE";"When I add a review for listing."
+"_ACTIVITY_ACTIONTYPE_YNMULTILISTING_TOPIC_CREATE";"When I create a listing topic."
+"_ACTIVITY_ACTIONTYPE_YNMULTILISTING_TOPIC_REPLY";"When I reply in a listing topic."
+"_ACTIVITY_ACTIONTYPE_YNMULTILISTING_VIDEO_CREATE";"When I add a video to listing."
+
+"ITEM_TYPE_YNMULTILISTING_LISTING";"Listing Types"
+"ITEM_TYPE_YNMULTILISTING_LISTINGTYPE";"Listings"
+"ITEM_TYPE_YNMULTILISTING_WISHLIST";"Wishlists"
+"ynmultilistng_reply_count";"reply";"replies"
+
+"You can add maximum %s video.";"You can add maximum %s video.";"You can add maximum %s videos."
+"You can add maximum %s photo.";"You can add maximum %s photo.";"You can add maximum %s photos."
+"{item:$subject} is following your listing.";"{item:$subject} is following your listing."
+"{item:$subject} has {item:$object:posted} on a {itemParent:$object::listing topic} you created.";"{item:$subject} has {item:$object:posted} on a {itemParent:$object::listing topic} you created."
+"{item:$subject} has {item:$object:posted} on a {itemParent:$object::listing topic} you posted on.";"{item:$subject} has {item:$object:posted} on a {itemParent:$object::listing topic} you posted on."
+"{item:$subject} has create a new {item:$object:listing}.";"{item:$subject} has create a new {item:$object:listing}."
+"Your listing {item:$subject} has been approved and published.";"Your listing {item:$subject} has been approved and published."
+"Your listing {item:$object} has been denied.";"Your listing {item:$object} has been denied."
+"A {item:$subject:$label} has just been added to listing {item:$object}.";"A {item:$subject:$label} has just been added to listing {item:$object}."
+"The listing {item:$subject} has just been {var:$status}.";"The listing {item:$subject} has just been {var:$status}."
+"A new transaction has been made for the listing {item:$subject}.";"A new transaction has been made for the listing {item:$subject}."
+"The current applied {item:$subject} package for the listing {item:$object} has been {var:$status}.";"The current applied {item:$subject} package for the listing {item:$object} has been {var:$status}."
+"{item:$subject} posted a new video:";"{item:$subject} posted a new video:"
+"{item:$subject} replied to the topic {body:$body}";"{item:$subject} replied to the topic {body:$body}"
+"{item:$subject} posted a new topic:";"{item:$subject} posted a new topic:"
+"{item:$subject} added {var:$count} photo(s).";"{item:$subject} added {var:$count} photo(s)."
+"{item:$subject} replied to the topic {body:$body}";"{item:$subject} replied to the topic {body:$body}"
+"{item:$subject} add a review for the listing {item:$object}";"{item:$subject} add a review for the listing {item:$object}"
+"{item:$subject} has became the owner of the listing {item:$object}";"{item:$subject} has became the owner of the listing {item:$object}"
+"{item:$subject} add a new listing:";"{item:$subject} add a new listing:"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

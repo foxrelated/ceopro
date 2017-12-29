@@ -1,0 +1,98 @@
+/*** file sharing ***/
+.layout_ynadvsearch_yn_filesharing_result > br
+{
+	display: none;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_browse_title,
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse  .ynfs_browse_control
+{
+	display: none !important;
+}
+.ynfs_browse_ul_list{
+	margin: 0 -0.5em;
+}
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item{
+	float: left;
+	width: 50%;
+	min-height: 40px;
+	line-height: 20px;
+	padding: 0.5em;
+	box-sizing: border-box;
+	min-width: auto;
+	border-bottom: 0;
+	position: relative;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item:before{
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	background-color: #eee;
+	left: 0.5em;
+	right: 0.5em;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_share_image,
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_check_column,
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_owner_column,
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_modifieddate_column,
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_view_download_column,
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_download_ctrl{
+	display: none;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_name_column
+{
+	width: 100%;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_name_column a
+{
+	height: 20px;
+	margin: 0;
+	padding-left: 10px;
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item .ynfs_type_column
+{
+	position: absolute;
+	margin-left: 42px;
+	margin-top: 15px;
+	font-size: 0.8em;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item:nth-child(2n)
+{
+	margin-right: 0;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item:nth-child(2n+1)
+{
+	clear: left;
+}
+
+.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.layout_ynadvsearch_yn_filesharing_result #ynfs_control_browse .ynfs_item {
+		height: auto;
+		width: 100% !important;
+		margin: 0;
+	}
+}

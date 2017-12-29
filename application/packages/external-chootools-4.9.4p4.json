@@ -1,0 +1,62 @@
+{
+  "type": "external",
+  "name": "chootools",
+  "version": "4.9.4p4",
+  "revision": "9747",
+  "path": "externals\/chootools",
+  "repository": null,
+  "sku": null,
+  "date": "Mon, 09 Oct 2017 09:37:44 +0000",
+  "title": "Chootools",
+  "description": null,
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Webligo Developments"
+  ],
+  "meta": {
+    "date": "Mon, 09 Oct 2017 09:37:44 +0000",
+    "title": "Chootools",
+    "description": null,
+    "developer": null,
+    "authors": [
+      "Webligo Developments"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    
+  ],
+  "callback": null,
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "externals\/chootools": {
+      "type": "directory",
+      "path": "externals\/chootools",
+      "structure": [
+        {
+          "path": "manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 436,
+          "sha1": "e243bbc57ea880a5dc29f1c0e63288e2f082a616"
+        },
+        {
+          "path": "chootools.js",
+          "dir": false,
+          "file": true,
+          "perms": "0644",
+          "size": 30490,
+          "sha1": "cbcd9124fc3744a0f7bb716abbd95bba058a7709"
+        }
+      ]
+    }
+  }
+}
