@@ -7807,7 +7807,7 @@ body[id^=global_page_messages-]{
     }
 }
 .layout_advgroup_groups_search{
-    padding: 0 !important;
+
     #filter_form{
         padding: 15px;
     }
@@ -7846,8 +7846,10 @@ body[id^=global_page_messages-]{
 
         .advgroup_location_icon{
             position: absolute;
-            right: 22px;
-            bottom: 11px;
+
+            .ynicon.yn-map-marker {
+                display: none;
+            }
         }
         
     }

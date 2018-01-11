@@ -428,7 +428,7 @@
             <?php elseif( $action->getTypeInfo()->shareable == 3 ): ?>
               <li class="feed_item_option_share">
                 <span>-</span>
-                <?php echo $this->htmlLink(array('route' => 'default', 'module' => 'activity', 'controller' => 'index', 'action' => 'share', 'type' => $object->getType(), 'id' => $object->getIdentity(), 'format' => 'smoothbox'), $this->translate('Share'), array('class' => 'smoothbox', 'title' => 'Share')) ?>
+                <?php echo $this->htmlLink(array('route' => 'default', 'module' => 'activity', 'controller' => 'index', 'action' => 'share', 'type' => $action->getObject()->getType(), 'id' => $action->getObject()->getIdentity(), 'format' => 'smoothbox'), $this->translate('Share'), array('class' => 'smoothbox', 'title' => 'Share')) ?>
               </li>
             <?php elseif( $action->getTypeInfo()->shareable == 4 ): ?>
               <li class="feed_item_option_share">

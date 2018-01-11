@@ -91,7 +91,7 @@ class Ynwiki_Form_Create extends Engine_Form
 		   		'table', 'fullscreen', 'media', 'preview', 'paste',
 		   		'code', 'image', 'textcolor', 'jbimages', 'link'
 	 		 ),
-		    'toolbar1' => "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
+		    'toolbar1' => "insertfile undo redo | styleselect | fontselect, fontsizeselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
 		    'toolbar2' => "print preview media | forecolor backcolor emoticons",
           ),
           'filters' => array(

@@ -1,2 +1,26 @@
 @include "../ynresponsivepurity-blue/yncustom.css";
 @include "constants.css";
+
+.layout_ynwiki_profile_options {
+    #profile_options {
+        .buttonlink {
+            padding: 6px 20px;
+        }
+    }
+}
+
+#global_page_ynwiki-index-compare-versions {
+    .layout_middle {
+        padding: 15px;
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #e8e8e8;
+
+        > div + div {
+            #page_rate {
+                margin: 10px 0px;
+            }
+        }
+    }
+}

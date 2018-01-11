@@ -77,7 +77,7 @@ class Ynbusinesspages_TransactionController extends Core_Controller_Action_Stand
 		{
 			$params['region'] = $localeParts[1];
 		}
-		$params['vendor_order_id'] = $this -> _order -> getIdentity();
+		$params['vendor_order_id'] = time() . '-' . $this -> _order -> getIdentity();
 		$params['return_url'] = $schema . $host . $this -> view -> url(array('action' => 'return')) . '?order_id=' . $params['vendor_order_id'] . '&state=' . 'return';
 		$params['cancel_url'] = $schema . $host . $this -> view -> url(array('action' => 'return')) . '?order_id=' . $params['vendor_order_id'] . '&state=' . 'cancel';
 		$params['ipn_url'] = $schema . $host . $this -> view -> url(array(

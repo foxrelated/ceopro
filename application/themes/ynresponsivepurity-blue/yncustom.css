@@ -1507,7 +1507,7 @@ blockquote p{font-size:11px;}
 
 				&.core_mini_profile img,
 				&.core_mini_update{display: none;}
-				&.core_mini_auth{border-top: none;}
+				&.core_mini_admin{border-top: none;}
 			}
 			.core_mini_admin:before{content:"\\f084";}
 			.core_mini_profile:before{content:"\\f007";}
