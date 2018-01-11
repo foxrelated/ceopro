@@ -1,2 +1,0 @@
-UPDATE `engine4_activity_notificationtypes` set `handler`='advgroup.widget.request-group' WHERE `type` = 'advgroup_invite';
-UPDATE `engine4_core_modules` SET `version` = '4.02p1' WHERE `name` = 'advgroup';
